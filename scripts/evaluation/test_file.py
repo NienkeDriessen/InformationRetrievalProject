@@ -2,27 +2,27 @@ import numpy as np
 import pandas as pd
 from pprint import pprint
 
-from scripts.evaluation.evaluation import evaluate_query, evaluate_all_queries
+from scripts.evaluation.evaluation_metrics import evaluate_query, evaluate_all_queries
 
-queries = ['query2']  #['query1' , 'query2']
+queries = ['query1' , 'query2']
 retrieved_lists = {
-    # 'query1': {
-    #     'query': 'query1',
-    #     'ranked_list': pd.DataFrame([
-    #         ['image1.jpg', 1],
-    #         ['image2.jpg', 1],
-    #         ['image3.jpg', 1],
-    #         ['image4.jpg', 1],
-    #         ['image5.jpg', 1],
-    #         ['image6.jpg', 0],
-    #         ['image7.jpg', 0],
-    #         ['image8.jpg', 0],
-    #         ['image9.jpg', 0],
-    #         ['image10.jpg', 0],
-    #     ],
-    #         columns=['image_path', 'relevance_score'])
-    #     .set_index('image_path'),
-    # },
+    'query1': {
+        'query': 'query1',
+        'ranked_list': pd.DataFrame([
+            ['image1.jpg', 1],
+            ['image2.jpg', 1],
+            ['image3.jpg', 1],
+            ['image4.jpg', 1],
+            ['image5.jpg', 1],
+            ['image6.jpg', 0],
+            ['image7.jpg', 0],
+            ['image8.jpg', 0],
+            ['image9.jpg', 0],
+            ['image10.jpg', 0],
+        ],
+            columns=['image_path', 'relevance_score'])
+        .set_index('image_path'),
+    },
     'query2': {
         'query': 'query2',
         'ranked_list': pd.DataFrame([
@@ -46,23 +46,23 @@ retrieved_lists = {
 }
 
 ground_truth = {
-    # 'query1': {
-    #     'query': 'query1',
-    #     'ranked_list': pd.DataFrame([
-    #         ['image1.jpg', 1],
-    #         ['image2.jpg', 1],
-    #         ['image6.jpg', 1],
-    #         ['image3.jpg', 1],
-    #         ['image5.jpg', 1],
-    #         ['image4.jpg', 0],
-    #         ['image7.jpg', 0],
-    #         ['image8.jpg', 0],
-    #         ['image9.jpg', 0],
-    #         ['image10.jpg', 0],
-    #     ],
-    #         columns=['image_path', 'relevance_score'])
-    #     .set_index('image_path'),
-    # },
+    'query1': {
+        'query': 'query1',
+        'ranked_list': pd.DataFrame([
+            ['image1.jpg', 1],
+            ['image2.jpg', 1],
+            ['image6.jpg', 1],
+            ['image3.jpg', 1],
+            ['image5.jpg', 1],
+            ['image4.jpg', 0],
+            ['image7.jpg', 0],
+            ['image8.jpg', 0],
+            ['image9.jpg', 0],
+            ['image10.jpg', 0],
+        ],
+            columns=['image_path', 'relevance_score'])
+        .set_index('image_path'),
+    },
     'query2': {
         'query': 'query2',
         'ranked_list': pd.DataFrame([

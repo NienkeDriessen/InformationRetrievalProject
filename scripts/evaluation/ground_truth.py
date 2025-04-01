@@ -1,19 +1,23 @@
 import json
 import clip
 import torch
+import os
 import numpy as np
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-def gen_ground_truth(queries: pd.DataFrame, metadata: pd.DataFrame, ps_rel: int = None) -> {}:
+def gen_ground_truth(queries: pd.DataFrame, metadata: pd.DataFrame, ps_rel: int = None, save_path: str = '') -> {}:
     """
     Generate ground truth for the dataset for the real images and save all to a JSON file. Assumes entity labels are
     accurate (blame Semi-Truths otherwise).
     :param queries: DataFrame containing the queries [image_path, query] where image path is the path of the image that
     the query is based on.
     :param metadata: DataFrame containing the metadata [image_path, original_image, entities, ...]
-    :return: Dictionary containing the queries and a dataframe with the ranked list of images and their relevance labels.
+    :param ps_rel: For pseudo-relevance feedback, how many top results are assumed to be relevant. If None, use cosine
+    similarity.
+    :return: Dictionary containing the queries and a dataframe with the ranked list of images and their relevance
+    labels.
     """
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model, preprocess = clip.load("ViT-B/32", device=device)
@@ -44,6 +48,6 @@ def gen_ground_truth(queries: pd.DataFrame, metadata: pd.DataFrame, ps_rel: int 
             'query': row['query'],
             'ranked_list': ranked_list,  # DF[image_id, rel_score (cosine similarity / pseudo relevance)]
         }
-    with open("queries_w_ground_truth.json", "w") as outfile:
-        json.dump(query_dict, outfile)
+    with open(os.path.join(save_path, "queries_w_ground_truth.json"), "w") as outfile:
+        json.dump(query_dict, outfile, default=lambda df: json.loads(df.to_json()))
     return query_dict
