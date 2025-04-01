@@ -2,3 +2,5 @@
 .idea/
 
 scripts/__pycache__/
+
+scripts/evaluation/__pycache__/
