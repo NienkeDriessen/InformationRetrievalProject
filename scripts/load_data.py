@@ -44,9 +44,9 @@ def load_images_and_generate_embeddings(imgs_path: str, metadata: pd.DataFrame, 
             real_images.append(metadata.iloc[i,0])
 
     for i in range(len(real_images)):
-        meta = df[metadata['image_id'].str.contains(real_images[i])]
-        meta = meta['label' == 'fake']
-        fake_images.append(meta[i])
+        meta = metadata[metadata['image_id'].str.contains(real_images[i])]
+        metal = meta['label' == 'fake']
+        fake_images.append(metal[i])
         
     linked_images = {
         'original': real_images,
