@@ -7,23 +7,26 @@ import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-def gen_ground_truth(queries: pd.DataFrame, metadata: pd.DataFrame, ps_rel: int = None, save_path: str = '') -> {}:
+def gen_ground_truth(queries: pd.DataFrame, metadata: pd.DataFrame, save_path: str,
+                     clip_model, clip_preprocess, ps_rel: int = None ) -> {}:
     """
     Generate ground truth for the dataset for the real images and save all to a JSON file. Assumes entity labels are
     accurate (blame Semi-Truths otherwise).
     :param queries: DataFrame containing the queries [image_path, query] where image path is the path of the image that
     the query is based on.
     :param metadata: DataFrame containing the metadata [image_path, original_image, entities, ...]
+    :param save_path: Path where the ground truth JSON file will be saved.
+    :param clip_model: CLIP model to use.
+    :param clip_preprocess: CLIP preprocess to use.
     :param ps_rel: For pseudo-relevance feedback, how many top results are assumed to be relevant. If None, use cosine
     similarity.
     :return: Dictionary containing the queries and a dataframe with the ranked list of images and their relevance
     labels.
     """
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    model, preprocess = clip.load("ViT-B/32", device=device)
     # get semantic embedding of all captions and queries
-    metadata['caption_embedding'] = model.encode_text(clip.tokenize(metadata['caption']).to(device))
-    query_embeddings = model.encode_text(clip.tokenize(queries['query']).to(device))
+    metadata['caption_embedding'] = clip_model.encode_text(clip.tokenize(metadata['caption']).to(device))
+    query_embeddings = clip_model.encode_text(clip.tokenize(queries['query']).to(device))
 
     query_dict = {}
 
@@ -44,7 +47,7 @@ def gen_ground_truth(queries: pd.DataFrame, metadata: pd.DataFrame, ps_rel: int 
             ranking.iloc[:ps_rel]['ps_rel_feedback'] = 1
             ranked_list = ranking[['image_path', 'ps_rel_feedback']].copy().set_index('image_path')
 
-        query_dict[row['image_path']] = {
+        query_dict[row['id']] = {
             'query': row['query'],
             'ranked_list': ranked_list,  # DF[image_id, rel_score (cosine similarity / pseudo relevance)]
         }

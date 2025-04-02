@@ -3,8 +3,6 @@ import numpy as np
 import json
 import os
 
-from setuptools.sandbox import save_path
-
 """
 To do:
 x ground truth generation (+ save i think)
