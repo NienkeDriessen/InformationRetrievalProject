@@ -37,20 +37,40 @@ def load_images_and_generate_embeddings(imgs_path: str, metadata: pd.DataFrame, 
     # TODO load images and filter only the ones we want based on metadata
 
     # TODO for
+    real_images = []
+    fake_images = []
     for i in range(len(metadata)):
-        metadata.iloc[i, 0] = metadata.iloc[i, 0] + '.png'
-        for k in range(len(metadata[i, 4])):
-            metadata.iloc[i, 4][k] = metadata.iloc[i, 4][k] + '.png'
+        if metadata['label'] == 'real':
+            real_images.append(metadata.iloc[i,0])
+
+    for i in range(len(real_images)):
+        meta = df[metadata['image_id'].str.contains(real_images[i])]
+        meta = meta['label' == 'fake']
+        fake_images.append(meta[i])
+        
+    linked_images = {
+        'original': real_images,
+        'fake': fake_images
+    }
+
+    meta_linked = pd.dataframe(linked_images)
+
+
+    # TODO for
+    for i in range(len(meta_linked)):
+        meta_linked.iloc[i, 0] = meta_linked.iloc[i, 0] + '.png'
+        for k in range(len(meta_linked[i, 1])):
+            meta_linked.iloc[i, 1][k] = meta_linked.iloc[i, 1][k] + '.png'
 
     og_img_paths = []
-    for i in range(len(metadata)):
-        img_path = find(metadata.iloc[i, 0], imgs_path)
+    for i in range(len(meta_linked)):
+        img_path = find(meta_linked.iloc[i, 0], imgs_path)
         og_img_paths.append(img_path)
 
     altered_img_paths = []
-    for i in range(len(metadata)):
-        for k in range(len(metadata[i, 4])):
-            img_path = find(metadata.iloc[i, 4][k], imgs_path)
+    for i in range(len(meta_linked)):
+        for k in range(len(meta_linked[i, 1])):
+            img_path = find(meta_linked.iloc[i, 1][k], imgs_path)
             altered_img_paths.append(img_path)
 
     image_path = og_img_paths + altered_img_paths
