@@ -1,19 +1,21 @@
 import torch
 from clip import clip
 
-from scripts.load_data import load_metadata, load_images_and_generate_embeddings, load_queries_and_image_ids, \
+from load_data import load_metadata, load_images_and_generate_embeddings, load_queries_and_image_ids, \
     load_embeddings
-from scripts.evaluation.ground_truth import gen_ground_truth
+from evaluation.ground_truth import gen_ground_truth
 import os
 
-from scripts.retrieval import TextToImageRetriever
+from retrieval import TextToImageRetriever
 
 METADATA_PATH = '../metadata/metadata_OpenImages.csv'
-PATH_TO_EMBEDDINGS = '../data/embeddings/img_embeddings.h5py'
+PATH_TO_EMBEDDINGS = '../data/embeddings/img_embeddings.h5'
 IMG_PATH = 'TODO DEFINE THIS' # TODO define this Mohit
 QUERY_PATH = '../data/queries_at_least_3_sufficient_altered.csv'
 RESULT_PATH = '../results/'  # path to folder to save metric results and graphs to
 K_VALUES = [1, 3, 5, 10]  # values for k used in the metrics in evaluation (EG, nDCG@k)
+REGENERATE_EMBEDDINGS = True
+
 
 def main():
     """
@@ -30,8 +32,9 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model, preprocess = clip.load("ViT-B/32", device=device)
 
-    if not os.path.exists(PATH_TO_EMBEDDINGS):
-        os.makedirs(PATH_TO_EMBEDDINGS)
+    if not os.path.exists(PATH_TO_EMBEDDINGS) or REGENERATE_EMBEDDINGS:
+        if not os.path.exists(PATH_TO_EMBEDDINGS):
+            os.makedirs(PATH_TO_EMBEDDINGS)
         embeddings = load_images_and_generate_embeddings(IMG_PATH, metadata, PATH_TO_EMBEDDINGS, model)  #TODO -> h5py datastructure
     else:
         embeddings = load_embeddings(PATH_TO_EMBEDDINGS)

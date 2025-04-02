@@ -134,9 +134,3 @@ def load_queries_and_image_ids(query_path: str):
         image_list.update(altered)
 
     return query_df, list(image_list)
-
-# To test
-QUERY_PATH = '../data/queries_at_least_3_sufficient_altered.csv'
-query_df, image_list = load_queries_and_image_ids(QUERY_PATH)
-print(query_df)
-print(image_list)
