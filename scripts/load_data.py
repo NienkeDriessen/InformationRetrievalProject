@@ -90,16 +90,33 @@ def load_embeddings(embeddings_path: str) -> dict:
 
 def load_queries_and_image_ids(query_path: str):
     """
-    Load query file from string path, as well as a list of all images that are in the query file
+    Load query file from string path, as well as a list of all images that are in the query file.
 
     :param query_path: Path to query file.
-    :return: Dataframe consisting of {original_id: {keywords,query,num_altered,altered_ids}}.
-    :return: image_list containing all original image ids as well as their altered image ids
+    :return: DataFrame consisting of {original_id: {keywords, query, num_altered, altered_ids}}.
+    :return: image_list containing all original image ids as well as their altered image ids.
     """
-    # If there is no query file yet, call the queries_based_on_random words to sub select valid original images to base queries on
-    # Add an AI generated or in our case manually created queries column called "query"
-
-    # Load csv dataframe
+    # Load CSV into DataFrame
     query_df = pd.read_csv(query_path)
 
-    # get image_list, which is a list of all strings in the id column, and all sub strings in the arrays in the altered_ids column
+    # Ensure required columns exist
+    # id,keywords,query,num_altered,altered_ids
+    required_columns = {'id', 'keywords', 'query', 'num_altered', 'altered_ids'}
+    if not required_columns.issubset(query_df.columns):
+        raise ValueError(f"Missing required columns: {required_columns - set(query_df.columns)}")
+
+    # Convert altered_ids column (assumed to be a string representation of lists) into actual lists
+    query_df['altered_ids'] = query_df['altered_ids'].apply(lambda x: eval(x) if isinstance(x, str) else x)
+
+    # Compile a list of all image IDs (original and altered)
+    image_list = set(query_df['id'].tolist())
+    for altered in query_df['altered_ids']:  # Assuming altered_ids is a list of strings
+        image_list.update(altered)
+
+    return query_df, list(image_list)
+
+# To test
+QUERY_PATH = '../data/queries_at_least_3_sufficient_altered.csv'
+query_df, image_list = load_queries_and_image_ids(QUERY_PATH)
+print(query_df)
+print(image_list)
