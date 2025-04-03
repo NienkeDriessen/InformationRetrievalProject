@@ -41,6 +41,7 @@ class TextToImageRetriever:
     self.embedding_model = embedding_model
     self.device = device
     self.img_paths = np.array(list(embeddings.keys()))
+
     self.embeddings = embeddings  # image paths mapped to embedding tensors
 
     embeddings = list(self.embeddings.values())

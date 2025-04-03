@@ -25,7 +25,7 @@ QUERY_PATH = '../data/queries_at_least_3_sufficient_altered.csv'
 RETRIEVAL_RESULTS_PATH = '../data/retrieval_results'
 RESULT_PATH = '../results/'  # path to folder to save metric results and graphs to
 K_VALUES = [1, 3, 5, 10]  # values for k used in the metrics in evaluation (EG, nDCG@k)
-REGENERATE_EMBEDDINGS = True
+REGENERATE_EMBEDDINGS = False
 
 
 def main():
@@ -49,8 +49,8 @@ def main():
             os.makedirs(EMBEDDING_FOLDER_PATH)
         embeddings, image_paths = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
         save_embeddings(EMBEDDING_PATH, embeddings, image_paths)
-    else:
-        embeddings = load_embeddings(EMBEDDING_PATH)
+
+    embeddings = load_embeddings(EMBEDDING_PATH)
 
     # Setting up retrieval pipeline
     retriever = TextToImageRetriever(model, device, embeddings)
