@@ -14,12 +14,24 @@ class RetrievalResult:
   img_path: str
   distance: float
 
-  def __str__(self):
+  def __str__(self) -> str:
     """
     Override to string for human readable output.
+
+    :return: String representation of object
     """
     return f"Result:\n  img_path: {self.img_path},\n  distance: {self.distance}\n"
 
+  def to_dict(self) -> dict:
+    """
+    Convert object to dictionary so that it can be saved to json.
+
+    :return: Dictionary of object fields (all values as strings).
+    """
+    return {
+      "img_path": self.img_path,
+      "distance": str(self.distance),
+    }
 
 class TextToImageRetriever:
   """
@@ -28,7 +40,7 @@ class TextToImageRetriever:
   def __init__(self, embedding_model, device, embeddings):
     self.embedding_model = embedding_model
     self.device = device
-    self.img_paths = list(embeddings.keys())
+    self.img_paths = np.array(list(embeddings.keys()))
     self.embeddings = embeddings  # image paths mapped to embedding tensors
 
     embeddings = list(self.embeddings.values())
@@ -59,12 +71,13 @@ class TextToImageRetriever:
 
     distances, indices = self.index.search(text_features.cpu().detach().numpy(), k=n)
     indices = indices[0]
+    distances = distances[0]
     img_paths = self.img_paths[indices]
     results = []
 
     # Construct results based on metadata
     for i in range(len(img_paths)):
-      distance = distances[0][i]
+      distance = distances[i]
       img_path = img_paths[i]
       results.append(RetrievalResult(img_path, distance))
 

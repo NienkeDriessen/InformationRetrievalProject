@@ -1,17 +1,28 @@
+"""
+Main module, executes the entire experiment.
+"""
+import ssl
+
 import torch
 from clip import clip
 
-from load_data import load_metadata, load_images_and_generate_embeddings, load_queries_and_image_ids, \
-    load_embeddings
+from load_data import load_metadata, load_queries_and_image_ids, load_embeddings
+from embedding import generate_image_embeddings
 from evaluation.ground_truth import gen_ground_truth
 import os
 
 from retrieval import TextToImageRetriever
+from experiment import execute_experiment
+from load_data import save_embeddings
 
+# Defining constants
 METADATA_PATH = '../metadata/metadata_OpenImages.csv'
-PATH_TO_EMBEDDINGS = '../data/embeddings/img_embeddings.h5'
-IMG_PATH = 'TODO DEFINE THIS' # TODO define this Mohit
+EMBEDDING_FOLDER_PATH = '../data/embeddings'
+EMBEDDING_NAME = 'img_embeddings.h5'
+EMBEDDING_PATH = os.path.join(EMBEDDING_FOLDER_PATH, EMBEDDING_NAME)
+IMG_PATH = '../data_openImages'
 QUERY_PATH = '../data/queries_at_least_3_sufficient_altered.csv'
+RETRIEVAL_RESULTS_PATH = '../data/retrieval_results'
 RESULT_PATH = '../results/'  # path to folder to save metric results and graphs to
 K_VALUES = [1, 3, 5, 10]  # values for k used in the metrics in evaluation (EG, nDCG@k)
 REGENERATE_EMBEDDINGS = True
@@ -25,22 +36,28 @@ def main():
     metadata = load_metadata(METADATA_PATH)
 
     # Generating and saving queries
-    # TODO: Nienke will write script for query loading save as json/dictionary
     query_df, image_list = load_queries_and_image_ids(QUERY_PATH)  # columns=[id,keywords,query,num_altered,altered_ids]
 
     # Define embedding model
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    ssl._create_default_https_context = ssl._create_unverified_context # Disable SSL because CLIP downloading doesn't work sometimes
     model, preprocess = clip.load("ViT-B/32", device=device)
+    ssl._create_default_https_context = ssl.create_default_context
 
-    if not os.path.exists(PATH_TO_EMBEDDINGS) or REGENERATE_EMBEDDINGS:
-        if not os.path.exists(PATH_TO_EMBEDDINGS):
-            os.makedirs(PATH_TO_EMBEDDINGS)
-        embeddings = load_images_and_generate_embeddings(IMG_PATH, metadata, PATH_TO_EMBEDDINGS, model)  #TODO -> h5py datastructure
+    if not os.path.exists(EMBEDDING_FOLDER_PATH) or REGENERATE_EMBEDDINGS:
+        if not os.path.exists(EMBEDDING_FOLDER_PATH):
+            os.makedirs(EMBEDDING_FOLDER_PATH)
+        embeddings, image_paths = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
+        save_embeddings(EMBEDDING_PATH, embeddings, image_paths)
     else:
-        embeddings = load_embeddings(PATH_TO_EMBEDDINGS)
+        embeddings = load_embeddings(EMBEDDING_PATH)
 
     # Setting up retrieval pipeline
     retriever = TextToImageRetriever(model, device, embeddings)
+
+    # Executing experiment for each K value, saves to json file for each K.
+    for k in K_VALUES:
+        execute_experiment(retriever, query_df, k, RETRIEVAL_RESULTS_PATH)
 
     # Evaluating
     ## Generate ground truth
