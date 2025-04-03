@@ -72,6 +72,7 @@ def load_images_and_generate_embeddings(imgs_path: str, metadata: pd.DataFrame, 
     model, preprocess = clip.load("ViT-B/32", device=device)
     output_embeddings = []
     # generate embeddings for all sampled images
+    dict_embed = {}
     for i in range(len(image_path)):
         if image_path[i] != '[None]':
             image = preprocess(Image.open(str(image_path[i]))).unsqueeze(0).to(device)
@@ -79,6 +80,7 @@ def load_images_and_generate_embeddings(imgs_path: str, metadata: pd.DataFrame, 
                 image_features = model.encode_image(image)
                 #print(image_features)
                 output_embeddings.append(image_features)
+                dict_embed.update({'image': image_path[i], 'embeddings': image_features})
     #print(output_embeddings)
 
     # Save embeddings to h5 file
