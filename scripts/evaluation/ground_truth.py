@@ -4,6 +4,7 @@ import torch
 import os
 import numpy as np
 import pandas as pd
+import math
 from sklearn.metrics.pairwise import cosine_similarity
 
 
@@ -25,14 +26,18 @@ def gen_ground_truth(queries: pd.DataFrame, metadata: pd.DataFrame, save_path: s
     """
     device = "cuda" if torch.cuda.is_available() else "cpu"
     # get semantic embedding of all captions and queries
-    metadata['caption_embedding'] = clip_model.encode_text(clip.tokenize(metadata['caption']).to(device))
+    print(metadata['entities'][0])
+    metadata['caption_embedding'] = metadata['entities'].apply(
+        lambda x: clip_model.encode_text(clip.tokenize(x.join(', ')).to(device)) if type(x) is list[str] else np.nan
+    )
+    # raise Exception("Debugging")
     query_embeddings = clip_model.encode_text(clip.tokenize(queries['query']).to(device))
 
     query_dict = {}
-
+    print(metadata.columns)
     # for all queries, get the cosine similarity to rank for ground truth
     for i, row in queries.iterrows():
-        ranking = metadata.copy()['image_path', 'caption_embedding']
+        ranking = metadata.copy()['image_path', 'caption_embedding'].dropna()
         ranking['query_embedding'] = row['embedding']
 
         ranking['cosine_distance'] = cosine_similarity(ranking['caption_embedding'], query_embeddings)

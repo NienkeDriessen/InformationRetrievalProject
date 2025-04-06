@@ -1,14 +1,18 @@
 """
 Main module, executes the entire experiment.
 """
-import ssl
+# import ssl
 
 import torch
 from clip import clip
+import json
+import pandas as pd
 
 from load_data import load_metadata, load_queries_and_image_ids, load_embeddings
 from embedding import generate_image_embeddings
 from evaluation.ground_truth import gen_ground_truth
+from evaluation.evaluation import evaluate
+from evaluation.reformatting import reformat_retrieval_results, reformat_metadata
 import os
 
 from retrieval import TextToImageRetriever
@@ -40,32 +44,46 @@ def main():
 
     # Define embedding model
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    ssl._create_default_https_context = ssl._create_unverified_context # Disable SSL because CLIP downloading doesn't work sometimes
+    # ssl._create_default_https_context = ssl._create_unverified_context # Disable SSL because CLIP downloading doesn't work sometimes
     model, preprocess = clip.load("ViT-B/32", device=device)
-    ssl._create_default_https_context = ssl.create_default_context
+    # ssl._create_default_https_context = ssl.create_default_context
 
     if not os.path.exists(EMBEDDING_FOLDER_PATH) or REGENERATE_EMBEDDINGS:
         if not os.path.exists(EMBEDDING_FOLDER_PATH):
             os.makedirs(EMBEDDING_FOLDER_PATH)
-        embeddings, image_paths = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
+        embeddings, image_paths, mdata = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
         save_embeddings(EMBEDDING_PATH, embeddings, image_paths)
+        mdata.to_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'), index=True)
 
     embeddings = load_embeddings(EMBEDDING_PATH)
+    metadata = pd.read_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'))
 
-    # Setting up retrieval pipeline
-    retriever = TextToImageRetriever(model, device, embeddings)
+    if not os.path.exists(RETRIEVAL_RESULTS_PATH):
+        os.makedirs(RETRIEVAL_RESULTS_PATH)
+    if len(os.listdir(RETRIEVAL_RESULTS_PATH)) == 0:  # check the retrieval_results folder is empty
+        # Setting up retrieval pipeline
+        retriever = TextToImageRetriever(model, device, embeddings)
+        # Executing experiment for each K value, saves to json file for each K.
+        for k in K_VALUES:
+            execute_experiment(retriever, query_df, k, RETRIEVAL_RESULTS_PATH)
 
-    # Executing experiment for each K value, saves to json file for each K.
-    for k in K_VALUES:
-        execute_experiment(retriever, query_df, k, RETRIEVAL_RESULTS_PATH)
-
-    # Evaluating
-    ## Generate ground truth
+    # ----- Evaluating -----
+    # Generate ground truth
     queries = query_df[['id', 'query']]
-    gen_ground_truth(queries, metadata, RESULT_PATH, model, preprocess,  10)
+    metadata = reformat_metadata(metadata)
+    if not os.path.exists(os.path.join(RESULT_PATH, 'queries_w_ground_truth.json')):
+        ground_truth = gen_ground_truth(queries, metadata, RESULT_PATH, model, preprocess,  10)
+    else:
+        with open(os.path.join(RESULT_PATH, 'queries_w_ground_truth.json'), 'r') as f:
+            ground_truth = json.load(f)
 
-    ## Evaluation script - individual functions detail expected input structure
-    # evaluate(K_VALUES, retrieval_results_path: str, metadata, queries, RESULTS_PATH)  # TODO: edit reformat metadata for actual metadata, retrieval results thing
+    # Evaluation script - individual functions detail expected input structure
+    for f in os.listdir(RETRIEVAL_RESULTS_PATH):
+        if f.endswith('.json'):
+            retrieval_results_path = os.path.join(RETRIEVAL_RESULTS_PATH, f)
+            # Evaluate the retrieval results
+            evaluate(K_VALUES, retrieval_results_path, metadata, queries, ground_truth, RESULT_PATH)
+
 
 if __name__ == "__main__":
     main()

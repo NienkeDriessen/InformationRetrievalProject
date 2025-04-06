@@ -10,3 +10,4 @@ pandas
 faiss-cpu
 numpy
 pandas
+matplotlib

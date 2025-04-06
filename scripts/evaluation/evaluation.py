@@ -2,10 +2,10 @@ import pandas as pd
 from pprint import pprint
 import json
 
-from scripts.evaluation.evaluation_metrics import evaluate_all_queries
-from scripts.evaluation.ground_truth import gen_ground_truth
-from scripts.evaluation.reformatting import reformat_retrieval_results, reformat_metadata
-from scripts.evaluation.distance_exploration import compute_relative_distances_per_bin, plot_relative_distances
+from evaluation.evaluation_metrics import evaluate_all_queries
+from evaluation.ground_truth import gen_ground_truth
+from evaluation.distance_exploration import compute_relative_distances_per_bin, plot_relative_distances
+from evaluation.reformatting import reformat_retrieval_results
 
 """
 Main script for evaluating the retrieval results of the image retrieval system.
@@ -14,7 +14,8 @@ Expected format of retrieval results: JSON file with the following structure:
 { <image_path_from_query>: pd.DataFrame[image_path, relevance_score] }
 """
 
-def evaluate(k_values: list[int], retrieval_results_path: str, metadata: pd.DataFrame, queries: pd.DataFrame,
+
+def evaluate(k_values: list[int], retrieval_results_path: str, metadata: pd.DataFrame, queries: pd.DataFrame, ground_truth: dict,
              save_folder: str):
     """
     Full evaluation of the retrieval results.
@@ -25,10 +26,10 @@ def evaluate(k_values: list[int], retrieval_results_path: str, metadata: pd.Data
     :param save_folder: path to folder where to save results.
     :return: None
     """
-    reformat_metadata(metadata)
-    ground_truth = gen_ground_truth(queries, metadata=metadata, ps_rel=10, save_path=save_folder)
-    print(f'Saved generated ground truth to {save_folder} as a JSON file.')
-    print('Structure of path:\n <image_path>: { query: str, ranked_list: pd.DataFrame[image_path, relevance_score] }')
+    # reformat_metadata(metadata)
+    # ground_truth = gen_ground_truth(queries, metadata=metadata, ps_rel=10, save_path=save_folder)
+    # print(f'Saved generated ground truth to {save_folder} as a JSON file.')
+    # print('Structure of path:\n <image_path>: { query: str, ranked_list: pd.DataFrame[image_path, relevance_score] }')
 
     retrieval_results = json.load(open(retrieval_results_path, 'r'))
     retrieval_results = reformat_retrieval_results(retrieval_results)

@@ -18,7 +18,7 @@ def compute_relative_distances_per_bin(bins: list[str], retrieval_results: dict[
     for results in retrieval_results.values():
         df = results['ranked_list'].copy()
         df['rank'] = np.arange(len(df))
-        for index, row in df.iterrows():
+        for index, row in df.iterrows()[:20]:  # take first 20 ranking results?
             og_image = metadata.loc[metadata['image_path'] == row.name, 'og_image'].values[0]  # TODO: error here
             if og_image == '':
                 continue  # if the image is not altered, skip it as dist = 0 always
@@ -27,7 +27,7 @@ def compute_relative_distances_per_bin(bins: list[str], retrieval_results: dict[
             bin = metadata.loc[metadata['image_path'] == row.name, 'category'].values[0]
             og_rank = df.loc[og_image, 'rank']
             # if the og image is not in the ranked list, skip this image
-            if og_rank == 0:
+            if og_rank == 0:  # TODO: OG not in ranking
                 continue
             # compute the relative distance
             relative_distance = (rank - og_rank)

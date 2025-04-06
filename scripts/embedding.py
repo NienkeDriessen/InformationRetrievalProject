@@ -30,10 +30,12 @@ def generate_image_embeddings(imgs_path: str, metadata: pd.DataFrame, image_ids:
     altered_img_paths = []
     image_paths = []
 
+    mdata = metadata[['image_path', 'image_id', 'ratio_category', 'caption_embedding']].copy().set_index('image_path')
+
     # Find altered images for each original image
     for i in range(len(real_images)):
-        meta = metadata[metadata['image_id'].str.contains(real_images[i])]
-        meta = meta[meta["image_id"].isin(image_ids)]
+        meta = metadata[metadata['image_id'].str.contains(real_images[i])]  # multiple images
+        meta = meta[meta["image_id"].isin(image_ids)]  # ????
         real_images[i] = real_images[i] + '.jpg'
         og_img_paths.append(find(real_images[i], imgs_path))
         image_paths.append(find(real_images[i], imgs_path))
@@ -53,6 +55,8 @@ def generate_image_embeddings(imgs_path: str, metadata: pd.DataFrame, image_ids:
     linked_image_paths = [{'Real_image_path': x, 'Altered_Image_path': y} for x, y in
                           zip(og_img_paths, altered_img_paths)]
 
+
+
     # Generate embeddings for all images
     output_embeddings = []
     dict_embed = {}
@@ -64,4 +68,4 @@ def generate_image_embeddings(imgs_path: str, metadata: pd.DataFrame, image_ids:
                 output_embeddings.append(image_features)
                 dict_embed.update({'image': image_paths[i], 'embeddings': image_features})
 
-    return output_embeddings, image_paths
+    return output_embeddings, image_paths, mdata

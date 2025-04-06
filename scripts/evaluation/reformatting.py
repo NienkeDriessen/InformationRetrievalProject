@@ -7,8 +7,8 @@ def reformat_retrieval_results(retrieval: pd.DataFrame) -> pd.DataFrame:
     :param retrieval:
     :return:
     """
-    p_img_path = ''
-    p_relevance_score = ''
+    p_img_path = 'img_path'
+    p_relevance_score = 'distance'
     return retrieval[[p_img_path, p_relevance_score]].rename(columns={
         p_img_path: 'image_path',
         p_relevance_score: 'relevance_score'
@@ -22,7 +22,7 @@ def reformat_metadata(metadata: pd.DataFrame) -> pd.DataFrame:
     :return:
     """
     p_image_path = 'image_path'
-    p_category = ''
+    p_category = 'ratio_category'
     p_og_image = ''
 
     return metadata[[p_image_path, p_category, p_og_image]].rename(
