@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
@@ -8,6 +9,11 @@ plots_folder = "../data_plots/"
 
 if not os.path.exists(plots_folder):
     os.makedirs(plots_folder)
+
+# Define a function to check if an image is original (based on fixed-length IDs)
+def isOriginal(image_id):
+    return len(image_id) == 16  # Assuming original IDs have exactly 16 characters
+
 
 # Load the CSV file
 df = pd.read_csv(metadata_path)
@@ -27,32 +33,32 @@ unique_entity_sets = set()
 for _, row in df.iterrows():
     image_id = row['image_id']
     dreamsim = row['dreamsim']  # DreamSim value
+    ratio = row['ratio_category']
 
     # Extract original ID (before any underscores if applicable)
     original_id = image_id.split("_")[0]
 
-    is_original = row.label == "real"  # Check if the image is original
-
+    is_original = isOriginal(image_id) # Check if the image is original
     # Check if it's an original image
-    if is_original:
-        if original_id not in original_to_altered:
-            original_to_altered[original_id] = []  # Initialize list
-
+    # if is_original:
+    if original_id not in original_to_altered:
+        original_to_altered[original_id] = []  # Initialize list
         # First filter: Only add altered images with DreamSim ≥ 0.13
-        if not is_original and dreamsim >= 0.13:
-            altered_data = {
-                "altered_id": image_id,
-                "dreamsim": dreamsim,
-                "mse_rgb": row["mse_rgb"],
-                "mse_gray": row["mse_gray"],
-                "ssim_rgb": row["ssim_rgb"],
-                "ssim_gray": row["ssim_gray"],
-            }
-            original_to_altered[original_id].append(altered_data)
+    if (not is_original) and dreamsim >= 0.13 and type(ratio) is str:
+        print("not none", ratio)
+        altered_data = {
+            "altered_id": image_id,
+            "dreamsim": dreamsim,
+            "mse_rgb": row["mse_rgb"],
+            "mse_gray": row["mse_gray"],
+            "ssim_rgb": row["ssim_rgb"],
+            "ssim_gray": row["ssim_gray"],
+        }
+        original_to_altered[original_id].append(altered_data)
 
-            # Track values for distribution analysis
-            for metric in tracked_metrics:
-                metric_values[metric].append(row[metric])
+        # Track values for distribution analysis
+        for metric in tracked_metrics:
+            metric_values[metric].append(row[metric])
 
 # Second filter: Only keep original images that have at least 3 altered versions
 filtered_originals = {k: v for k, v in original_to_altered.items() if len(v) >= 3}
@@ -89,13 +95,16 @@ df.to_csv(plots_folder + "altered_to_og.csv", index=True)
 
 # Convert to DataFrame and save to CSV
 df_selected = pd.DataFrame(selected_originals)
-df_selected.to_csv(plots_folder + "queries.csv", index=False)
+df_selected.to_csv(plots_folder + "ratio_queries.csv", index=False)
 
 # Print the min and max values for each metric
 print("\nMetric Value Ranges:")
 for metric in tracked_metrics:
     if metric_values[metric]:  # Ensure there are values
         print(f"{metric}: Min = {min(metric_values[metric]):.4f}, Max = {max(metric_values[metric]):.4f}")
+
+# Generate the plots for these categoric metrics: mse_rgb_category,ssim_rgb_category,ratio_rgb_category,ratio_category,change_location_category,sem_mag_category,size_mag_category,
+# Each category has bin1 ... bin5
 
 #
 # # Generate box plots for the tracked metrics
