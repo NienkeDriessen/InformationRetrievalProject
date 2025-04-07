@@ -1,16 +1,16 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 # Define file paths
 metadata_path = "../metadata/metadata_OpenImages.csv"
 plots_folder = "../data_plots/"
 
+if not os.path.exists(plots_folder):
+    os.makedirs(plots_folder)
+
 # Load the CSV file
 df = pd.read_csv(metadata_path)
-
-# Define a function to check if an image is original (based on fixed-length IDs)
-def is_original(image_id):
-    return len(image_id) == 16  # Assuming original IDs have exactly 16 characters
 
 # Dictionary to store original images and their altered versions
 original_to_altered = {}
@@ -31,13 +31,15 @@ for _, row in df.iterrows():
     # Extract original ID (before any underscores if applicable)
     original_id = image_id.split("_")[0]
 
+    is_original = row.label == "real"  # Check if the image is original
+
     # Check if it's an original image
-    if is_original(original_id):
+    if is_original:
         if original_id not in original_to_altered:
             original_to_altered[original_id] = []  # Initialize list
 
         # First filter: Only add altered images with DreamSim ≥ 0.13
-        if not is_original(image_id) and dreamsim >= 0.13:
+        if not is_original and dreamsim >= 0.13:
             altered_data = {
                 "altered_id": image_id,
                 "dreamsim": dreamsim,
@@ -77,6 +79,13 @@ print("\nSelected Original Images (At least 3 altered versions & DreamSim ≥ 0.
 for entry in selected_originals:
     print(entry["keywords"])
 
+
+altered_to_og = {}
+for row in selected_originals:
+    for i in row["altered_ids"]:
+        altered_to_og[i] = row["id"]
+df = pd.DataFrame.from_dict(altered_to_og, orient='index', columns=['og_image'])
+df.to_csv(plots_folder + "altered_to_og.csv", index=True)
 
 # Convert to DataFrame and save to CSV
 df_selected = pd.DataFrame(selected_originals)
