@@ -1,1243 +1,1243 @@
 {
-    "3fdfe506da22acaa": [
+    "3": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/a1b204b6512f9242_m0gd36_d0a3165f_OpenImages_OpenJourney.png",
+            "img_index": "3373",
             "distance": "0.29020342"
         }
     ],
-    "f509159922bd5baa": [
+    "13": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b2ebfacff545ad09_m0242l_3826bd37_OpenImages_OpenJourney.png",
+            "img_index": "1804",
             "distance": "0.2591448"
         }
     ],
-    "86401ad43b4f7652": [
+    "1290": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/5bf182c14ade8c4f_m03k3r_e3181618_OpenImages_StableDiffusion_v4.png",
+            "img_index": "8095",
             "distance": "0.25375038"
         }
     ],
-    "91326dc604d416d7": [
+    "3565": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/addd2b526748b761_m025rp___2f4e6452_OpenImages_StableDiffusion_v5.png",
+            "img_index": "10725",
             "distance": "0.27082202"
         }
     ],
-    "b2916bddaa2d55eb": [
+    "1985": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/179846a7e34ba228_m039xj__28027b21_OpenImages_StableDiffusion_v5.png",
+            "img_index": "2687",
             "distance": "0.24029824"
         }
     ],
-    "c861036dc15f8bca": [
+    "13111": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/8e5632d35c91e78d_m0dv77_f2bb68e3_OpenImages_StableDiffusion_v4.png",
+            "img_index": "8435",
             "distance": "0.32430077"
         }
     ],
-    "001a695ad732152b": [
+    "4903": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/28d5b8a619808f60_m0c9ph5_8af3740d_OpenImages_OpenJourney.png",
+            "img_index": "412",
             "distance": "0.2535806"
         }
     ],
-    "fd280d46f9488014": [
+    "4346": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/fd280d46f9488014_m01d40f_41bb8e2e_OpenImages_OpenJourney.png",
+            "img_index": "51",
             "distance": "0.26860017"
         }
     ],
-    "f820c39c5300de83": [
+    "62": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/e470100eed3c6c1e.jpg",
+            "img_index": "7701",
             "distance": "0.35249254"
         }
     ],
-    "2ab74cc6cebb34d4": [
+    "789": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/2ab74cc6cebb34d4_m03bk1_a6a7b405_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10830",
             "distance": "0.29654163"
         }
     ],
-    "9c226d0fe33db772": [
+    "4022": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/9c226d0fe33db772_m06m11_bf150c2d_OpenImages_StableDiffusion_v5.png",
+            "img_index": "4957",
             "distance": "0.25381106"
         }
     ],
-    "39cb2cc53e4b218d": [
+    "8489": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/e3be2c967e5af1e5_m01dwsz_67d03c6a_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10347",
             "distance": "0.2773692"
         }
     ],
-    "d5e7c31e225379d9": [
+    "88": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/febefae5f104a7c8_m0l515_ef067f2e_OpenImages_OpenJourney.png",
+            "img_index": "11518",
             "distance": "0.23878364"
         }
     ],
-    "5fdedcd2143479b3": [
+    "3598": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/5fdedcd2143479b3_m03q5c7_963c0ff3_OpenImages_StableDiffusion_v4.png",
+            "img_index": "12407",
             "distance": "0.31565186"
         }
     ],
-    "5f2c6ffc9d36ed35": [
+    "109": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/6d1bfe7adfaf407d_m0cdn1_5859eb46_OpenImages_Kandinsky_2_2.png",
+            "img_index": "8620",
             "distance": "0.28694117"
         }
     ],
-    "e3ca083901d78d37": [
+    "9887": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/e3ca083901d78d37_m03fwl_e729982c_OpenImages_Kandinsky_2_2.png",
+            "img_index": "1648",
             "distance": "0.28139085"
         }
     ],
-    "74b714ee6721e879": [
+    "8326": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/74b714ee6721e879_m0hf58v5_76b2130c_OpenImages_StableDiffusion_v4.png",
+            "img_index": "6848",
             "distance": "0.25360855"
         }
     ],
-    "74563583796dcea3": [
+    "10717": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/492df4450b7893d9.jpg",
+            "img_index": "7950",
             "distance": "0.2930176"
         }
     ],
-    "7836e79ccd8a924a": [
+    "5759": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/7836e79ccd8a924a_m02p0tk3_d1c86e37_OpenImages_Kandinsky_2_2.png",
+            "img_index": "9154",
             "distance": "0.2699068"
         }
     ],
-    "38776582a81af18f": [
+    "995": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/38776582a81af18f_m025nd_4cb0b1e7_OpenImages_OpenJourney.png",
+            "img_index": "905",
             "distance": "0.23198178"
         }
     ],
-    "94e41c296bd7ffb3": [
+    "3568": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/94e41c296bd7ffb3.jpg",
+            "img_index": "3568",
             "distance": "0.29655656"
         }
     ],
-    "39988dc3a63d8751": [
+    "187": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/3928a399e08e1758_m026qbn5_4b39f480_OpenImages_Kandinsky_2_2.png",
+            "img_index": "1799",
             "distance": "0.2753616"
         }
     ],
-    "f49b39356ee510f4": [
+    "2297": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/f49b39356ee510f4_m03d443_2c667277_OpenImages_OpenJourney.png",
+            "img_index": "8502",
             "distance": "0.32121834"
         }
     ],
-    "1fe7a99c23f64885": [
+    "385": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/3d37a6b6be146c12_m03fwl_4140911e_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12333",
             "distance": "0.29094383"
         }
     ],
-    "2646412c48fa2d2f": [
+    "3906": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/2646412c48fa2d2f_m015wgc_d0623c87_OpenImages_StableDiffusion_v5.png",
+            "img_index": "1604",
             "distance": "0.30041945"
         }
     ],
-    "97bd4d44d3eba27d": [
+    "2876": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/001a695ad732152b.jpg",
+            "img_index": "4903",
             "distance": "0.26261562"
         }
     ],
-    "bcb52a962e3bed87": [
+    "8222": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/229069c3eadf0cc4_m02p5f1q_704145db_OpenImages_StableDiffusion_v5.png",
+            "img_index": "609",
             "distance": "0.3062907"
         }
     ],
-    "ddb2047a165799b4": [
+    "6022": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/6a3f4cc422ca16d1_m0271t_63991dae_OpenImages_Kandinsky_2_2.png",
+            "img_index": "11939",
             "distance": "0.26763836"
         }
     ],
-    "409fb6aa7a58f7fc": [
+    "7337": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/d19f33c0904d6776_m01bjv_23251d24_OpenImages_StableDiffusion_v5.png",
+            "img_index": "9111",
             "distance": "0.27247304"
         }
     ],
-    "279ca908e642fd7a": [
+    "3149": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/279ca908e642fd7a_m0283dt1_a38102e3_OpenImages_OpenJourney.png",
+            "img_index": "7790",
             "distance": "0.26849526"
         }
     ],
-    "3d37a6b6be146c12": [
+    "285": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/e3ca083901d78d37_m03fwl_c77a8e73_OpenImages_StableDiffusion_v5.png",
+            "img_index": "6348",
             "distance": "0.2604633"
         }
     ],
-    "00812a688e387d43": [
+    "5715": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/873d1d9c65b7b7a1.jpg",
+            "img_index": "624",
             "distance": "0.26158822"
         }
     ],
-    "26912ba548456bd8": [
+    "5541": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/26912ba548456bd8_m079cl_fa14470b_OpenImages_StableDiffusion_v4.png",
+            "img_index": "299",
             "distance": "0.25585905"
         }
     ],
-    "c3eed75afb2a6e35": [
+    "12930": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b281c337a69f4e52_m02p0tk3_546fea16_OpenImages_OpenJourney.png",
+            "img_index": "3606",
             "distance": "0.3314612"
         }
     ],
-    "c6d4685fc6df6d16": [
+    "306": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/da3eaba337a1c0e4.jpg",
+            "img_index": "13259",
             "distance": "0.27200437"
         }
     ],
-    "ceec94afe83824f8": [
+    "9683": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/05122205d3994c32_m05vtc_48bb97ee_OpenImages_OpenJourney.png",
+            "img_index": "12483",
             "distance": "0.2665361"
         }
     ],
-    "6d1bfe7adfaf407d": [
+    "2396": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/6d1bfe7adfaf407d_m0cdn1_5859eb46_OpenImages_Kandinsky_2_2.png",
+            "img_index": "8620",
             "distance": "0.31512478"
         }
     ],
-    "ffa70a65bc910ea4": [
+    "4334": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/3928a399e08e1758_m02crq1_17c89498_OpenImages_OpenJourney.png",
+            "img_index": "2733",
             "distance": "0.28464812"
         }
     ],
-    "f9cf7cec793a2988": [
+    "5936": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/f9cf7cec793a2988_m0l515_80b648a7_OpenImages_OpenJourney.png",
+            "img_index": "344",
             "distance": "0.31732878"
         }
     ],
-    "e1ddd4103569fbab": [
+    "4760": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/1f29bf6f469ac1b7_m02l8p9_6b7d5f9c_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12065",
             "distance": "0.28868976"
         }
     ],
-    "fb43156f7d0a6b94": [
+    "8340": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/fb43156f7d0a6b94_m0_cp5_93239736_OpenImages_StableDiffusion_v5.png",
+            "img_index": "5971",
             "distance": "0.30417445"
         }
     ],
-    "54ba1ec0d85d45b1": [
+    "3337": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/58a0c796e16d767e_m0fm3zh_7aa7b4d4_OpenImages_OpenJourney.png",
+            "img_index": "9156",
             "distance": "0.2855045"
         }
     ],
-    "5a26ee6c6175ae97": [
+    "11659": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/5a26ee6c6175ae97_m0_cp5_29f7401b_OpenImages_Kandinsky_2_2.png",
+            "img_index": "5524",
             "distance": "0.3028228"
         }
     ],
-    "4e1a92be80a8d7f6": [
+    "9664": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/4e1a92be80a8d7f6.jpg",
+            "img_index": "9664",
             "distance": "0.26354158"
         }
     ],
-    "63cb39d5401e1a6e": [
+    "3277": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/873d1d9c65b7b7a1_m01gkx__cacf7380_OpenImages_OpenJourney.png",
+            "img_index": "1969",
             "distance": "0.28926423"
         }
     ],
-    "28d5b8a619808f60": [
+    "10812": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/28d5b8a619808f60_m0c9ph5_8af3740d_OpenImages_OpenJourney.png",
+            "img_index": "412",
             "distance": "0.2741119"
         }
     ],
-    "abed8a82f3e24f22": [
+    "11322": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/b281c337a69f4e52_m02p5f1q_324dfef1_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12304",
             "distance": "0.33155262"
         }
     ],
-    "5855782749c3ed0b": [
+    "416": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/5855782749c3ed0b_m018xm_2ba4bd8e_OpenImages_StableDiffusion_v5.png",
+            "img_index": "2833",
             "distance": "0.32331452"
         }
     ],
-    "fa18e35a0def0b4f": [
+    "6976": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/1e74328369e70739_m0hqkz_668d48c1_OpenImages_StableDiffusion_v4.png",
+            "img_index": "2901",
             "distance": "0.2925834"
         }
     ],
-    "a29e85514998dff0": [
+    "10051": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/a29e85514998dff0_m014j1m_e42f14d4_OpenImages_Kandinsky_2_2.png",
+            "img_index": "11922",
             "distance": "0.306595"
         }
     ],
-    "0ab25a872a3a628f": [
+    "441": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b99df92d7b79dec8_m02p5f1q_da5dddc7_OpenImages_OpenJourney.png",
+            "img_index": "3301",
             "distance": "0.2952644"
         }
     ],
-    "a0620646a2b9d6e7": [
+    "459": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/a0620646a2b9d6e7.jpg",
+            "img_index": "459",
             "distance": "0.3113911"
         }
     ],
-    "b99df92d7b79dec8": [
+    "10446": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b99df92d7b79dec8_m02p5f1q_da5dddc7_OpenImages_OpenJourney.png",
+            "img_index": "3301",
             "distance": "0.31317317"
         }
     ],
-    "a83f96e6a35124c7": [
+    "2026": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/58d5304378bd430b_m084zz_caeabb80_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10989",
             "distance": "0.30773744"
         }
     ],
-    "14a839093eaba2d3": [
+    "5131": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/14a839093eaba2d3_m02p3w7d_a3d9a64d_OpenImages_OpenJourney.png",
+            "img_index": "496",
             "distance": "0.29719737"
         }
     ],
-    "e1065d5f5dbeac8b": [
+    "7040": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/591039865a4d874a.jpg",
+            "img_index": "2013",
             "distance": "0.2841242"
         }
     ],
-    "150b0a3dce58854d": [
+    "510": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/39cb2cc53e4b218d_m02zvsm_bb92b9fb_OpenImages_StableDiffusion_v4.png",
+            "img_index": "81",
             "distance": "0.303478"
         }
     ],
-    "b6436a7302c5eaa4": [
+    "663": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/b22737782d386723_m0283dt1_76e9604d_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10323",
             "distance": "0.23179129"
         }
     ],
-    "4f104caa8ad41cdf": [
+    "3838": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/e3be2c967e5af1e5_m01dwsz_67d03c6a_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10347",
             "distance": "0.2817134"
         }
     ],
-    "bbfe88937357fd71": [
+    "548": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/bbfe88937357fd71_m02zvsm_890be05e_OpenImages_StableDiffusion_v4.png",
+            "img_index": "4464",
             "distance": "0.32554835"
         }
     ],
-    "43200d1e5c86e555": [
+    "6211": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/da3eaba337a1c0e4_m0jg57_f4d192dd_OpenImages_StableDiffusion_v4.png",
+            "img_index": "3504",
             "distance": "0.31460962"
         }
     ],
-    "580b2fe0333192e0": [
+    "5245": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b281c337a69f4e52_m02p0tk3_546fea16_OpenImages_OpenJourney.png",
+            "img_index": "3606",
             "distance": "0.2993639"
         }
     ],
-    "16af0e13b34bbe4d": [
+    "10872": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/16af0e13b34bbe4d_m09qck_9097e755_OpenImages_OpenJourney.png",
+            "img_index": "11907",
             "distance": "0.26759127"
         }
     ],
-    "701d9f182fd8b979": [
+    "4869": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/b281c337a69f4e52_m02p5f1q_324dfef1_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12304",
             "distance": "0.2976846"
         }
     ],
-    "08e0a62e92643799": [
+    "12882": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/76d67fe26f7576aa_m04rmv_b487624c_OpenImages_StableDiffusion_v4.png",
+            "img_index": "8530",
             "distance": "0.26095128"
         }
     ],
-    "6a951ffda4eb0a0b": [
+    "7342": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/69c3fcecd632d261.jpg",
+            "img_index": "3198",
             "distance": "0.28072098"
         }
     ],
-    "05122205d3994c32": [
+    "9716": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/16af0e13b34bbe4d_m09qck_fcf1d5b3_OpenImages_OpenJourney.png",
+            "img_index": "9480",
             "distance": "0.24519426"
         }
     ],
-    "229069c3eadf0cc4": [
+    "5043": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/229069c3eadf0cc4_m02p5f1q_704145db_OpenImages_StableDiffusion_v5.png",
+            "img_index": "609",
             "distance": "0.30871147"
         }
     ],
-    "873d1d9c65b7b7a1": [
+    "624": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/873d1d9c65b7b7a1_m01gkx__557269d4_OpenImages_Kandinsky_2_2.png",
+            "img_index": "2294",
             "distance": "0.2551052"
         }
     ],
-    "bff3e167dd9ba4e8": [
+    "4630": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/7b4e7878bf1aecb3_m01tcjp_2f8dba73_OpenImages_StableDiffusion_v5.png",
+            "img_index": "5447",
             "distance": "0.29028645"
         }
     ],
-    "9cb33c4f6356a3c5": [
+    "11832": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/39cb2cc53e4b218d_m02zvsm_bb92b9fb_OpenImages_StableDiffusion_v4.png",
+            "img_index": "81",
             "distance": "0.2939732"
         }
     ],
-    "200eaae66a594057": [
+    "12047": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/408e6a6f9f0ab7f3_m01b638_659383f2_OpenImages_OpenJourney.png",
+            "img_index": "5823",
             "distance": "0.2586116"
         }
     ],
-    "875338d0d45abc20": [
+    "5407": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/875338d0d45abc20.jpg",
+            "img_index": "5407",
             "distance": "0.3172748"
         }
     ],
-    "4f7111413fecde01": [
+    "2207": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/4f7111413fecde01_m06k2mb_8e8ae3b8_OpenImages_Kandinsky_2_2.png",
+            "img_index": "1384",
             "distance": "0.3054486"
         }
     ],
-    "408e6a6f9f0ab7f3": [
+    "13312": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/253425099d3393de_m01cmb2_7d7de923_OpenImages_Kandinsky_2_2.png",
+            "img_index": "9448",
             "distance": "0.28802407"
         }
     ],
-    "802539e8caa1611d": [
+    "10818": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/802539e8caa1611d_m01jfm__c569cf04_OpenImages_OpenJourney.png",
+            "img_index": "1998",
             "distance": "0.30313018"
         }
     ],
-    "f84355fd72ad8eb1": [
+    "2871": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/1e74328369e70739_m0hqkz_4851b222_OpenImages_Kandinsky_2_2.png",
+            "img_index": "1874",
             "distance": "0.24545914"
         }
     ],
-    "d1110b5eb76d4b0e": [
+    "1323": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/1e74328369e70739_m0hqkz_668d48c1_OpenImages_StableDiffusion_v4.png",
+            "img_index": "2901",
             "distance": "0.3036585"
         }
     ],
-    "69c3fcecd632d261": [
+    "3198": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/69c3fcecd632d261_m015p6_ecb85782_OpenImages_OpenJourney.png",
+            "img_index": "6894",
             "distance": "0.2820326"
         }
     ],
-    "175d58a18a0bd278": [
+    "779": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/1f29bf6f469ac1b7_m0gd36_b1b942ba_OpenImages_Kandinsky_2_2.png",
+            "img_index": "7408",
             "distance": "0.27941886"
         }
     ],
-    "d78a5500403a56c0": [
+    "6313": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/d78a5500403a56c0_m06y5r_37845d47_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12798",
             "distance": "0.27603132"
         }
     ],
-    "7b4e7878bf1aecb3": [
+    "6406": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/7b4e7878bf1aecb3.jpg",
+            "img_index": "6406",
             "distance": "0.26937443"
         }
     ],
-    "b728aa6f4c5280e3": [
+    "4505": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/622e074fe98116c3_m02s195_71c29538_OpenImages_StableDiffusion_v4.png",
+            "img_index": "10254",
             "distance": "0.2932737"
         }
     ],
-    "5e25bb93819d7e8e": [
+    "822": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/5e25bb93819d7e8e.jpg",
+            "img_index": "822",
             "distance": "0.279825"
         }
     ],
-    "dbc3c0da2f3d57d8": [
+    "3049": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/dbc3c0da2f3d57d8_m09f20_997733ae_OpenImages_OpenJourney.png",
+            "img_index": "9988",
             "distance": "0.33499163"
         }
     ],
-    "f7dc53f11acde989": [
+    "12354": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/f7dc53f11acde989.jpg",
+            "img_index": "12354",
             "distance": "0.2998023"
         }
     ],
-    "ef1c92617f2a63e3": [
+    "5240": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/b22737782d386723_m0283dt1_76e9604d_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10323",
             "distance": "0.23639894"
         }
     ],
-    "8b286a528fde362d": [
+    "6341": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/eea67dd864586c56.jpg",
+            "img_index": "10978",
             "distance": "0.27427858"
         }
     ],
-    "622e074fe98116c3": [
+    "3200": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/22d9e033dadee2ab.jpg",
+            "img_index": "7358",
             "distance": "0.32347733"
         }
     ],
-    "1f29bf6f469ac1b7": [
+    "919": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/e1ddd4103569fbab.jpg",
+            "img_index": "4760",
             "distance": "0.31148726"
         }
     ],
-    "fecf91dd4a41cd96": [
+    "12257": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/a1b204b6512f9242_m0gd36_d0a3165f_OpenImages_OpenJourney.png",
+            "img_index": "3373",
             "distance": "0.29153028"
         }
     ],
-    "59d728940d54f997": [
+    "6932": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/253425099d3393de_m01cmb2_7d7de923_OpenImages_Kandinsky_2_2.png",
+            "img_index": "9448",
             "distance": "0.27931896"
         }
     ],
-    "b58f1f88f8fbd38a": [
+    "5438": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/b58f1f88f8fbd38a_m01h8tj_399d73c3_OpenImages_StableDiffusion_v4.png",
+            "img_index": "968",
             "distance": "0.3197529"
         }
     ],
-    "8c1d24dcbaeec096": [
+    "7134": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/8c1d24dcbaeec096_m02zn6n_e6e157d4_OpenImages_OpenJourney.png",
+            "img_index": "985",
             "distance": "0.28591996"
         }
     ],
-    "5de7fc6ecb724cff": [
+    "1785": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/5de7fc6ecb724cff_m07mhn_e8875a14_OpenImages_Kandinsky_2_2.png",
+            "img_index": "7773",
             "distance": "0.25114784"
         }
     ],
-    "7ca419af2bf4b432": [
+    "9241": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/d19f33c0904d6776_m01bjv_23251d24_OpenImages_StableDiffusion_v5.png",
+            "img_index": "9111",
             "distance": "0.27247304"
         }
     ],
-    "5c9e024962d5f0a7": [
+    "4277": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/5c9e024962d5f0a7.jpg",
+            "img_index": "4277",
             "distance": "0.25232533"
         }
     ],
-    "516a2419668bd201": [
+    "5287": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/516a2419668bd201.jpg",
+            "img_index": "5287",
             "distance": "0.2650304"
         }
     ],
-    "500b6180c0d29747": [
+    "11662": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/221b481a8ee7e11d_m0hqkz_23f53460_OpenImages_OpenJourney.png",
+            "img_index": "10168",
             "distance": "0.30934042"
         }
     ],
-    "18eedb7aeb04344a": [
+    "1842": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/781a6f4611f566b7_m04dr76w_f28307cb_OpenImages_Kandinsky_2_2.png",
+            "img_index": "6361",
             "distance": "0.2948857"
         }
     ],
-    "2406df385f602b9b": [
+    "3270": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/8e5632d35c91e78d_m0dv77_f2bb68e3_OpenImages_StableDiffusion_v4.png",
+            "img_index": "8435",
             "distance": "0.3353067"
         }
     ],
-    "b755836a8af2024b": [
+    "10575": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/b755836a8af2024b.jpg",
+            "img_index": "10575",
             "distance": "0.27722898"
         }
     ],
-    "b81faf1b4bff0153": [
+    "4523": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b81faf1b4bff0153_m0ph39_3caf6f91_OpenImages_OpenJourney.png",
+            "img_index": "13011",
             "distance": "0.25954062"
         }
     ],
-    "e86eaa23da78ed96": [
+    "1153": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/e86eaa23da78ed96.jpg",
+            "img_index": "1153",
             "distance": "0.3206251"
         }
     ],
-    "57d9906180d7a87d": [
+    "5220": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/57d9906180d7a87d_m01gkx__e559119a_OpenImages_StableDiffusion_v4.png",
+            "img_index": "1171",
             "distance": "0.2831385"
         }
     ],
-    "ee2687b634bb8fbe": [
+    "1224": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/2646412c48fa2d2f_m015wgc_d0623c87_OpenImages_StableDiffusion_v5.png",
+            "img_index": "1604",
             "distance": "0.268087"
         }
     ],
-    "2c5681a1d46ea716": [
+    "1248": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/2c5681a1d46ea716.jpg",
+            "img_index": "1248",
             "distance": "0.3176721"
         }
     ],
-    "8865694899bc5737": [
+    "4262": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/1f29bf6f469ac1b7_m0gd36_b1b942ba_OpenImages_Kandinsky_2_2.png",
+            "img_index": "7408",
             "distance": "0.274852"
         }
     ],
-    "591039865a4d874a": [
+    "2013": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/591039865a4d874a.jpg",
+            "img_index": "2013",
             "distance": "0.24797134"
         }
     ],
-    "58d5304378bd430b": [
+    "1282": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/58d5304378bd430b.jpg",
+            "img_index": "1282",
             "distance": "0.2987941"
         }
     ],
-    "9157d7a27084111b": [
+    "3288": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/3928a399e08e1758_m02crq1_17c89498_OpenImages_StableDiffusion_v5.png",
+            "img_index": "8260",
             "distance": "0.29513073"
         }
     ],
-    "4211b2a300991531": [
+    "7914": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/4211b2a300991531_m0cmf2_24614f5b_OpenImages_OpenJourney.png",
+            "img_index": "4990",
             "distance": "0.28343996"
         }
     ],
-    "77342c4f2ac0f91b": [
+    "4755": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/77342c4f2ac0f91b_m09ddx_3abe9daf_OpenImages_OpenJourney.png",
+            "img_index": "1346",
             "distance": "0.27208412"
         }
     ],
-    "1c68ec73964a0332": [
+    "5876": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/1c68ec73964a0332_m01x_v_5a8585bc_OpenImages_StableDiffusion_v4.png",
+            "img_index": "10719",
             "distance": "0.29955557"
         }
     ],
-    "c698f4f101a2d16d": [
+    "1444": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/c698f4f101a2d16d_m01yx86_cffae025_OpenImages_OpenJourney.png",
+            "img_index": "6642",
             "distance": "0.3508515"
         }
     ],
-    "764b7a05c634c23f": [
+    "3805": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/4e1a92be80a8d7f6_m01b638_2199e0dd_OpenImages_StableDiffusion_v5.png",
+            "img_index": "8804",
             "distance": "0.27404618"
         }
     ],
-    "6a3f4cc422ca16d1": [
+    "5218": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/6a3f4cc422ca16d1_m0271t_63991dae_OpenImages_Kandinsky_2_2.png",
+            "img_index": "11939",
             "distance": "0.31445616"
         }
     ],
-    "e3ca7de8aa638f6a": [
+    "7047": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b99df92d7b79dec8_m02p5f1q_da5dddc7_OpenImages_OpenJourney.png",
+            "img_index": "3301",
             "distance": "0.32203162"
         }
     ],
-    "f722edf6695264e1": [
+    "8027": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/b281c337a69f4e52_m02p5f1q_324dfef1_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12304",
             "distance": "0.3056103"
         }
     ],
-    "a1b204b6512f9242": [
+    "1555": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/a1b204b6512f9242.jpg",
+            "img_index": "1555",
             "distance": "0.31099546"
         }
     ],
-    "bd3607a4b241c06d": [
+    "2819": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/bd3607a4b241c06d_m0174k2_586fbd1b_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12372",
             "distance": "0.29218826"
         }
     ],
-    "df6a51c635afe963": [
+    "8080": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/229069c3eadf0cc4_m02p5f1q_704145db_OpenImages_StableDiffusion_v5.png",
+            "img_index": "609",
             "distance": "0.30211475"
         }
     ],
-    "e6e6865c1f6b8e87": [
+    "6322": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/39cb2cc53e4b218d_m02zvsm_bb92b9fb_OpenImages_StableDiffusion_v4.png",
+            "img_index": "81",
             "distance": "0.30720705"
         }
     ],
-    "b22737782d386723": [
+    "1613": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/ef80dcc193773eae.jpg",
+            "img_index": "9081",
             "distance": "0.27519226"
         }
     ],
-    "38c6a73c3e1fc3d2": [
+    "6171": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/addd2b526748b761_m025rp___2f4e6452_OpenImages_StableDiffusion_v5.png",
+            "img_index": "10725",
             "distance": "0.27082202"
         }
     ],
-    "ebb9a47f006b7d49": [
+    "12302": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b281c337a69f4e52_m02p0tk3_546fea16_OpenImages_OpenJourney.png",
+            "img_index": "3606",
             "distance": "0.32431543"
         }
     ],
-    "2ed68ac9c200a034": [
+    "8728": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/2ed68ac9c200a034_m029b3_0a389be9_OpenImages_StableDiffusion_v5.png",
+            "img_index": "1682",
             "distance": "0.3031376"
         }
     ],
-    "cfc964f6e8a96301": [
+    "6092": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/cfc964f6e8a96301_m01599_60dd36e0_OpenImages_OpenJourney.png",
+            "img_index": "1723",
             "distance": "0.27358958"
         }
     ],
-    "31c66704f5623e96": [
+    "5819": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/7836e79ccd8a924a_m02p0tk3_d1c86e37_OpenImages_Kandinsky_2_2.png",
+            "img_index": "9154",
             "distance": "0.2829471"
         }
     ],
-    "3928a399e08e1758": [
+    "6030": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/3928a399e08e1758_m02crq1_17c89498_OpenImages_StableDiffusion_v5.png",
+            "img_index": "8260",
             "distance": "0.27972448"
         }
     ],
-    "b2ebfacff545ad09": [
+    "8047": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/5a26ee6c6175ae97_m0_cp5_29f7401b_OpenImages_Kandinsky_2_2.png",
+            "img_index": "5524",
             "distance": "0.2379359"
         }
     ],
-    "e16d9f29e2462eea": [
+    "6442": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/e16d9f29e2462eea_m0jy4k_94e6f699_OpenImages_OpenJourney.png",
+            "img_index": "3592",
             "distance": "0.2716807"
         }
     ],
-    "9e38e554494bd9a5": [
+    "1825": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/9e38e554494bd9a5_m0dftk_2d7ae3cb_OpenImages_OpenJourney.png",
+            "img_index": "5100",
             "distance": "0.28321192"
         }
     ],
-    "1e74328369e70739": [
+    "10288": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/1e74328369e70739_m0hqkz_4851b222_OpenImages_Kandinsky_2_2.png",
+            "img_index": "1874",
             "distance": "0.29340538"
         }
     ],
-    "574c680e0b62ef73": [
+    "4836": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/574c680e0b62ef73_m011k07_4cc11eeb_OpenImages_OpenJourney.png",
+            "img_index": "8039",
             "distance": "0.29411873"
         }
     ],
-    "0650a130d7f707b5": [
+    "5312": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b9ed4725c0ca9f60_m0jly1_348ab3ab_OpenImages_OpenJourney.png",
+            "img_index": "2416",
             "distance": "0.27462217"
         }
     ],
-    "35abdcbd62e7f8a4": [
+    "2439": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/fd280d46f9488014_m01d40f_41bb8e2e_OpenImages_OpenJourney.png",
+            "img_index": "51",
             "distance": "0.25070482"
         }
     ],
-    "b9ed4725c0ca9f60": [
+    "8069": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/b9ed4725c0ca9f60_m0jly1_348ab3ab_OpenImages_OpenJourney.png",
+            "img_index": "2416",
             "distance": "0.28708985"
         }
     ],
-    "8e164d1a6f6edbf4": [
+    "12223": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/8e164d1a6f6edbf4.jpg",
+            "img_index": "12223",
             "distance": "0.30502966"
         }
     ],
-    "1290db73f773e299": [
+    "4124": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/c6d4685fc6df6d16_m07j87_a699a844_OpenImages_StableDiffusion_v5.png",
+            "img_index": "11015",
             "distance": "0.30293894"
         }
     ],
-    "22d9e033dadee2ab": [
+    "7358": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/22d9e033dadee2ab.jpg",
+            "img_index": "7358",
             "distance": "0.31716174"
         }
     ],
-    "70a6c792e498bccc": [
+    "3383": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/3928a399e08e1758_m02crq1_17c89498_OpenImages_OpenJourney.png",
+            "img_index": "2733",
             "distance": "0.30365047"
         }
     ],
-    "addd2b526748b761": [
+    "9560": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/addd2b526748b761.jpg",
+            "img_index": "9560",
             "distance": "0.27487138"
         }
     ],
-    "a273f504b47d0670": [
+    "2370": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/a273f504b47d0670_m01yrx_a0626e8b_OpenImages_OpenJourney.png",
+            "img_index": "3320",
             "distance": "0.2569596"
         }
     ],
-    "89d8c4de1f2f3f07": [
+    "4924": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/89d8c4de1f2f3f07.jpg",
+            "img_index": "4924",
             "distance": "0.2861679"
         }
     ],
-    "5bf182c14ade8c4f": [
+    "2437": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/5bf182c14ade8c4f_m03k3r_e3181618_OpenImages_StableDiffusion_v4.png",
+            "img_index": "8095",
             "distance": "0.25375038"
         }
     ],
-    "8440b82a456faf37": [
+    "2440": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/2c5681a1d46ea716.jpg",
+            "img_index": "1248",
             "distance": "0.2868459"
         }
     ],
-    "95653b68e47ff420": [
+    "7380": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/701d9f182fd8b979_m02p5f1q_9e17ec66_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10428",
             "distance": "0.2797816"
         }
     ],
-    "ef80dcc193773eae": [
+    "9081": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/b22737782d386723_m0283dt1_76e9604d_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10323",
             "distance": "0.23873942"
         }
     ],
-    "7936076e23541980": [
+    "6639": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/7936076e23541980.jpg",
+            "img_index": "6639",
             "distance": "0.2888205"
         }
     ],
-    "1993005e3e47a261": [
+    "4579": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/408e6a6f9f0ab7f3_m01b638_659383f2_OpenImages_OpenJourney.png",
+            "img_index": "5823",
             "distance": "0.24610974"
         }
     ],
-    "dde0f0d1cb4c50dc": [
+    "4764": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/eab69fe27b0d1b84_m06bt6_93974b9f_OpenImages_Kandinsky_2_2.png",
+            "img_index": "3443",
             "distance": "0.25432563"
         }
     ],
-    "5cb4587ec30a3020": [
+    "13315": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/5cb4587ec30a3020_m068zj_feb37ced_OpenImages_StableDiffusion_v4.png",
+            "img_index": "2670",
             "distance": "0.2606417"
         }
     ],
-    "179846a7e34ba228": [
+    "4097": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/5a26ee6c6175ae97.jpg",
+            "img_index": "11659",
             "distance": "0.25251165"
         }
     ],
-    "adc6cb08fcafcf77": [
+    "5949": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/7836e79ccd8a924a_m02p0tk3_d1c86e37_OpenImages_Kandinsky_2_2.png",
+            "img_index": "9154",
             "distance": "0.2734467"
         }
     ],
-    "55917f4c7f266f73": [
+    "13118": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/55917f4c7f266f73_m0k1tl_5c6b85c2_OpenImages_StableDiffusion_v5.png",
+            "img_index": "6120",
             "distance": "0.2895949"
         }
     ],
-    "d19f33c0904d6776": [
+    "2750": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/d19f33c0904d6776_m083wq_19f888ca_OpenImages_Kandinsky_2_2.png",
+            "img_index": "3661",
             "distance": "0.29175362"
         }
     ],
-    "a7feceea20efd89f": [
+    "2758": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/addd2b526748b761_m025rp___2f4e6452_OpenImages_StableDiffusion_v5.png",
+            "img_index": "10725",
             "distance": "0.25054505"
         }
     ],
-    "faf6d30a2f4398af": [
+    "8466": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/faf6d30a2f4398af_m07mhn_7bda4aff_OpenImages_StableDiffusion_v5.png",
+            "img_index": "3473",
             "distance": "0.2646306"
         }
     ],
-    "347b0afa5c8808d8": [
+    "5307": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/2c5681a1d46ea716.jpg",
+            "img_index": "1248",
             "distance": "0.2846055"
         }
     ],
-    "925d1489dc88f3f3": [
+    "7579": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/6d1bfe7adfaf407d_m0cdn1_5859eb46_OpenImages_Kandinsky_2_2.png",
+            "img_index": "8620",
             "distance": "0.2788918"
         }
     ],
-    "3df749836e00ec37": [
+    "9824": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/1f29bf6f469ac1b7_m0gd36_b1b942ba_OpenImages_Kandinsky_2_2.png",
+            "img_index": "7408",
             "distance": "0.27590916"
         }
     ],
-    "4e9df759ce180a15": [
+    "3252": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/4e9df759ce180a15_m03bt1vf_c8cc79ef_OpenImages_OpenJourney.png",
+            "img_index": "5564",
             "distance": "0.3071241"
         }
     ],
-    "fdc74a42fdd67589": [
+    "7607": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/b281c337a69f4e52_m02p5f1q_324dfef1_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12304",
             "distance": "0.31359574"
         }
     ],
-    "b2a369f311184a17": [
+    "4812": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/b2a369f311184a17_m06j2d_65d81167_OpenImages_StableDiffusion_v4.png",
+            "img_index": "3304",
             "distance": "0.26951078"
         }
     ],
-    "958db65f66dd29ea": [
+    "3459": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/b281c337a69f4e52_m02p5f1q_324dfef1_OpenImages_StableDiffusion_v5.png",
+            "img_index": "12304",
             "distance": "0.31724054"
         }
     ],
-    "fe1580f27cfe4c67": [
+    "9365": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/5fdedcd2143479b3.jpg",
+            "img_index": "3598",
             "distance": "0.28491428"
         }
     ],
-    "eab69fe27b0d1b84": [
+    "11167": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/eab69fe27b0d1b84_m06bt6_93974b9f_OpenImages_Kandinsky_2_2.png",
+            "img_index": "3443",
             "distance": "0.26917624"
         }
     ],
-    "d78ddd3457118747": [
+    "10114": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/22d9e033dadee2ab.jpg",
+            "img_index": "7358",
             "distance": "0.29169613"
         }
     ],
-    "da3eaba337a1c0e4": [
+    "13259": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/5a639b9ea7739f07_m0jg57_821e759f_OpenImages_StableDiffusion_v5.png",
+            "img_index": "10387",
             "distance": "0.28288746"
         }
     ],
-    "b281c337a69f4e52": [
+    "5986": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/b281c337a69f4e52_m02vqfm_b5bd6eee_OpenImages_StableDiffusion_v5.png",
+            "img_index": "4363",
             "distance": "0.2910046"
         }
     ],
-    "4b3cadd107cd92b1": [
+    "3628": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/a0620646a2b9d6e7_m09k_b_c81ea6ff_OpenImages_StableDiffusion_v5.png",
+            "img_index": "3981",
             "distance": "0.30651245"
         }
     ],
-    "221b481a8ee7e11d": [
+    "11710": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/221b481a8ee7e11d_m0hqkz_2f5ca57f_OpenImages_Kandinsky_2_2.png",
+            "img_index": "8625",
             "distance": "0.30210826"
         }
     ],
-    "dc012ea9e1406bfa": [
+    "9063": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/dc012ea9e1406bfa.jpg",
+            "img_index": "9063",
             "distance": "0.29777265"
         }
     ],
-    "f884aa07d36a636f": [
+    "3686": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/f884aa07d36a636f_m076bq_9910294d_OpenImages_StableDiffusion_v4.png",
+            "img_index": "12298",
             "distance": "0.36086845"
         }
     ],
-    "05da9a3a550ceeed": [
+    "3721": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/1993005e3e47a261.jpg",
+            "img_index": "4579",
             "distance": "0.26398686"
         }
     ],
-    "3fc30c8644f09b0f": [
+    "7375": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/3fc30c8644f09b0f.jpg",
+            "img_index": "7375",
             "distance": "0.3075987"
         }
     ],
-    "2dd63a5811653e8d": [
+    "4507": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/2dd63a5811653e8d_m05kyg__8c4b7e16_OpenImages_Kandinsky_2_2.png",
+            "img_index": "12948",
             "distance": "0.30919737"
         }
     ],
-    "e470100eed3c6c1e": [
+    "7701": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/8db04c13559176c0_m01gkx__62b44210_OpenImages_StableDiffusion_v5.png",
+            "img_index": "5747",
             "distance": "0.34199667"
         }
     ],
-    "bdcb4068d4772da1": [
+    "5805": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/bdcb4068d4772da1.jpg",
+            "img_index": "5805",
             "distance": "0.2584105"
         }
     ],
-    "8e5632d35c91e78d": [
+    "3927": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/8e5632d35c91e78d_m0dv77_f2bb68e3_OpenImages_StableDiffusion_v4.png",
+            "img_index": "8435",
             "distance": "0.324891"
         }
     ],
-    "58a0c796e16d767e": [
+    "7117": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/da3eaba337a1c0e4_m0dv77_26616148_OpenImages_StableDiffusion_v5.png",
+            "img_index": "5027",
             "distance": "0.25702855"
         }
     ],
-    "781a6f4611f566b7": [
+    "4028": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/cfc964f6e8a96301_m01599_60dd36e0_OpenImages_OpenJourney.png",
+            "img_index": "1723",
             "distance": "0.29351208"
         }
     ],
-    "56401bf3ff33c9ed": [
+    "6843": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/5de7fc6ecb724cff_m07mhn_86811b89_OpenImages_StableDiffusion_v5.png",
+            "img_index": "10893",
             "distance": "0.250271"
         }
     ],
-    "f45544793dac3d4c": [
+    "4109": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/f45544793dac3d4c_m0bwd_0j_0a55c29d_OpenImages_OpenJourney.png",
+            "img_index": "13144",
             "distance": "0.27739543"
         }
     ],
-    "253425099d3393de": [
+    "9577": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/253425099d3393de.jpg",
+            "img_index": "9577",
             "distance": "0.27215263"
         }
     ],
-    "d563d1c04e5cf154": [
+    "9961": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/4e9df759ce180a15_m03bt1vf_c8cc79ef_OpenImages_OpenJourney.png",
+            "img_index": "5564",
             "distance": "0.24030733"
         }
     ],
-    "be3e49b80af4e60c": [
+    "9719": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/be3e49b80af4e60c_m015p6_18749db3_OpenImages_StableDiffusion_v5.png",
+            "img_index": "4437",
             "distance": "0.28177246"
         }
     ],
-    "63cdf8c23f197ee5": [
+    "7000": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/d19f33c0904d6776_m083wq_19f888ca_OpenImages_Kandinsky_2_2.png",
+            "img_index": "3661",
             "distance": "0.2946412"
         }
     ],
-    "33e9b80ec55e4689": [
+    "7312": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/addd2b526748b761_m025rp___2f4e6452_OpenImages_StableDiffusion_v5.png",
+            "img_index": "10725",
             "distance": "0.26415166"
         }
     ],
-    "0ab071932a440ed7": [
+    "4809": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/0ab071932a440ed7_m0hnyx_e01b6c30_OpenImages_OpenJourney.png",
+            "img_index": "11030",
             "distance": "0.2919435"
         }
     ],
-    "8db04c13559176c0": [
+    "12187": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/e470100eed3c6c1e.jpg",
+            "img_index": "7701",
             "distance": "0.2926129"
         }
     ],
-    "5a639b9ea7739f07": [
+    "7808": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/5a639b9ea7739f07_m0jg57_821e759f_OpenImages_StableDiffusion_v5.png",
+            "img_index": "10387",
             "distance": "0.31011456"
         }
     ],
-    "1245d58837d6af78": [
+    "7537": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/1245d58837d6af78_m09b5t_3bab0295_OpenImages_StableDiffusion_v5.png",
+            "img_index": "11761",
             "distance": "0.28703377"
         }
     ],
-    "27ba2858e4182e7b": [
+    "8591": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/89d8c4de1f2f3f07.jpg",
+            "img_index": "4924",
             "distance": "0.2893183"
         }
     ],
-    "76d67fe26f7576aa": [
+    "13082": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/76d67fe26f7576aa.jpg",
+            "img_index": "13082",
             "distance": "0.2781285"
         }
     ],
-    "e3be2c967e5af1e5": [
+    "11805": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/e3be2c967e5af1e5_m01dwsz_67d03c6a_OpenImages_Kandinsky_2_2.png",
+            "img_index": "10347",
             "distance": "0.30989853"
         }
     ],
-    "492df4450b7893d9": [
+    "7950": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/492df4450b7893d9_m08pbxl_7c67d977_OpenImages_StableDiffusion_v4.png",
+            "img_index": "10631",
             "distance": "0.29185343"
         }
     ],
-    "c61d05c0829eb3ae": [
+    "12999": [
         {
-            "img_path": "../data_openImages/Altered_Kansinsky_2_2/Kandinsky_2_2/873d1d9c65b7b7a1_m01gkx__557269d4_OpenImages_Kandinsky_2_2.png",
+            "img_index": "2294",
             "distance": "0.26857737"
         }
     ],
-    "febefae5f104a7c8": [
+    "8221": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v5/StableDiffusion_v5/f9cf7cec793a2988_m02jvh9_1da3b372_OpenImages_StableDiffusion_v5.png",
+            "img_index": "7943",
             "distance": "0.2860779"
         }
     ],
-    "2b91cfcc79d10374": [
+    "6091": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/3fc30c8644f09b0f_m07r04_ede98599_OpenImages_OpenJourney.png",
+            "img_index": "5333",
             "distance": "0.27966592"
         }
     ],
-    "03bb15edb87b7821": [
+    "6836": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/5c9e024962d5f0a7_m04_sv_df3b233a_OpenImages_StableDiffusion_v4.png",
+            "img_index": "4467",
             "distance": "0.26422533"
         }
     ],
-    "5fe8f87bf3a503ff": [
+    "6805": [
         {
-            "img_path": "../data_openImages/Altered_StableDiffusion_v4/StableDiffusion_v4/5fe8f87bf3a503ff_m05r5c_db6b4b32_OpenImages_StableDiffusion_v4.png",
+            "img_index": "11690",
             "distance": "0.28278092"
         }
     ],
-    "fd01a784f0e01064": [
+    "10054": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/fd01a784f0e01064.jpg",
+            "img_index": "10054",
             "distance": "0.30884677"
         }
     ],
-    "893d742b579a4124": [
+    "7186": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/8e5632d35c91e78d.jpg",
+            "img_index": "3927",
             "distance": "0.32178885"
         }
     ],
-    "5cdac0d67970161d": [
+    "10633": [
         {
-            "img_path": "../data_openImages/Altered_OpenJourney/OpenJourney/00812a688e387d43_m01bfm9_d7781747_OpenImages_OpenJourney.png",
+            "img_index": "4237",
             "distance": "0.2478514"
         }
     ],
-    "eea67dd864586c56": [
+    "10978": [
         {
-            "img_path": "../data_openImages/Original/original_openImages/eea67dd864586c56.jpg",
+            "img_index": "10978",
             "distance": "0.2672302"
         }
     ]

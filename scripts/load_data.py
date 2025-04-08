@@ -2,6 +2,8 @@
 Module containing functionality to load data (e.g. metadata, embeddings...)
 """
 import os
+from typing import List
+
 import h5py
 import pandas as pd
 import torch
@@ -19,6 +21,18 @@ def find(name, path) -> os.path:
         if name in files:
             return os.path.join(root, name)
     return None
+
+
+def find_index_from_image_id(image_id: str, metadata: pd.DataFrame) -> str:
+    """
+    Find the index of an image by its image id from a metadata dataframe.
+
+    :param image_id: Image id to find.
+    :param metadata: Metadata dataframe.
+    :param column_name: Name of column containing image ids.
+    :return: Index of image.
+    """
+    return metadata[metadata['image_id'] == image_id]['index'].iloc[0]
 
 
 def load_metadata(metadata_path: str) -> pd.DataFrame:
@@ -72,16 +86,18 @@ def load_embeddings(embeddings_path: str) -> dict:
     return embedding_dict
 
 
-def load_queries_and_image_ids(query_path: str):
+def load_queries_and_image_ids(query_path: str, img_metadata: pd.DataFrame) -> (List[str], List[str]):
     """
     Load query file from string path, as well as a list of all images that are in the query file.
 
     :param query_path: Path to query file.
+    :param img_metadata: Metadata dataframe for images.
     :return: DataFrame consisting of {original_id: {keywords, query, num_altered, altered_ids}}.
     :return: image_list containing all original image ids as well as their altered image ids.
     """
     # Load CSV into DataFrame
     query_df = pd.read_csv(query_path)
+    query_df['index'] = query_df['id'].apply(lambda x: find_index_from_image_id(x, img_metadata))
 
     # Ensure required columns exist
     # id,keywords,query,num_altered,altered_ids
@@ -91,6 +107,7 @@ def load_queries_and_image_ids(query_path: str):
 
     # Convert altered_ids column (assumed to be a string representation of lists) into actual lists
     query_df['altered_ids'] = query_df['altered_ids'].apply(lambda x: eval(x) if isinstance(x, str) else x)
+    query_df['altered_indices'] = query_df['altered_ids'].apply(lambda x: [find_index_from_image_id(img_id, img_metadata) for img_id in x])
 
     # Compile a list of all image IDs (original and altered)
     image_list = set(query_df['id'].tolist())

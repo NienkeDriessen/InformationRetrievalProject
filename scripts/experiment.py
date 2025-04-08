@@ -21,13 +21,13 @@ def execute_experiment(retriever: TextToImageRetriever, query_df: pd.DataFrame, 
         os.makedirs(save_folder)
     res_file_name = os.path.join(save_folder, f"results_{n}.json")
 
-    # Keys are query ids, values are lists of retrieved results
+    # Keys are the original image index the query corresponds to, values are lists of retrieved results
     res = {}
     for _, row in query_df.iterrows():
-        query_id = row['id']
+        img_index = row['index']
         query = row['query']
         results = [retrieval_result.to_dict() for retrieval_result in retriever.retrieve(query, n)]
-        res[query_id] = results
+        res[img_index] = results
 
     with open(res_file_name, "w") as f:
         json.dump(res, f, indent=4)

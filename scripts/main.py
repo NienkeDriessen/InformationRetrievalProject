@@ -30,6 +30,7 @@ RETRIEVAL_RESULTS_PATH = '../data/retrieval_results'
 RESULT_PATH = '../results/'  # path to folder to save metric results and graphs to
 K_VALUES = [1, 3, 5, 10]  # values for k used in the metrics in evaluation (EG, nDCG@k)
 REGENERATE_EMBEDDINGS = False
+REGENERATE_RESULTS = False
 
 
 def main():
@@ -43,7 +44,7 @@ def main():
     metadata = load_metadata(PROCESSED_METADATA_PATH)
 
     # Generating and saving queries
-    query_df, image_list = load_queries_and_image_ids(QUERY_PATH)  # columns=[id,keywords,query,num_altered,altered_ids]
+    query_df, image_list = load_queries_and_image_ids(QUERY_PATH, metadata)  # columns=[id,keywords,query,num_altered,altered_ids]
 
     # Define embedding model
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -63,7 +64,7 @@ def main():
 
     if not os.path.exists(RETRIEVAL_RESULTS_PATH):
         os.makedirs(RETRIEVAL_RESULTS_PATH)
-    if len(os.listdir(RETRIEVAL_RESULTS_PATH)) == 0:  # check the retrieval_results folder is empty
+    if len(os.listdir(RETRIEVAL_RESULTS_PATH)) == 0 or REGENERATE_RESULTS:  # check the retrieval_results folder is empty
         # Setting up retrieval pipeline
         retriever = TextToImageRetriever(model, device, embeddings)
         # Executing experiment for each K value, saves to json file for each K.
