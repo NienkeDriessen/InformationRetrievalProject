@@ -1,2900 +1,2886 @@
 {
     "3": [
         {
-            "img_index": "3373",
-            "distance": "0.29020342"
+            "img_index": "3270",
+            "distance": "0.2551527"
         },
         {
-            "img_index": "387",
-            "distance": "0.2663772"
+            "img_index": "3",
+            "distance": "0.25245553"
         },
         {
-            "img_index": "1839",
-            "distance": "0.26306888"
+            "img_index": "5438",
+            "distance": "0.24523543"
         }
     ],
     "13": [
         {
-            "img_index": "1804",
-            "distance": "0.2591448"
+            "img_index": "3200",
+            "distance": "0.2508347"
         },
         {
-            "img_index": "9646",
-            "distance": "0.25807863"
+            "img_index": "8047",
+            "distance": "0.24909712"
         },
         {
-            "img_index": "2229",
-            "distance": "0.254823"
+            "img_index": "6022",
+            "distance": "0.23130202"
         }
     ],
-    "1290": [
+    "8290": [
         {
-            "img_index": "8095",
-            "distance": "0.25375038"
+            "img_index": "6635",
+            "distance": "0.2629416"
         },
         {
-            "img_index": "13347",
-            "distance": "0.25234777"
+            "img_index": "5949",
+            "distance": "0.24374142"
         },
         {
-            "img_index": "6385",
-            "distance": "0.25082833"
+            "img_index": "5819",
+            "distance": "0.23909935"
         }
     ],
-    "3565": [
-        {
-            "img_index": "10725",
-            "distance": "0.27082202"
-        },
+    "12382": [
         {
             "img_index": "9560",
-            "distance": "0.26144558"
+            "distance": "0.25313622"
         },
         {
-            "img_index": "13347",
-            "distance": "0.24712244"
+            "img_index": "9063",
+            "distance": "0.24111848"
+        },
+        {
+            "img_index": "6635",
+            "distance": "0.23678304"
         }
     ],
-    "1985": [
+    "6947": [
         {
-            "img_index": "2687",
-            "distance": "0.24029824"
+            "img_index": "6947",
+            "distance": "0.26242346"
         },
         {
-            "img_index": "4843",
-            "distance": "0.239973"
+            "img_index": "6406",
+            "distance": "0.2581561"
         },
         {
-            "img_index": "4467",
-            "distance": "0.239973"
+            "img_index": "11167",
+            "distance": "0.23862837"
         }
     ],
     "13111": [
         {
-            "img_index": "8435",
-            "distance": "0.32430077"
-        },
-        {
             "img_index": "3927",
-            "distance": "0.32420072"
+            "distance": "0.32695568"
         },
         {
-            "img_index": "13337",
-            "distance": "0.29366598"
+            "img_index": "6639",
+            "distance": "0.295066"
+        },
+        {
+            "img_index": "10872",
+            "distance": "0.2653479"
         }
     ],
     "4903": [
         {
-            "img_index": "412",
-            "distance": "0.2535806"
+            "img_index": "12382",
+            "distance": "0.23349293"
         },
         {
-            "img_index": "13020",
-            "distance": "0.25077236"
+            "img_index": "4903",
+            "distance": "0.22999367"
         },
         {
-            "img_index": "2687",
-            "distance": "0.25024"
+            "img_index": "2758",
+            "distance": "0.22661787"
         }
     ],
     "4346": [
         {
-            "img_index": "51",
-            "distance": "0.26860017"
-        },
-        {
-            "img_index": "9448",
-            "distance": "0.2596244"
-        },
-        {
             "img_index": "4346",
-            "distance": "0.23721348"
+            "distance": "0.2282138"
+        },
+        {
+            "img_index": "2207",
+            "distance": "0.22160912"
+        },
+        {
+            "img_index": "12011",
+            "distance": "0.2145836"
         }
     ],
     "62": [
         {
             "img_index": "7701",
-            "distance": "0.35249254"
+            "distance": "0.2623657"
         },
         {
-            "img_index": "12713",
-            "distance": "0.34290022"
+            "img_index": "12999",
+            "distance": "0.25989294"
         },
         {
-            "img_index": "12744",
-            "distance": "0.34022105"
+            "img_index": "624",
+            "distance": "0.2508665"
         }
     ],
     "789": [
         {
-            "img_index": "10830",
-            "distance": "0.29654163"
+            "img_index": "789",
+            "distance": "0.2760628"
         },
         {
-            "img_index": "6297",
-            "distance": "0.28270683"
+            "img_index": "5949",
+            "distance": "0.2387991"
         },
         {
-            "img_index": "11234",
-            "distance": "0.28080946"
+            "img_index": "5876",
+            "distance": "0.23059545"
         }
     ],
     "4022": [
         {
-            "img_index": "4957",
-            "distance": "0.25381106"
+            "img_index": "7117",
+            "distance": "0.22824769"
         },
         {
-            "img_index": "4843",
-            "distance": "0.23448715"
+            "img_index": "416",
+            "distance": "0.22660857"
         },
         {
-            "img_index": "4467",
-            "distance": "0.23448715"
+            "img_index": "3337",
+            "distance": "0.22573483"
         }
     ],
     "8489": [
         {
-            "img_index": "10347",
-            "distance": "0.2773692"
-        },
-        {
             "img_index": "8489",
-            "distance": "0.27247784"
+            "distance": "0.27013147"
         },
         {
-            "img_index": "5074",
-            "distance": "0.26965895"
+            "img_index": "3838",
+            "distance": "0.2604903"
+        },
+        {
+            "img_index": "11805",
+            "distance": "0.25716454"
         }
     ],
     "88": [
         {
-            "img_index": "11518",
-            "distance": "0.23878364"
+            "img_index": "3927",
+            "distance": "0.23856682"
         },
         {
-            "img_index": "3373",
-            "distance": "0.23819457"
+            "img_index": "88",
+            "distance": "0.22949149"
         },
         {
-            "img_index": "11869",
-            "distance": "0.23739108"
+            "img_index": "3198",
+            "distance": "0.22834292"
         }
     ],
     "3598": [
         {
-            "img_index": "12407",
-            "distance": "0.31565186"
-        },
-        {
             "img_index": "3598",
-            "distance": "0.31335592"
+            "distance": "0.27463824"
         },
         {
-            "img_index": "99",
-            "distance": "0.31260228"
+            "img_index": "5986",
+            "distance": "0.27221543"
+        },
+        {
+            "img_index": "5936",
+            "distance": "0.2632954"
         }
     ],
     "109": [
         {
-            "img_index": "8620",
-            "distance": "0.28694117"
+            "img_index": "7579",
+            "distance": "0.26413396"
         },
         {
-            "img_index": "105",
-            "distance": "0.2790621"
+            "img_index": "109",
+            "distance": "0.25087565"
         },
         {
-            "img_index": "13048",
-            "distance": "0.277365"
+            "img_index": "9683",
+            "distance": "0.24646875"
         }
     ],
     "9887": [
         {
-            "img_index": "1648",
-            "distance": "0.28139085"
+            "img_index": "9887",
+            "distance": "0.24270703"
         },
         {
-            "img_index": "6348",
-            "distance": "0.2775327"
+            "img_index": "3605",
+            "distance": "0.22721832"
         },
         {
-            "img_index": "3192",
-            "distance": "0.2735679"
+            "img_index": "5949",
+            "distance": "0.2260375"
         }
     ],
     "8326": [
         {
-            "img_index": "6848",
-            "distance": "0.25360855"
+            "img_index": "10633",
+            "distance": "0.2413157"
         },
         {
-            "img_index": "4153",
-            "distance": "0.25331944"
+            "img_index": "5949",
+            "distance": "0.23253071"
         },
         {
-            "img_index": "648",
-            "distance": "0.2527919"
+            "img_index": "9081",
+            "distance": "0.22712874"
         }
     ],
     "10717": [
         {
             "img_index": "7950",
-            "distance": "0.2930176"
+            "distance": "0.27231312"
         },
         {
-            "img_index": "10631",
-            "distance": "0.28614977"
+            "img_index": "3149",
+            "distance": "0.23809454"
         },
         {
-            "img_index": "5808",
-            "distance": "0.27802718"
+            "img_index": "10717",
+            "distance": "0.23196247"
         }
     ],
-    "5759": [
+    "6635": [
         {
-            "img_index": "9154",
-            "distance": "0.2699068"
+            "img_index": "6635",
+            "distance": "0.24718112"
         },
         {
-            "img_index": "886",
-            "distance": "0.26962867"
+            "img_index": "12999",
+            "distance": "0.24105299"
         },
         {
-            "img_index": "5759",
-            "distance": "0.26884323"
+            "img_index": "5949",
+            "distance": "0.23843414"
         }
     ],
     "995": [
         {
-            "img_index": "905",
-            "distance": "0.23198178"
+            "img_index": "5438",
+            "distance": "0.23495473"
         },
         {
-            "img_index": "968",
-            "distance": "0.22966641"
+            "img_index": "12882",
+            "distance": "0.2306218"
         },
         {
-            "img_index": "1193",
-            "distance": "0.22963037"
+            "img_index": "10978",
+            "distance": "0.23002526"
         }
     ],
     "3568": [
         {
             "img_index": "3568",
-            "distance": "0.29655656"
+            "distance": "0.2841035"
         },
         {
-            "img_index": "3667",
-            "distance": "0.29150677"
+            "img_index": "3927",
+            "distance": "0.24567059"
         },
         {
-            "img_index": "8564",
-            "distance": "0.28443158"
+            "img_index": "416",
+            "distance": "0.23575944"
         }
     ],
     "187": [
         {
-            "img_index": "1799",
-            "distance": "0.2753616"
+            "img_index": "2370",
+            "distance": "0.2470092"
         },
         {
-            "img_index": "6217",
-            "distance": "0.27351037"
+            "img_index": "187",
+            "distance": "0.24478412"
         },
         {
-            "img_index": "8260",
-            "distance": "0.26716453"
+            "img_index": "12999",
+            "distance": "0.24463414"
         }
     ],
     "2297": [
         {
-            "img_index": "8502",
-            "distance": "0.32121834"
+            "img_index": "2297",
+            "distance": "0.27757362"
         },
         {
-            "img_index": "4231",
-            "distance": "0.30483916"
+            "img_index": "11881",
+            "distance": "0.26062915"
         },
         {
-            "img_index": "9988",
-            "distance": "0.2980887"
+            "img_index": "11167",
+            "distance": "0.23345035"
         }
     ],
-    "385": [
+    "3605": [
         {
-            "img_index": "12333",
-            "distance": "0.29094383"
+            "img_index": "6635",
+            "distance": "0.24692383"
         },
         {
-            "img_index": "4596",
-            "distance": "0.28953978"
+            "img_index": "3605",
+            "distance": "0.24308795"
         },
         {
-            "img_index": "9757",
-            "distance": "0.2882561"
+            "img_index": "13315",
+            "distance": "0.23773861"
         }
     ],
-    "3906": [
+    "4216": [
         {
-            "img_index": "1604",
-            "distance": "0.30041945"
+            "img_index": "4216",
+            "distance": "0.3022853"
         },
         {
-            "img_index": "3906",
-            "distance": "0.298823"
+            "img_index": "8489",
+            "distance": "0.2612276"
         },
         {
-            "img_index": "10397",
-            "distance": "0.2912116"
+            "img_index": "11167",
+            "distance": "0.23684618"
         }
     ],
     "2876": [
         {
+            "img_index": "3927",
+            "distance": "0.25712544"
+        },
+        {
+            "img_index": "4579",
+            "distance": "0.24033625"
+        },
+        {
             "img_index": "4903",
-            "distance": "0.26261562"
-        },
-        {
-            "img_index": "42",
-            "distance": "0.25659066"
-        },
-        {
-            "img_index": "5949",
-            "distance": "0.25153682"
+            "distance": "0.23917767"
         }
     ],
     "8222": [
         {
-            "img_index": "609",
-            "distance": "0.3062907"
+            "img_index": "7607",
+            "distance": "0.27899268"
         },
         {
-            "img_index": "4363",
-            "distance": "0.2996435"
+            "img_index": "8027",
+            "distance": "0.2784018"
         },
         {
-            "img_index": "12304",
-            "distance": "0.29827204"
+            "img_index": "5986",
+            "distance": "0.27160463"
         }
     ],
     "6022": [
         {
-            "img_index": "11939",
-            "distance": "0.26763836"
+            "img_index": "6022",
+            "distance": "0.26687986"
         },
         {
-            "img_index": "3981",
-            "distance": "0.26646587"
+            "img_index": "5407",
+            "distance": "0.2654001"
         },
         {
             "img_index": "459",
-            "distance": "0.26367232"
+            "distance": "0.263281"
         }
     ],
     "7337": [
         {
-            "img_index": "9111",
-            "distance": "0.27247304"
+            "img_index": "9241",
+            "distance": "0.2575273"
         },
         {
-            "img_index": "252",
-            "distance": "0.26130942"
+            "img_index": "7337",
+            "distance": "0.25526443"
         },
         {
-            "img_index": "7381",
-            "distance": "0.25989953"
+            "img_index": "7914",
+            "distance": "0.24091858"
         }
     ],
     "3149": [
         {
-            "img_index": "7790",
-            "distance": "0.26849526"
-        },
-        {
-            "img_index": "8312",
-            "distance": "0.25676346"
-        },
-        {
             "img_index": "3149",
-            "distance": "0.24443801"
+            "distance": "0.24614663"
+        },
+        {
+            "img_index": "4903",
+            "distance": "0.239515"
+        },
+        {
+            "img_index": "11167",
+            "distance": "0.23837098"
         }
     ],
     "285": [
         {
-            "img_index": "6348",
-            "distance": "0.2604633"
+            "img_index": "6635",
+            "distance": "0.21783438"
         },
         {
-            "img_index": "9154",
-            "distance": "0.24748805"
+            "img_index": "9683",
+            "distance": "0.21270636"
         },
         {
-            "img_index": "1648",
-            "distance": "0.24724957"
+            "img_index": "6341",
+            "distance": "0.2121889"
         }
     ],
     "5715": [
         {
             "img_index": "624",
-            "distance": "0.26158822"
+            "distance": "0.2644413"
         },
         {
             "img_index": "12999",
-            "distance": "0.25823477"
+            "distance": "0.2507391"
         },
         {
-            "img_index": "1969",
-            "distance": "0.25607076"
+            "img_index": "12011",
+            "distance": "0.22641504"
         }
     ],
     "5541": [
         {
-            "img_index": "299",
-            "distance": "0.25585905"
-        },
-        {
             "img_index": "5541",
-            "distance": "0.23995166"
+            "distance": "0.23290956"
         },
         {
-            "img_index": "4843",
-            "distance": "0.23585428"
+            "img_index": "3568",
+            "distance": "0.22083509"
+        },
+        {
+            "img_index": "2750",
+            "distance": "0.21505249"
         }
     ],
     "12930": [
         {
-            "img_index": "3606",
-            "distance": "0.3314612"
+            "img_index": "5986",
+            "distance": "0.27978557"
         },
         {
-            "img_index": "12304",
-            "distance": "0.3304317"
+            "img_index": "8027",
+            "distance": "0.27816308"
         },
         {
-            "img_index": "5225",
-            "distance": "0.31745625"
+            "img_index": "7607",
+            "distance": "0.27276006"
         }
     ],
     "306": [
         {
             "img_index": "13259",
-            "distance": "0.27200437"
+            "distance": "0.26671118"
         },
         {
-            "img_index": "10387",
-            "distance": "0.25900096"
+            "img_index": "7808",
+            "distance": "0.25485098"
         },
         {
-            "img_index": "3504",
-            "distance": "0.2588235"
+            "img_index": "3927",
+            "distance": "0.2522135"
         }
     ],
     "9683": [
         {
-            "img_index": "12483",
-            "distance": "0.2665361"
+            "img_index": "3598",
+            "distance": "0.24935213"
         },
         {
-            "img_index": "9712",
-            "distance": "0.26606616"
+            "img_index": "9716",
+            "distance": "0.24242619"
         },
         {
-            "img_index": "5982",
-            "distance": "0.2656204"
+            "img_index": "11167",
+            "distance": "0.24068585"
         }
     ],
     "2396": [
         {
-            "img_index": "8620",
-            "distance": "0.31512478"
-        },
-        {
             "img_index": "7579",
-            "distance": "0.27957445"
+            "distance": "0.25984025"
         },
         {
-            "img_index": "105",
-            "distance": "0.26756513"
+            "img_index": "3927",
+            "distance": "0.24370696"
+        },
+        {
+            "img_index": "109",
+            "distance": "0.24002859"
         }
     ],
     "4334": [
         {
-            "img_index": "2733",
-            "distance": "0.28464812"
+            "img_index": "4334",
+            "distance": "0.2542784"
         },
         {
-            "img_index": "8260",
-            "distance": "0.28370994"
+            "img_index": "6030",
+            "distance": "0.2507919"
         },
         {
-            "img_index": "1799",
-            "distance": "0.27746072"
+            "img_index": "2370",
+            "distance": "0.23387799"
         }
     ],
     "5936": [
         {
-            "img_index": "344",
-            "distance": "0.31732878"
+            "img_index": "7607",
+            "distance": "0.26896515"
         },
         {
-            "img_index": "5936",
-            "distance": "0.30044782"
+            "img_index": "5986",
+            "distance": "0.2654701"
         },
         {
-            "img_index": "1350",
-            "distance": "0.28799745"
+            "img_index": "8027",
+            "distance": "0.26031741"
         }
     ],
     "4760": [
         {
-            "img_index": "12065",
-            "distance": "0.28868976"
-        },
-        {
-            "img_index": "919",
-            "distance": "0.28651008"
-        },
-        {
             "img_index": "1555",
-            "distance": "0.27910104"
+            "distance": "0.29546902"
+        },
+        {
+            "img_index": "4760",
+            "distance": "0.2950099"
+        },
+        {
+            "img_index": "980",
+            "distance": "0.27707517"
         }
     ],
     "8340": [
         {
-            "img_index": "5971",
-            "distance": "0.30417445"
+            "img_index": "8340",
+            "distance": "0.2663846"
         },
         {
-            "img_index": "10556",
-            "distance": "0.3002308"
+            "img_index": "3270",
+            "distance": "0.26247913"
         },
         {
-            "img_index": "4003",
-            "distance": "0.29888293"
+            "img_index": "7579",
+            "distance": "0.25907463"
         }
     ],
     "3337": [
         {
-            "img_index": "9156",
-            "distance": "0.2855045"
+            "img_index": "3200",
+            "distance": "0.26799998"
         },
         {
-            "img_index": "4957",
-            "distance": "0.2775206"
+            "img_index": "7358",
+            "distance": "0.25976902"
         },
         {
-            "img_index": "377",
-            "distance": "0.27674514"
+            "img_index": "3337",
+            "distance": "0.24702933"
         }
     ],
     "11659": [
         {
-            "img_index": "5524",
-            "distance": "0.3028228"
-        },
-        {
-            "img_index": "387",
-            "distance": "0.2873626"
-        },
-        {
             "img_index": "11659",
-            "distance": "0.28466928"
+            "distance": "0.27536184"
+        },
+        {
+            "img_index": "8340",
+            "distance": "0.26873666"
+        },
+        {
+            "img_index": "3270",
+            "distance": "0.24398446"
         }
     ],
     "9664": [
         {
             "img_index": "9664",
-            "distance": "0.26354158"
+            "distance": "0.25850287"
         },
         {
-            "img_index": "397",
-            "distance": "0.25897187"
+            "img_index": "3805",
+            "distance": "0.24947491"
         },
         {
-            "img_index": "7610",
-            "distance": "0.25748014"
+            "img_index": "12011",
+            "distance": "0.2386946"
         }
     ],
     "3277": [
         {
-            "img_index": "1969",
-            "distance": "0.28926423"
+            "img_index": "624",
+            "distance": "0.24935329"
         },
         {
-            "img_index": "2294",
-            "distance": "0.2848479"
+            "img_index": "12999",
+            "distance": "0.23879506"
         },
         {
             "img_index": "3277",
-            "distance": "0.2762175"
+            "distance": "0.23869582"
         }
     ],
     "10812": [
         {
-            "img_index": "412",
-            "distance": "0.2741119"
-        },
-        {
-            "img_index": "638",
-            "distance": "0.2681541"
-        },
-        {
             "img_index": "10812",
-            "distance": "0.26286718"
+            "distance": "0.26077148"
+        },
+        {
+            "img_index": "4022",
+            "distance": "0.23677462"
+        },
+        {
+            "img_index": "3337",
+            "distance": "0.23472276"
         }
     ],
     "11322": [
         {
-            "img_index": "12304",
-            "distance": "0.33155262"
+            "img_index": "8027",
+            "distance": "0.28047693"
         },
         {
-            "img_index": "6338",
-            "distance": "0.32147285"
+            "img_index": "5986",
+            "distance": "0.28020415"
         },
         {
-            "img_index": "3606",
-            "distance": "0.31829643"
+            "img_index": "7607",
+            "distance": "0.27453268"
         }
     ],
     "416": [
         {
-            "img_index": "2833",
-            "distance": "0.32331452"
+            "img_index": "416",
+            "distance": "0.29894036"
         },
         {
-            "img_index": "2296",
-            "distance": "0.3219983"
+            "img_index": "3721",
+            "distance": "0.25982538"
         },
         {
-            "img_index": "12110",
-            "distance": "0.32177347"
+            "img_index": "4869",
+            "distance": "0.24183744"
         }
     ],
     "6976": [
         {
-            "img_index": "2901",
-            "distance": "0.2925834"
+            "img_index": "3397",
+            "distance": "0.29147172"
         },
         {
-            "img_index": "2093",
-            "distance": "0.29158372"
+            "img_index": "10051",
+            "distance": "0.29106534"
         },
         {
-            "img_index": "12412",
-            "distance": "0.28475994"
+            "img_index": "11780",
+            "distance": "0.28412166"
         }
     ],
     "10051": [
         {
-            "img_index": "11922",
-            "distance": "0.306595"
-        },
-        {
             "img_index": "10051",
-            "distance": "0.30288723"
+            "distance": "0.2851112"
         },
         {
-            "img_index": "8208",
-            "distance": "0.30155307"
+            "img_index": "10872",
+            "distance": "0.26092386"
+        },
+        {
+            "img_index": "10288",
+            "distance": "0.25936493"
         }
     ],
     "441": [
         {
-            "img_index": "3301",
-            "distance": "0.2952644"
+            "img_index": "441",
+            "distance": "0.27304325"
         },
         {
-            "img_index": "9850",
-            "distance": "0.28507912"
+            "img_index": "3927",
+            "distance": "0.2563392"
         },
         {
-            "img_index": "4899",
-            "distance": "0.274822"
+            "img_index": "10872",
+            "distance": "0.24170412"
         }
     ],
     "459": [
         {
             "img_index": "459",
-            "distance": "0.3113911"
+            "distance": "0.2719159"
         },
         {
-            "img_index": "3981",
-            "distance": "0.3112072"
+            "img_index": "5407",
+            "distance": "0.26915509"
         },
         {
-            "img_index": "5834",
-            "distance": "0.30912873"
+            "img_index": "11780",
+            "distance": "0.26355797"
         }
     ],
     "10446": [
         {
-            "img_index": "3301",
-            "distance": "0.31317317"
+            "img_index": "5986",
+            "distance": "0.25854814"
         },
         {
-            "img_index": "3606",
-            "distance": "0.29732063"
+            "img_index": "8027",
+            "distance": "0.25704193"
         },
         {
-            "img_index": "5225",
-            "distance": "0.29142913"
+            "img_index": "7607",
+            "distance": "0.25657362"
         }
     ],
     "2026": [
         {
-            "img_index": "10989",
-            "distance": "0.30773744"
-        },
-        {
             "img_index": "2026",
-            "distance": "0.28573862"
+            "distance": "0.26708424"
         },
         {
-            "img_index": "485",
-            "distance": "0.28509903"
+            "img_index": "1282",
+            "distance": "0.25173452"
+        },
+        {
+            "img_index": "3270",
+            "distance": "0.24368984"
         }
     ],
     "5131": [
         {
-            "img_index": "496",
-            "distance": "0.29719737"
-        },
-        {
-            "img_index": "10811",
-            "distance": "0.29433036"
-        },
-        {
             "img_index": "5131",
-            "distance": "0.2797141"
+            "distance": "0.279714"
+        },
+        {
+            "img_index": "10633",
+            "distance": "0.27615327"
+        },
+        {
+            "img_index": "8466",
+            "distance": "0.2626655"
         }
     ],
     "7040": [
         {
             "img_index": "2013",
-            "distance": "0.2841242"
+            "distance": "0.27121615"
         },
         {
-            "img_index": "4588",
-            "distance": "0.27074915"
+            "img_index": "2750",
+            "distance": "0.25381988"
         },
         {
-            "img_index": "2150",
-            "distance": "0.2674076"
-        }
-    ],
-    "510": [
-        {
-            "img_index": "81",
-            "distance": "0.303478"
-        },
-        {
-            "img_index": "3040",
-            "distance": "0.29709244"
-        },
-        {
-            "img_index": "7224",
-            "distance": "0.29372844"
+            "img_index": "7040",
+            "distance": "0.24730729"
         }
     ],
     "663": [
         {
-            "img_index": "10323",
-            "distance": "0.23179129"
+            "img_index": "12999",
+            "distance": "0.24449375"
         },
         {
-            "img_index": "4843",
-            "distance": "0.23016647"
+            "img_index": "9081",
+            "distance": "0.23374045"
         },
         {
-            "img_index": "4467",
-            "distance": "0.23016647"
+            "img_index": "10633",
+            "distance": "0.23326668"
         }
     ],
     "3838": [
         {
-            "img_index": "10347",
-            "distance": "0.2817134"
+            "img_index": "3838",
+            "distance": "0.27964205"
         },
         {
             "img_index": "8489",
-            "distance": "0.28126997"
+            "distance": "0.27934393"
         },
         {
-            "img_index": "1248",
-            "distance": "0.28057268"
+            "img_index": "9365",
+            "distance": "0.27114326"
         }
     ],
     "548": [
         {
-            "img_index": "4464",
-            "distance": "0.32554835"
+            "img_index": "3927",
+            "distance": "0.25248474"
         },
         {
-            "img_index": "3040",
-            "distance": "0.32182115"
+            "img_index": "10872",
+            "distance": "0.24252883"
         },
         {
-            "img_index": "6053",
-            "distance": "0.3208161"
+            "img_index": "9683",
+            "distance": "0.2404649"
         }
     ],
     "6211": [
         {
-            "img_index": "3504",
-            "distance": "0.31460962"
-        },
-        {
             "img_index": "13259",
-            "distance": "0.3139709"
+            "distance": "0.312223"
         },
         {
-            "img_index": "10387",
-            "distance": "0.29777312"
+            "img_index": "6211",
+            "distance": "0.27720624"
+        },
+        {
+            "img_index": "7808",
+            "distance": "0.26828897"
         }
     ],
     "5245": [
         {
-            "img_index": "3606",
-            "distance": "0.2993639"
-        },
-        {
-            "img_index": "12808",
-            "distance": "0.29401815"
-        },
-        {
             "img_index": "7607",
-            "distance": "0.29274645"
+            "distance": "0.2853804"
+        },
+        {
+            "img_index": "5986",
+            "distance": "0.2833217"
+        },
+        {
+            "img_index": "8027",
+            "distance": "0.27571073"
         }
     ],
     "10872": [
         {
-            "img_index": "11907",
-            "distance": "0.26759127"
+            "img_index": "10872",
+            "distance": "0.27134195"
         },
         {
-            "img_index": "7827",
-            "distance": "0.2652093"
+            "img_index": "11167",
+            "distance": "0.24233688"
         },
         {
-            "img_index": "10329",
-            "distance": "0.26316813"
+            "img_index": "6639",
+            "distance": "0.23947889"
         }
     ],
     "4869": [
         {
-            "img_index": "12304",
-            "distance": "0.2976846"
+            "img_index": "4869",
+            "distance": "0.28642115"
         },
         {
-            "img_index": "4141",
-            "distance": "0.29274198"
+            "img_index": "8080",
+            "distance": "0.27294648"
         },
         {
-            "img_index": "609",
-            "distance": "0.29236418"
+            "img_index": "3927",
+            "distance": "0.2607262"
         }
     ],
     "12882": [
         {
-            "img_index": "8530",
-            "distance": "0.26095128"
+            "img_index": "12882",
+            "distance": "0.24198732"
         },
         {
-            "img_index": "9601",
-            "distance": "0.24970067"
+            "img_index": "13082",
+            "distance": "0.2394198"
         },
         {
-            "img_index": "10805",
-            "distance": "0.24848886"
+            "img_index": "3721",
+            "distance": "0.23694654"
         }
     ],
     "7342": [
         {
             "img_index": "3198",
-            "distance": "0.28072098"
+            "distance": "0.2795357"
         },
         {
-            "img_index": "574",
-            "distance": "0.28056404"
+            "img_index": "7342",
+            "distance": "0.27323842"
         },
         {
-            "img_index": "12437",
-            "distance": "0.2774466"
+            "img_index": "11167",
+            "distance": "0.25438732"
         }
     ],
     "9716": [
         {
-            "img_index": "9480",
-            "distance": "0.24519426"
+            "img_index": "10872",
+            "distance": "0.25037426"
         },
         {
             "img_index": "822",
-            "distance": "0.24292979"
+            "distance": "0.23886472"
         },
         {
-            "img_index": "595",
-            "distance": "0.24206941"
+            "img_index": "3927",
+            "distance": "0.23434936"
         }
     ],
     "5043": [
         {
-            "img_index": "609",
-            "distance": "0.30871147"
+            "img_index": "7607",
+            "distance": "0.28306082"
         },
         {
-            "img_index": "12304",
-            "distance": "0.3022743"
+            "img_index": "5986",
+            "distance": "0.28070813"
         },
         {
-            "img_index": "10298",
-            "distance": "0.30030432"
+            "img_index": "8027",
+            "distance": "0.27151275"
         }
     ],
     "624": [
         {
-            "img_index": "2294",
-            "distance": "0.2551052"
+            "img_index": "3277",
+            "distance": "0.24067827"
         },
         {
-            "img_index": "1969",
-            "distance": "0.24805208"
+            "img_index": "624",
+            "distance": "0.23508479"
         },
         {
-            "img_index": "8933",
-            "distance": "0.24399179"
+            "img_index": "12999",
+            "distance": "0.22905532"
         }
     ],
     "4630": [
         {
-            "img_index": "5447",
-            "distance": "0.29028645"
-        },
-        {
             "img_index": "2440",
-            "distance": "0.28892168"
+            "distance": "0.26628876"
         },
         {
-            "img_index": "5890",
-            "distance": "0.28326088"
+            "img_index": "4630",
+            "distance": "0.2577821"
+        },
+        {
+            "img_index": "1248",
+            "distance": "0.2538191"
         }
     ],
     "11832": [
         {
-            "img_index": "81",
-            "distance": "0.2939732"
+            "img_index": "4809",
+            "distance": "0.24921575"
         },
         {
-            "img_index": "6433",
-            "distance": "0.28289202"
+            "img_index": "10107",
+            "distance": "0.24759437"
         },
         {
-            "img_index": "7224",
-            "distance": "0.26056418"
+            "img_index": "7579",
+            "distance": "0.24279107"
         }
     ],
     "12047": [
         {
-            "img_index": "5823",
-            "distance": "0.2586116"
+            "img_index": "12999",
+            "distance": "0.25287127"
         },
         {
-            "img_index": "10018",
-            "distance": "0.257043"
+            "img_index": "6341",
+            "distance": "0.24360068"
         },
         {
-            "img_index": "13312",
-            "distance": "0.25300604"
+            "img_index": "12011",
+            "distance": "0.2297959"
         }
     ],
     "5407": [
         {
+            "img_index": "11780",
+            "distance": "0.27582228"
+        },
+        {
             "img_index": "5407",
-            "distance": "0.3172748"
+            "distance": "0.2721315"
         },
         {
-            "img_index": "11939",
-            "distance": "0.31099653"
-        },
-        {
-            "img_index": "3131",
-            "distance": "0.31076047"
+            "img_index": "459",
+            "distance": "0.26891658"
         }
     ],
     "2207": [
         {
-            "img_index": "1384",
-            "distance": "0.3054486"
+            "img_index": "2207",
+            "distance": "0.2887724"
         },
         {
-            "img_index": "683",
-            "distance": "0.2987488"
+            "img_index": "3805",
+            "distance": "0.23557965"
         },
         {
-            "img_index": "3005",
-            "distance": "0.29395127"
+            "img_index": "10633",
+            "distance": "0.23448506"
         }
     ],
     "13312": [
         {
-            "img_index": "9448",
-            "distance": "0.28802407"
+            "img_index": "2207",
+            "distance": "0.2571249"
         },
         {
-            "img_index": "5823",
-            "distance": "0.28204286"
+            "img_index": "12011",
+            "distance": "0.24581155"
         },
         {
-            "img_index": "10018",
-            "distance": "0.28003162"
+            "img_index": "12999",
+            "distance": "0.24178377"
         }
     ],
     "10818": [
         {
-            "img_index": "1998",
-            "distance": "0.30313018"
-        },
-        {
-            "img_index": "702",
-            "distance": "0.29658315"
-        },
-        {
             "img_index": "10818",
-            "distance": "0.29517648"
+            "distance": "0.29089653"
+        },
+        {
+            "img_index": "1153",
+            "distance": "0.23386693"
+        },
+        {
+            "img_index": "2750",
+            "distance": "0.2333805"
         }
     ],
-    "2871": [
+    "7249": [
         {
-            "img_index": "1874",
-            "distance": "0.24545914"
+            "img_index": "7249",
+            "distance": "0.2594185"
         },
         {
-            "img_index": "8148",
-            "distance": "0.24068046"
+            "img_index": "416",
+            "distance": "0.23386809"
         },
         {
-            "img_index": "711",
-            "distance": "0.24006997"
+            "img_index": "3927",
+            "distance": "0.22470762"
         }
     ],
-    "1323": [
+    "3397": [
         {
-            "img_index": "2901",
-            "distance": "0.3036585"
+            "img_index": "10051",
+            "distance": "0.29360533"
         },
         {
-            "img_index": "2093",
-            "distance": "0.2915664"
+            "img_index": "3397",
+            "distance": "0.28504634"
         },
         {
-            "img_index": "7498",
-            "distance": "0.28945768"
+            "img_index": "11780",
+            "distance": "0.28444725"
         }
     ],
     "3198": [
         {
-            "img_index": "6894",
-            "distance": "0.2820326"
+            "img_index": "4262",
+            "distance": "0.2459904"
         },
         {
-            "img_index": "754",
-            "distance": "0.26964465"
+            "img_index": "7537",
+            "distance": "0.23888946"
         },
         {
-            "img_index": "7408",
-            "distance": "0.2529205"
+            "img_index": "4812",
+            "distance": "0.23885354"
         }
     ],
     "779": [
         {
-            "img_index": "7408",
-            "distance": "0.27941886"
+            "img_index": "4403",
+            "distance": "0.25594202"
         },
         {
-            "img_index": "11348",
-            "distance": "0.27737087"
+            "img_index": "779",
+            "distance": "0.25384027"
         },
         {
-            "img_index": "11927",
-            "distance": "0.27029806"
+            "img_index": "4262",
+            "distance": "0.24043871"
         }
     ],
     "6313": [
         {
-            "img_index": "12798",
-            "distance": "0.27603132"
-        },
-        {
-            "img_index": "788",
-            "distance": "0.26974508"
-        },
-        {
             "img_index": "6313",
-            "distance": "0.26923263"
+            "distance": "0.26718795"
+        },
+        {
+            "img_index": "3927",
+            "distance": "0.26202965"
+        },
+        {
+            "img_index": "6341",
+            "distance": "0.23907574"
         }
     ],
     "6406": [
         {
             "img_index": "6406",
-            "distance": "0.26937443"
+            "distance": "0.26277632"
         },
         {
-            "img_index": "5447",
-            "distance": "0.2650266"
+            "img_index": "2440",
+            "distance": "0.25725552"
         },
         {
-            "img_index": "5890",
-            "distance": "0.2580194"
+            "img_index": "4630",
+            "distance": "0.24967927"
         }
     ],
     "4505": [
         {
-            "img_index": "10254",
-            "distance": "0.2932737"
+            "img_index": "3200",
+            "distance": "0.29365367"
         },
         {
-            "img_index": "7841",
-            "distance": "0.29251245"
+            "img_index": "7358",
+            "distance": "0.29009593"
         },
         {
-            "img_index": "7029",
-            "distance": "0.2896065"
+            "img_index": "4505",
+            "distance": "0.2720267"
         }
     ],
     "822": [
         {
             "img_index": "822",
-            "distance": "0.279825"
+            "distance": "0.27810338"
         },
         {
-            "img_index": "8530",
-            "distance": "0.2527082"
+            "img_index": "3198",
+            "distance": "0.2289333"
         },
         {
-            "img_index": "9863",
-            "distance": "0.2479145"
+            "img_index": "4277",
+            "distance": "0.22716483"
         }
     ],
-    "3049": [
+    "11881": [
         {
-            "img_index": "9988",
-            "distance": "0.33499163"
+            "img_index": "11881",
+            "distance": "0.29061687"
         },
         {
-            "img_index": "3049",
-            "distance": "0.29570195"
+            "img_index": "1555",
+            "distance": "0.25340742"
         },
         {
-            "img_index": "826",
-            "distance": "0.28748018"
+            "img_index": "1444",
+            "distance": "0.23833527"
         }
     ],
     "12354": [
         {
             "img_index": "12354",
-            "distance": "0.2998023"
+            "distance": "0.28520545"
         },
         {
-            "img_index": "1788",
-            "distance": "0.2978147"
+            "img_index": "10872",
+            "distance": "0.26036853"
         },
         {
-            "img_index": "10347",
-            "distance": "0.26265624"
+            "img_index": "1248",
+            "distance": "0.25474095"
         }
     ],
     "5240": [
         {
-            "img_index": "10323",
-            "distance": "0.23639894"
+            "img_index": "624",
+            "distance": "0.24321502"
         },
         {
-            "img_index": "12619",
-            "distance": "0.23491162"
+            "img_index": "9081",
+            "distance": "0.23662251"
         },
         {
-            "img_index": "4964",
-            "distance": "0.2303903"
+            "img_index": "1613",
+            "distance": "0.23557624"
         }
     ],
     "6341": [
         {
+            "img_index": "6341",
+            "distance": "0.23837033"
+        },
+        {
             "img_index": "10978",
-            "distance": "0.27427858"
+            "distance": "0.23390403"
         },
         {
-            "img_index": "11486",
-            "distance": "0.2723357"
-        },
-        {
-            "img_index": "9601",
-            "distance": "0.27039152"
+            "img_index": "12999",
+            "distance": "0.23132154"
         }
     ],
     "3200": [
         {
             "img_index": "7358",
-            "distance": "0.32347733"
+            "distance": "0.315047"
         },
         {
-            "img_index": "2229",
-            "distance": "0.31849352"
+            "img_index": "3200",
+            "distance": "0.30837902"
         },
         {
-            "img_index": "10254",
-            "distance": "0.31315023"
-        }
-    ],
-    "919": [
-        {
-            "img_index": "4760",
-            "distance": "0.31148726"
-        },
-        {
-            "img_index": "1555",
-            "distance": "0.3110146"
-        },
-        {
-            "img_index": "11869",
-            "distance": "0.30555362"
+            "img_index": "4869",
+            "distance": "0.27495316"
         }
     ],
     "12257": [
         {
-            "img_index": "3373",
-            "distance": "0.29153028"
+            "img_index": "12257",
+            "distance": "0.24795364"
         },
         {
-            "img_index": "11136",
-            "distance": "0.25942004"
+            "img_index": "3270",
+            "distance": "0.24654299"
         },
         {
-            "img_index": "387",
-            "distance": "0.25850126"
+            "img_index": "5438",
+            "distance": "0.24597096"
         }
     ],
     "6932": [
         {
-            "img_index": "9448",
-            "distance": "0.27931896"
+            "img_index": "12011",
+            "distance": "0.26136813"
         },
         {
-            "img_index": "5550",
-            "distance": "0.27605125"
+            "img_index": "624",
+            "distance": "0.24059355"
         },
         {
-            "img_index": "9577",
-            "distance": "0.2755804"
+            "img_index": "2207",
+            "distance": "0.23800969"
         }
     ],
     "5438": [
         {
-            "img_index": "968",
-            "distance": "0.3197529"
-        },
-        {
             "img_index": "5438",
-            "distance": "0.31548223"
+            "distance": "0.30981326"
         },
         {
-            "img_index": "3373",
-            "distance": "0.27737486"
+            "img_index": "11659",
+            "distance": "0.22772786"
+        },
+        {
+            "img_index": "12223",
+            "distance": "0.2259045"
+        }
+    ],
+    "980": [
+        {
+            "img_index": "4760",
+            "distance": "0.30918017"
+        },
+        {
+            "img_index": "1555",
+            "distance": "0.3080976"
+        },
+        {
+            "img_index": "980",
+            "distance": "0.29693386"
         }
     ],
     "7134": [
         {
-            "img_index": "985",
-            "distance": "0.28591996"
+            "img_index": "7134",
+            "distance": "0.26740777"
         },
         {
-            "img_index": "12828",
-            "distance": "0.28334907"
+            "img_index": "4869",
+            "distance": "0.24183048"
         },
         {
-            "img_index": "9265",
-            "distance": "0.28088507"
+            "img_index": "3927",
+            "distance": "0.24169108"
         }
     ],
     "1785": [
         {
-            "img_index": "7773",
-            "distance": "0.25114784"
+            "img_index": "6341",
+            "distance": "0.24930349"
         },
         {
-            "img_index": "5550",
-            "distance": "0.24751145"
+            "img_index": "3927",
+            "distance": "0.2438187"
         },
         {
-            "img_index": "9577",
-            "distance": "0.2450751"
+            "img_index": "12999",
+            "distance": "0.23976116"
         }
     ],
     "9241": [
         {
-            "img_index": "9111",
-            "distance": "0.27247304"
+            "img_index": "7337",
+            "distance": "0.26328453"
         },
         {
-            "img_index": "252",
-            "distance": "0.26130942"
+            "img_index": "7914",
+            "distance": "0.25674012"
         },
         {
-            "img_index": "7381",
-            "distance": "0.25989953"
+            "img_index": "9241",
+            "distance": "0.2552895"
         }
     ],
     "4277": [
         {
             "img_index": "4277",
-            "distance": "0.25232533"
-        },
-        {
-            "img_index": "10385",
-            "distance": "0.25070715"
+            "distance": "0.25759345"
         },
         {
             "img_index": "12882",
-            "distance": "0.24804974"
+            "distance": "0.24706309"
+        },
+        {
+            "img_index": "3686",
+            "distance": "0.23878634"
         }
     ],
     "5287": [
         {
             "img_index": "5287",
-            "distance": "0.2650304"
+            "distance": "0.26503038"
         },
         {
-            "img_index": "5157",
-            "distance": "0.25918645"
+            "img_index": "3927",
+            "distance": "0.25636417"
         },
         {
-            "img_index": "7399",
-            "distance": "0.25772464"
+            "img_index": "5043",
+            "distance": "0.23668003"
         }
     ],
     "11662": [
         {
-            "img_index": "10168",
-            "distance": "0.30934042"
+            "img_index": "6639",
+            "distance": "0.29266167"
         },
         {
-            "img_index": "12266",
-            "distance": "0.29576415"
+            "img_index": "3927",
+            "distance": "0.2817607"
         },
         {
-            "img_index": "12070",
-            "distance": "0.29362333"
+            "img_index": "11662",
+            "distance": "0.27414805"
         }
     ],
     "1842": [
         {
-            "img_index": "6361",
-            "distance": "0.2948857"
-        },
-        {
             "img_index": "4028",
-            "distance": "0.28097162"
+            "distance": "0.26877862"
         },
         {
-            "img_index": "1842",
-            "distance": "0.2791729"
+            "img_index": "6022",
+            "distance": "0.25847554"
+        },
+        {
+            "img_index": "6092",
+            "distance": "0.25687006"
         }
     ],
     "3270": [
         {
-            "img_index": "8435",
-            "distance": "0.3353067"
-        },
-        {
             "img_index": "3927",
-            "distance": "0.32997918"
+            "distance": "0.33619866"
         },
         {
-            "img_index": "13337",
-            "distance": "0.30486855"
+            "img_index": "6639",
+            "distance": "0.29308206"
+        },
+        {
+            "img_index": "10872",
+            "distance": "0.2722733"
         }
     ],
     "10575": [
         {
             "img_index": "10575",
-            "distance": "0.27722898"
+            "distance": "0.27671927"
         },
         {
-            "img_index": "10053",
-            "distance": "0.2767669"
+            "img_index": "4579",
+            "distance": "0.2504007"
         },
         {
-            "img_index": "2530",
-            "distance": "0.26642826"
+            "img_index": "12882",
+            "distance": "0.22424525"
         }
     ],
     "4523": [
         {
-            "img_index": "13011",
-            "distance": "0.25954062"
+            "img_index": "624",
+            "distance": "0.23745003"
         },
         {
-            "img_index": "1839",
-            "distance": "0.25281152"
+            "img_index": "416",
+            "distance": "0.2343429"
         },
         {
             "img_index": "3927",
-            "distance": "0.25213167"
+            "distance": "0.23405239"
         }
     ],
     "1153": [
         {
             "img_index": "1153",
-            "distance": "0.3206251"
+            "distance": "0.307137"
         },
         {
-            "img_index": "7722",
-            "distance": "0.29922837"
+            "img_index": "2750",
+            "distance": "0.25228962"
         },
         {
-            "img_index": "5333",
-            "distance": "0.25090894"
+            "img_index": "2437",
+            "distance": "0.24645576"
         }
     ],
-    "5220": [
+    "10378": [
         {
-            "img_index": "1171",
-            "distance": "0.2831385"
+            "img_index": "12999",
+            "distance": "0.2438998"
         },
         {
-            "img_index": "11666",
-            "distance": "0.27870557"
+            "img_index": "10378",
+            "distance": "0.23763686"
         },
         {
-            "img_index": "5220",
-            "distance": "0.27624264"
+            "img_index": "624",
+            "distance": "0.23150021"
         }
     ],
     "1224": [
         {
-            "img_index": "1604",
-            "distance": "0.268087"
+            "img_index": "4216",
+            "distance": "0.28200406"
         },
         {
-            "img_index": "11885",
-            "distance": "0.26200366"
+            "img_index": "8489",
+            "distance": "0.2504101"
         },
         {
-            "img_index": "3906",
-            "distance": "0.25989997"
+            "img_index": "11167",
+            "distance": "0.24855025"
         }
     ],
     "1248": [
         {
             "img_index": "1248",
-            "distance": "0.3176721"
+            "distance": "0.27316776"
         },
         {
-            "img_index": "9506",
-            "distance": "0.31026375"
+            "img_index": "12999",
+            "distance": "0.24800797"
         },
         {
-            "img_index": "1845",
-            "distance": "0.3100437"
+            "img_index": "5307",
+            "distance": "0.24739453"
         }
     ],
     "4262": [
         {
-            "img_index": "7408",
-            "distance": "0.274852"
+            "img_index": "4403",
+            "distance": "0.24920593"
         },
         {
-            "img_index": "11348",
-            "distance": "0.271082"
+            "img_index": "4262",
+            "distance": "0.23988268"
         },
         {
-            "img_index": "5100",
-            "distance": "0.26017928"
+            "img_index": "779",
+            "distance": "0.23910038"
         }
     ],
     "2013": [
         {
             "img_index": "2013",
-            "distance": "0.24797134"
+            "distance": "0.24192949"
         },
         {
-            "img_index": "4588",
-            "distance": "0.24772276"
+            "img_index": "7040",
+            "distance": "0.2416352"
         },
         {
-            "img_index": "2150",
-            "distance": "0.2452575"
+            "img_index": "2750",
+            "distance": "0.24068514"
         }
     ],
     "1282": [
         {
             "img_index": "1282",
-            "distance": "0.2987941"
+            "distance": "0.2721004"
         },
         {
-            "img_index": "10989",
-            "distance": "0.28691715"
+            "img_index": "2026",
+            "distance": "0.2575158"
         },
         {
-            "img_index": "9093",
-            "distance": "0.27294856"
+            "img_index": "12999",
+            "distance": "0.22987987"
         }
     ],
     "3288": [
         {
-            "img_index": "8260",
-            "distance": "0.29513073"
+            "img_index": "6030",
+            "distance": "0.26617867"
         },
         {
-            "img_index": "2733",
-            "distance": "0.29275876"
+            "img_index": "4334",
+            "distance": "0.25923964"
         },
         {
-            "img_index": "1799",
-            "distance": "0.2912147"
+            "img_index": "2370",
+            "distance": "0.24221806"
         }
     ],
     "7914": [
         {
-            "img_index": "4990",
-            "distance": "0.28343996"
+            "img_index": "7914",
+            "distance": "0.26078662"
         },
         {
-            "img_index": "1340",
-            "distance": "0.272266"
+            "img_index": "7337",
+            "distance": "0.25922942"
         },
         {
-            "img_index": "9111",
-            "distance": "0.2691895"
+            "img_index": "9241",
+            "distance": "0.24134319"
         }
     ],
     "4755": [
         {
-            "img_index": "1346",
-            "distance": "0.27208412"
+            "img_index": "4403",
+            "distance": "0.2605976"
         },
         {
-            "img_index": "7478",
-            "distance": "0.27202028"
+            "img_index": "4755",
+            "distance": "0.25410742"
         },
         {
-            "img_index": "9824",
-            "distance": "0.26515722"
+            "img_index": "4262",
+            "distance": "0.24445085"
         }
     ],
     "5876": [
         {
-            "img_index": "10719",
-            "distance": "0.29955557"
+            "img_index": "5876",
+            "distance": "0.2799431"
         },
         {
-            "img_index": "5895",
-            "distance": "0.29862207"
+            "img_index": "5949",
+            "distance": "0.276576"
         },
         {
-            "img_index": "9882",
-            "distance": "0.29441807"
+            "img_index": "4764",
+            "distance": "0.24858862"
         }
     ],
     "1444": [
         {
-            "img_index": "6642",
-            "distance": "0.3508515"
-        },
-        {
             "img_index": "1444",
-            "distance": "0.3397868"
+            "distance": "0.32122654"
         },
         {
-            "img_index": "563",
-            "distance": "0.2539484"
+            "img_index": "4869",
+            "distance": "0.25175765"
+        },
+        {
+            "img_index": "8047",
+            "distance": "0.23776802"
         }
     ],
     "3805": [
         {
-            "img_index": "8804",
-            "distance": "0.27404618"
+            "img_index": "2207",
+            "distance": "0.2698237"
         },
         {
-            "img_index": "7610",
-            "distance": "0.2720817"
+            "img_index": "3805",
+            "distance": "0.25344485"
         },
         {
-            "img_index": "1384",
-            "distance": "0.27046707"
+            "img_index": "9664",
+            "distance": "0.24893776"
         }
     ],
-    "5218": [
+    "11780": [
         {
-            "img_index": "11939",
-            "distance": "0.31445616"
+            "img_index": "11780",
+            "distance": "0.28133494"
         },
         {
-            "img_index": "7398",
-            "distance": "0.3129814"
+            "img_index": "10051",
+            "distance": "0.27500102"
         },
         {
             "img_index": "5407",
-            "distance": "0.31147277"
+            "distance": "0.2691207"
         }
     ],
     "7047": [
         {
-            "img_index": "3301",
-            "distance": "0.32203162"
+            "img_index": "8027",
+            "distance": "0.2691186"
         },
         {
-            "img_index": "12304",
-            "distance": "0.31084672"
+            "img_index": "5986",
+            "distance": "0.26724398"
         },
         {
-            "img_index": "3606",
-            "distance": "0.306204"
+            "img_index": "3200",
+            "distance": "0.26080477"
         }
     ],
     "8027": [
         {
-            "img_index": "12304",
-            "distance": "0.3056103"
-        },
-        {
             "img_index": "8027",
-            "distance": "0.3045399"
+            "distance": "0.2878695"
         },
         {
-            "img_index": "3606",
-            "distance": "0.3019754"
+            "img_index": "5986",
+            "distance": "0.27533746"
+        },
+        {
+            "img_index": "7607",
+            "distance": "0.27196804"
         }
     ],
     "1555": [
         {
             "img_index": "1555",
-            "distance": "0.31099546"
-        },
-        {
-            "img_index": "12065",
-            "distance": "0.30971012"
+            "distance": "0.3059774"
         },
         {
             "img_index": "4760",
-            "distance": "0.30838904"
+            "distance": "0.29907376"
+        },
+        {
+            "img_index": "980",
+            "distance": "0.2914275"
         }
     ],
     "2819": [
         {
-            "img_index": "12372",
-            "distance": "0.29218826"
+            "img_index": "2819",
+            "distance": "0.27034625"
         },
         {
-            "img_index": "1567",
-            "distance": "0.29166374"
+            "img_index": "4507",
+            "distance": "0.26521003"
         },
         {
-            "img_index": "12948",
-            "distance": "0.2835696"
+            "img_index": "3927",
+            "distance": "0.23819"
         }
     ],
     "8080": [
         {
-            "img_index": "609",
-            "distance": "0.30211475"
+            "img_index": "4869",
+            "distance": "0.2820484"
         },
         {
-            "img_index": "12304",
-            "distance": "0.29893818"
+            "img_index": "8080",
+            "distance": "0.2770579"
         },
         {
-            "img_index": "4141",
-            "distance": "0.29337564"
+            "img_index": "7358",
+            "distance": "0.26137435"
         }
     ],
-    "6322": [
+    "10107": [
         {
-            "img_index": "81",
-            "distance": "0.30720705"
+            "img_index": "10107",
+            "distance": "0.26508924"
         },
         {
-            "img_index": "7224",
-            "distance": "0.30125883"
+            "img_index": "8029",
+            "distance": "0.25404045"
         },
         {
-            "img_index": "3040",
-            "distance": "0.29823658"
+            "img_index": "3927",
+            "distance": "0.25321436"
         }
     ],
     "1613": [
         {
-            "img_index": "9081",
-            "distance": "0.27519226"
-        },
-        {
-            "img_index": "387",
-            "distance": "0.264164"
-        },
-        {
             "img_index": "11659",
-            "distance": "0.25812244"
+            "distance": "0.25096852"
+        },
+        {
+            "img_index": "9081",
+            "distance": "0.24396484"
+        },
+        {
+            "img_index": "11167",
+            "distance": "0.23997252"
         }
     ],
     "6171": [
         {
-            "img_index": "10725",
-            "distance": "0.27082202"
-        },
-        {
             "img_index": "9560",
-            "distance": "0.26144558"
+            "distance": "0.25130594"
         },
         {
-            "img_index": "13347",
-            "distance": "0.24712244"
+            "img_index": "12382",
+            "distance": "0.24861342"
+        },
+        {
+            "img_index": "4903",
+            "distance": "0.24482411"
         }
     ],
     "12302": [
         {
-            "img_index": "3606",
-            "distance": "0.32431543"
+            "img_index": "5986",
+            "distance": "0.28753948"
         },
         {
-            "img_index": "12304",
-            "distance": "0.32038367"
+            "img_index": "8027",
+            "distance": "0.28605506"
         },
         {
-            "img_index": "5225",
-            "distance": "0.31428677"
+            "img_index": "7607",
+            "distance": "0.28071922"
         }
     ],
     "8728": [
         {
-            "img_index": "1682",
-            "distance": "0.3031376"
-        },
-        {
             "img_index": "8728",
-            "distance": "0.2911855"
+            "distance": "0.28782338"
         },
         {
-            "img_index": "2020",
-            "distance": "0.29096752"
+            "img_index": "416",
+            "distance": "0.24148671"
+        },
+        {
+            "img_index": "3721",
+            "distance": "0.23919263"
         }
     ],
     "6092": [
         {
-            "img_index": "1723",
-            "distance": "0.27358958"
+            "img_index": "3200",
+            "distance": "0.24516575"
         },
         {
-            "img_index": "1983",
-            "distance": "0.25866416"
+            "img_index": "4028",
+            "distance": "0.24122126"
         },
         {
-            "img_index": "6092",
-            "distance": "0.25579298"
+            "img_index": "3927",
+            "distance": "0.23620471"
         }
     ],
     "5819": [
         {
-            "img_index": "9154",
-            "distance": "0.2829471"
+            "img_index": "6635",
+            "distance": "0.26801342"
         },
         {
-            "img_index": "11002",
-            "distance": "0.28182316"
+            "img_index": "13315",
+            "distance": "0.25599667"
         },
         {
-            "img_index": "12974",
-            "distance": "0.2799332"
+            "img_index": "3605",
+            "distance": "0.25501114"
         }
     ],
     "6030": [
         {
-            "img_index": "8260",
-            "distance": "0.27972448"
+            "img_index": "6030",
+            "distance": "0.25931856"
         },
         {
-            "img_index": "2733",
-            "distance": "0.27957654"
+            "img_index": "2370",
+            "distance": "0.25304562"
         },
         {
-            "img_index": "1799",
-            "distance": "0.27909115"
+            "img_index": "4334",
+            "distance": "0.25185013"
         }
     ],
     "8047": [
         {
-            "img_index": "5524",
-            "distance": "0.2379359"
+            "img_index": "416",
+            "distance": "0.24856628"
         },
         {
-            "img_index": "4899",
-            "distance": "0.2347408"
+            "img_index": "3721",
+            "distance": "0.22928229"
         },
         {
-            "img_index": "387",
-            "distance": "0.23334615"
+            "img_index": "11167",
+            "distance": "0.22799477"
         }
     ],
     "6442": [
         {
-            "img_index": "3592",
-            "distance": "0.2716807"
-        },
-        {
-            "img_index": "10730",
-            "distance": "0.2692901"
-        },
-        {
             "img_index": "6442",
-            "distance": "0.26900253"
-        }
-    ],
-    "1825": [
-        {
-            "img_index": "5100",
-            "distance": "0.28321192"
+            "distance": "0.26256847"
         },
         {
-            "img_index": "8693",
-            "distance": "0.2780108"
+            "img_index": "3598",
+            "distance": "0.24719483"
         },
         {
-            "img_index": "11348",
-            "distance": "0.2770138"
+            "img_index": "12223",
+            "distance": "0.23992491"
         }
     ],
     "10288": [
         {
-            "img_index": "1874",
-            "distance": "0.29340538"
+            "img_index": "10051",
+            "distance": "0.2720821"
         },
         {
-            "img_index": "2901",
-            "distance": "0.291807"
+            "img_index": "11780",
+            "distance": "0.26146016"
         },
         {
-            "img_index": "12594",
-            "distance": "0.2825805"
+            "img_index": "11710",
+            "distance": "0.2612011"
         }
     ],
-    "4836": [
+    "5744": [
         {
-            "img_index": "8039",
-            "distance": "0.29411873"
+            "img_index": "5744",
+            "distance": "0.26540905"
         },
         {
-            "img_index": "4425",
-            "distance": "0.28693432"
+            "img_index": "11167",
+            "distance": "0.24863756"
         },
         {
-            "img_index": "4836",
-            "distance": "0.2710882"
+            "img_index": "3198",
+            "distance": "0.24743475"
         }
     ],
     "5312": [
         {
-            "img_index": "2416",
-            "distance": "0.27462217"
+            "img_index": "7537",
+            "distance": "0.27521718"
         },
         {
-            "img_index": "1956",
-            "distance": "0.2738483"
+            "img_index": "9719",
+            "distance": "0.2665972"
         },
         {
-            "img_index": "4437",
-            "distance": "0.27116257"
+            "img_index": "8069",
+            "distance": "0.25374493"
         }
     ],
     "2439": [
         {
-            "img_index": "51",
-            "distance": "0.25070482"
+            "img_index": "13312",
+            "distance": "0.2528434"
+        },
+        {
+            "img_index": "6932",
+            "distance": "0.24825859"
         },
         {
             "img_index": "12999",
-            "distance": "0.24547084"
-        },
-        {
-            "img_index": "9448",
-            "distance": "0.24010801"
+            "distance": "0.2410712"
         }
     ],
     "8069": [
         {
-            "img_index": "2416",
-            "distance": "0.28708985"
+            "img_index": "8069",
+            "distance": "0.25758904"
         },
         {
-            "img_index": "4437",
-            "distance": "0.2719023"
+            "img_index": "11322",
+            "distance": "0.25392634"
         },
         {
-            "img_index": "1956",
-            "distance": "0.27092576"
+            "img_index": "7537",
+            "distance": "0.2495347"
         }
     ],
     "12223": [
         {
             "img_index": "12223",
-            "distance": "0.30502966"
+            "distance": "0.3038933"
         },
         {
-            "img_index": "11136",
-            "distance": "0.3005033"
+            "img_index": "4216",
+            "distance": "0.25325733"
         },
         {
-            "img_index": "2087",
-            "distance": "0.2994142"
+            "img_index": "11167",
+            "distance": "0.2394771"
         }
     ],
     "4124": [
         {
-            "img_index": "11015",
-            "distance": "0.30293894"
+            "img_index": "13259",
+            "distance": "0.26147997"
         },
         {
-            "img_index": "9105",
-            "distance": "0.3028243"
+            "img_index": "3927",
+            "distance": "0.2505545"
         },
         {
-            "img_index": "4124",
-            "distance": "0.29512694"
+            "img_index": "6639",
+            "distance": "0.24185342"
         }
     ],
     "7358": [
         {
             "img_index": "7358",
-            "distance": "0.31716174"
-        },
-        {
-            "img_index": "2229",
-            "distance": "0.31216958"
+            "distance": "0.3212745"
         },
         {
             "img_index": "3200",
-            "distance": "0.3102921"
+            "distance": "0.31410667"
+        },
+        {
+            "img_index": "4869",
+            "distance": "0.2706794"
         }
     ],
     "3383": [
         {
-            "img_index": "2733",
-            "distance": "0.30365047"
+            "img_index": "4334",
+            "distance": "0.27364224"
         },
         {
-            "img_index": "11819",
-            "distance": "0.29840797"
+            "img_index": "6030",
+            "distance": "0.25610566"
         },
         {
-            "img_index": "8151",
-            "distance": "0.29490387"
+            "img_index": "3383",
+            "distance": "0.24925002"
         }
     ],
     "9560": [
         {
             "img_index": "9560",
-            "distance": "0.27487138"
+            "distance": "0.26166862"
         },
         {
-            "img_index": "10725",
-            "distance": "0.26873505"
+            "img_index": "2758",
+            "distance": "0.2471165"
         },
         {
             "img_index": "4903",
-            "distance": "0.26265633"
+            "distance": "0.24037954"
         }
     ],
     "2370": [
         {
-            "img_index": "3320",
-            "distance": "0.2569596"
-        },
-        {
-            "img_index": "8190",
-            "distance": "0.2510363"
-        },
-        {
             "img_index": "2370",
-            "distance": "0.2502305"
+            "distance": "0.25295082"
+        },
+        {
+            "img_index": "624",
+            "distance": "0.24369247"
+        },
+        {
+            "img_index": "3198",
+            "distance": "0.23776579"
         }
     ],
     "4924": [
         {
             "img_index": "4924",
-            "distance": "0.2861679"
+            "distance": "0.26700532"
         },
         {
-            "img_index": "8974",
-            "distance": "0.2840836"
+            "img_index": "3927",
+            "distance": "0.23958808"
         },
         {
-            "img_index": "4666",
-            "distance": "0.27625448"
+            "img_index": "6805",
+            "distance": "0.23376298"
         }
     ],
     "2437": [
         {
-            "img_index": "8095",
-            "distance": "0.25375038"
+            "img_index": "2437",
+            "distance": "0.24646501"
         },
         {
-            "img_index": "13347",
-            "distance": "0.25234777"
+            "img_index": "6635",
+            "distance": "0.24561602"
         },
         {
-            "img_index": "6385",
-            "distance": "0.25082833"
+            "img_index": "5949",
+            "distance": "0.24532181"
         }
     ],
     "2440": [
         {
             "img_index": "1248",
-            "distance": "0.2868459"
+            "distance": "0.26958048"
         },
         {
-            "img_index": "2044",
-            "distance": "0.28321475"
+            "img_index": "3598",
+            "distance": "0.25792742"
         },
         {
-            "img_index": "9506",
-            "distance": "0.2806149"
+            "img_index": "12999",
+            "distance": "0.255794"
         }
     ],
-    "7380": [
-        {
-            "img_index": "10428",
-            "distance": "0.2797816"
-        },
+    "12858": [
         {
             "img_index": "4505",
-            "distance": "0.2784611"
+            "distance": "0.2731749"
         },
         {
-            "img_index": "5840",
-            "distance": "0.27771872"
+            "img_index": "3200",
+            "distance": "0.2567343"
+        },
+        {
+            "img_index": "7358",
+            "distance": "0.24620664"
         }
     ],
     "9081": [
         {
-            "img_index": "10323",
-            "distance": "0.23873942"
-        },
-        {
             "img_index": "9081",
-            "distance": "0.23523654"
+            "distance": "0.24198489"
         },
         {
-            "img_index": "1969",
-            "distance": "0.23388071"
+            "img_index": "10633",
+            "distance": "0.23764153"
+        },
+        {
+            "img_index": "624",
+            "distance": "0.23530531"
         }
     ],
     "6639": [
         {
             "img_index": "6639",
-            "distance": "0.2888205"
+            "distance": "0.3025384"
         },
         {
-            "img_index": "8435",
-            "distance": "0.27955443"
+            "img_index": "11662",
+            "distance": "0.2713114"
         },
         {
-            "img_index": "12266",
-            "distance": "0.277114"
+            "img_index": "13259",
+            "distance": "0.26754475"
         }
     ],
     "4579": [
         {
-            "img_index": "5823",
-            "distance": "0.24610974"
+            "img_index": "12999",
+            "distance": "0.2621926"
         },
         {
-            "img_index": "10018",
-            "distance": "0.24577199"
+            "img_index": "6341",
+            "distance": "0.24405092"
         },
         {
-            "img_index": "2930",
-            "distance": "0.24414067"
+            "img_index": "624",
+            "distance": "0.22998595"
         }
     ],
     "4764": [
         {
-            "img_index": "3443",
-            "distance": "0.25432563"
-        },
-        {
             "img_index": "624",
-            "distance": "0.25217763"
+            "distance": "0.26373383"
         },
         {
-            "img_index": "11126",
-            "distance": "0.2506055"
+            "img_index": "6341",
+            "distance": "0.23453839"
+        },
+        {
+            "img_index": "9081",
+            "distance": "0.2324618"
         }
     ],
     "13315": [
         {
-            "img_index": "2670",
-            "distance": "0.2606417"
+            "img_index": "13315",
+            "distance": "0.24676931"
         },
         {
-            "img_index": "7671",
-            "distance": "0.2547088"
+            "img_index": "3927",
+            "distance": "0.2416062"
         },
-        {
-            "img_index": "7276",
-            "distance": "0.25260997"
-        }
-    ],
-    "4097": [
         {
             "img_index": "11659",
-            "distance": "0.25251165"
+            "distance": "0.23392469"
+        }
+    ],
+    "7834": [
+        {
+            "img_index": "11659",
+            "distance": "0.25531527"
         },
         {
-            "img_index": "9996",
-            "distance": "0.24842793"
+            "img_index": "11167",
+            "distance": "0.24264434"
         },
         {
-            "img_index": "6843",
-            "distance": "0.24785963"
+            "img_index": "9081",
+            "distance": "0.23466356"
         }
     ],
     "5949": [
         {
-            "img_index": "9154",
-            "distance": "0.2734467"
+            "img_index": "3605",
+            "distance": "0.2693374"
         },
         {
-            "img_index": "12628",
-            "distance": "0.2732928"
+            "img_index": "13315",
+            "distance": "0.2689669"
         },
         {
-            "img_index": "11670",
-            "distance": "0.2727623"
+            "img_index": "6635",
+            "distance": "0.2578893"
         }
     ],
     "13118": [
         {
-            "img_index": "6120",
-            "distance": "0.2895949"
-        },
-        {
             "img_index": "13118",
-            "distance": "0.27541345"
+            "distance": "0.27417752"
         },
         {
-            "img_index": "10363",
-            "distance": "0.27000108"
+            "img_index": "3927",
+            "distance": "0.25296718"
+        },
+        {
+            "img_index": "6805",
+            "distance": "0.23576069"
         }
     ],
     "2750": [
         {
-            "img_index": "3661",
-            "distance": "0.29175362"
-        },
-        {
-            "img_index": "8776",
-            "distance": "0.28614178"
-        },
-        {
             "img_index": "2750",
-            "distance": "0.28353423"
+            "distance": "0.2698702"
+        },
+        {
+            "img_index": "7000",
+            "distance": "0.25459167"
+        },
+        {
+            "img_index": "1153",
+            "distance": "0.25309813"
         }
     ],
     "2758": [
         {
-            "img_index": "10725",
-            "distance": "0.25054505"
-        },
-        {
             "img_index": "9560",
-            "distance": "0.25038886"
+            "distance": "0.2511818"
         },
         {
-            "img_index": "9063",
-            "distance": "0.24648294"
+            "img_index": "2758",
+            "distance": "0.24548754"
+        },
+        {
+            "img_index": "4903",
+            "distance": "0.24213238"
         }
     ],
     "8466": [
         {
-            "img_index": "3473",
-            "distance": "0.2646306"
+            "img_index": "10633",
+            "distance": "0.26267684"
         },
         {
-            "img_index": "12819",
-            "distance": "0.2600939"
+            "img_index": "2207",
+            "distance": "0.24997626"
         },
         {
-            "img_index": "7784",
-            "distance": "0.25901088"
+            "img_index": "12999",
+            "distance": "0.24735108"
         }
     ],
     "5307": [
         {
             "img_index": "1248",
-            "distance": "0.2846055"
+            "distance": "0.26375952"
         },
         {
-            "img_index": "2044",
-            "distance": "0.27888525"
+            "img_index": "5307",
+            "distance": "0.2600328"
         },
         {
-            "img_index": "9506",
-            "distance": "0.2753021"
+            "img_index": "7249",
+            "distance": "0.2483319"
         }
     ],
     "7579": [
         {
-            "img_index": "8620",
-            "distance": "0.2788918"
-        },
-        {
             "img_index": "7579",
-            "distance": "0.26802233"
+            "distance": "0.26534688"
         },
         {
-            "img_index": "105",
-            "distance": "0.25643733"
+            "img_index": "109",
+            "distance": "0.24813426"
+        },
+        {
+            "img_index": "3927",
+            "distance": "0.23476668"
         }
     ],
     "9824": [
         {
-            "img_index": "7408",
-            "distance": "0.27590916"
+            "img_index": "4755",
+            "distance": "0.26235247"
         },
         {
-            "img_index": "5100",
-            "distance": "0.27330005"
+            "img_index": "4403",
+            "distance": "0.25965217"
         },
         {
-            "img_index": "8693",
-            "distance": "0.27249187"
+            "img_index": "4262",
+            "distance": "0.24636352"
         }
     ],
     "3252": [
         {
-            "img_index": "5564",
-            "distance": "0.3071241"
+            "img_index": "10633",
+            "distance": "0.23852088"
         },
         {
             "img_index": "3252",
-            "distance": "0.29507175"
+            "distance": "0.23790795"
         },
         {
-            "img_index": "3026",
-            "distance": "0.2944827"
+            "img_index": "9081",
+            "distance": "0.22864354"
         }
     ],
     "7607": [
         {
-            "img_index": "12304",
-            "distance": "0.31359574"
+            "img_index": "5986",
+            "distance": "0.29812574"
         },
         {
-            "img_index": "10298",
-            "distance": "0.31018797"
+            "img_index": "7607",
+            "distance": "0.28721714"
         },
         {
-            "img_index": "3606",
-            "distance": "0.303936"
+            "img_index": "8027",
+            "distance": "0.28312904"
         }
     ],
     "4812": [
         {
-            "img_index": "3304",
-            "distance": "0.26951078"
-        },
-        {
             "img_index": "4812",
-            "distance": "0.26532343"
+            "distance": "0.25167757"
         },
         {
-            "img_index": "10635",
-            "distance": "0.2636667"
+            "img_index": "9719",
+            "distance": "0.23706165"
+        },
+        {
+            "img_index": "4277",
+            "distance": "0.22664419"
         }
     ],
     "3459": [
         {
-            "img_index": "12304",
-            "distance": "0.31724054"
+            "img_index": "4869",
+            "distance": "0.28511533"
         },
         {
-            "img_index": "11981",
-            "distance": "0.30927014"
+            "img_index": "8080",
+            "distance": "0.27354813"
         },
         {
-            "img_index": "10298",
-            "distance": "0.3033299"
+            "img_index": "5986",
+            "distance": "0.26828957"
         }
     ],
     "9365": [
         {
+            "img_index": "1248",
+            "distance": "0.27577332"
+        },
+        {
+            "img_index": "3838",
+            "distance": "0.2701273"
+        },
+        {
             "img_index": "3598",
-            "distance": "0.28491428"
-        },
-        {
-            "img_index": "12407",
-            "distance": "0.2764332"
-        },
-        {
-            "img_index": "99",
-            "distance": "0.2748282"
+            "distance": "0.26881558"
         }
     ],
     "11167": [
         {
-            "img_index": "3443",
-            "distance": "0.26917624"
-        },
-        {
             "img_index": "3198",
-            "distance": "0.26679236"
+            "distance": "0.2569622"
         },
         {
             "img_index": "11167",
-            "distance": "0.2586601"
+            "distance": "0.25072896"
+        },
+        {
+            "img_index": "4277",
+            "distance": "0.24268429"
         }
     ],
     "10114": [
         {
             "img_index": "7358",
-            "distance": "0.29169613"
+            "distance": "0.29075027"
         },
         {
             "img_index": "3200",
-            "distance": "0.28732446"
+            "distance": "0.2887141"
         },
         {
-            "img_index": "2229",
-            "distance": "0.28528565"
+            "img_index": "4869",
+            "distance": "0.25732896"
         }
     ],
     "13259": [
         {
-            "img_index": "10387",
-            "distance": "0.28288746"
+            "img_index": "13259",
+            "distance": "0.30607823"
         },
         {
-            "img_index": "3504",
-            "distance": "0.27636105"
+            "img_index": "6639",
+            "distance": "0.28484648"
         },
         {
-            "img_index": "949",
-            "distance": "0.27357405"
+            "img_index": "3927",
+            "distance": "0.27573323"
         }
     ],
     "5986": [
         {
-            "img_index": "4363",
-            "distance": "0.2910046"
+            "img_index": "5986",
+            "distance": "0.27442294"
         },
         {
-            "img_index": "10298",
-            "distance": "0.28707266"
+            "img_index": "8027",
+            "distance": "0.27375415"
         },
         {
-            "img_index": "609",
-            "distance": "0.2868592"
+            "img_index": "7607",
+            "distance": "0.2666021"
         }
     ],
     "3628": [
         {
-            "img_index": "3981",
-            "distance": "0.30651245"
+            "img_index": "6022",
+            "distance": "0.27490303"
         },
         {
             "img_index": "459",
-            "distance": "0.30479652"
+            "distance": "0.26424247"
         },
         {
-            "img_index": "7196",
-            "distance": "0.30140305"
+            "img_index": "5407",
+            "distance": "0.26381677"
         }
     ],
     "11710": [
         {
-            "img_index": "8625",
-            "distance": "0.30210826"
+            "img_index": "11710",
+            "distance": "0.27982408"
         },
         {
-            "img_index": "12594",
-            "distance": "0.2949284"
+            "img_index": "3397",
+            "distance": "0.27574974"
         },
         {
-            "img_index": "2093",
-            "distance": "0.28939313"
+            "img_index": "11780",
+            "distance": "0.27165917"
         }
     ],
     "9063": [
         {
             "img_index": "9063",
-            "distance": "0.29777265"
+            "distance": "0.2589789"
         },
         {
-            "img_index": "13347",
-            "distance": "0.28886673"
+            "img_index": "5949",
+            "distance": "0.2525154"
         },
         {
-            "img_index": "3680",
-            "distance": "0.2802659"
+            "img_index": "3927",
+            "distance": "0.24775448"
         }
     ],
     "3686": [
         {
-            "img_index": "12298",
-            "distance": "0.36086845"
-        },
-        {
             "img_index": "3686",
-            "distance": "0.34699264"
+            "distance": "0.29538453"
         },
         {
-            "img_index": "7569",
-            "distance": "0.3436744"
+            "img_index": "8466",
+            "distance": "0.25861865"
+        },
+        {
+            "img_index": "10633",
+            "distance": "0.2280857"
         }
     ],
     "3721": [
         {
             "img_index": "4579",
-            "distance": "0.26398686"
+            "distance": "0.255462"
         },
         {
-            "img_index": "10428",
-            "distance": "0.26287267"
+            "img_index": "416",
+            "distance": "0.25459453"
         },
         {
-            "img_index": "1874",
-            "distance": "0.26121545"
+            "img_index": "3721",
+            "distance": "0.2517056"
         }
     ],
     "7375": [
         {
             "img_index": "7375",
-            "distance": "0.3075987"
+            "distance": "0.2679072"
         },
         {
-            "img_index": "5333",
-            "distance": "0.24822064"
+            "img_index": "1153",
+            "distance": "0.26427388"
         },
         {
-            "img_index": "6091",
-            "distance": "0.23630579"
+            "img_index": "2750",
+            "distance": "0.24686372"
         }
     ],
     "4507": [
         {
-            "img_index": "12948",
-            "distance": "0.30919737"
-        },
-        {
             "img_index": "4507",
-            "distance": "0.30131206"
+            "distance": "0.27091947"
         },
         {
-            "img_index": "3762",
-            "distance": "0.29816535"
+            "img_index": "2819",
+            "distance": "0.24384764"
+        },
+        {
+            "img_index": "12999",
+            "distance": "0.24201208"
         }
     ],
     "7701": [
         {
-            "img_index": "5747",
-            "distance": "0.34199667"
+            "img_index": "7701",
+            "distance": "0.24960867"
         },
         {
-            "img_index": "12713",
-            "distance": "0.33994493"
+            "img_index": "12999",
+            "distance": "0.24351639"
         },
         {
-            "img_index": "12744",
-            "distance": "0.32702732"
+            "img_index": "624",
+            "distance": "0.23524557"
         }
     ],
     "5805": [
         {
             "img_index": "5805",
-            "distance": "0.2584105"
+            "distance": "0.23690683"
         },
         {
-            "img_index": "8383",
-            "distance": "0.24923196"
+            "img_index": "7579",
+            "distance": "0.22914651"
         },
         {
-            "img_index": "8389",
-            "distance": "0.24223989"
+            "img_index": "3927",
+            "distance": "0.2290239"
         }
     ],
     "3927": [
         {
-            "img_index": "8435",
-            "distance": "0.324891"
-        },
-        {
             "img_index": "3927",
-            "distance": "0.31699514"
+            "distance": "0.3248275"
         },
         {
             "img_index": "6639",
-            "distance": "0.30159807"
+            "distance": "0.30877703"
+        },
+        {
+            "img_index": "10872",
+            "distance": "0.2788859"
         }
     ],
     "7117": [
         {
-            "img_index": "5027",
-            "distance": "0.25702855"
+            "img_index": "3200",
+            "distance": "0.2685539"
         },
         {
-            "img_index": "9156",
-            "distance": "0.25576866"
+            "img_index": "7358",
+            "distance": "0.26215065"
         },
         {
-            "img_index": "2429",
-            "distance": "0.25184014"
+            "img_index": "4505",
+            "distance": "0.24464658"
         }
     ],
     "4028": [
         {
-            "img_index": "1723",
-            "distance": "0.29351208"
+            "img_index": "4028",
+            "distance": "0.25490212"
         },
         {
             "img_index": "6092",
-            "distance": "0.2756764"
+            "distance": "0.2530347"
         },
         {
-            "img_index": "1983",
-            "distance": "0.2698469"
+            "img_index": "3200",
+            "distance": "0.24230662"
         }
     ],
     "6843": [
         {
-            "img_index": "10893",
-            "distance": "0.250271"
+            "img_index": "1785",
+            "distance": "0.25118384"
         },
         {
-            "img_index": "987",
-            "distance": "0.24904753"
+            "img_index": "12999",
+            "distance": "0.2331847"
         },
         {
-            "img_index": "8328",
-            "distance": "0.24831903"
+            "img_index": "6843",
+            "distance": "0.22455835"
         }
     ],
     "4109": [
         {
-            "img_index": "13144",
-            "distance": "0.27739543"
+            "img_index": "4109",
+            "distance": "0.24877225"
         },
         {
-            "img_index": "9119",
-            "distance": "0.2742917"
+            "img_index": "5949",
+            "distance": "0.2407763"
         },
         {
-            "img_index": "4688",
-            "distance": "0.26122898"
+            "img_index": "2297",
+            "distance": "0.22846343"
         }
     ],
-    "9577": [
+    "12011": [
         {
-            "img_index": "9577",
-            "distance": "0.27215263"
+            "img_index": "12999",
+            "distance": "0.25108224"
         },
         {
-            "img_index": "5550",
-            "distance": "0.26457196"
+            "img_index": "12011",
+            "distance": "0.24864906"
         },
         {
-            "img_index": "9448",
-            "distance": "0.2463506"
+            "img_index": "624",
+            "distance": "0.2463641"
         }
     ],
     "9961": [
         {
-            "img_index": "5564",
-            "distance": "0.24030733"
-        },
-        {
             "img_index": "10633",
-            "distance": "0.23922126"
+            "distance": "0.23922148"
         },
         {
             "img_index": "3252",
-            "distance": "0.23845541"
+            "distance": "0.23845547"
+        },
+        {
+            "img_index": "9961",
+            "distance": "0.22859742"
+        }
+    ],
+    "4403": [
+        {
+            "img_index": "4403",
+            "distance": "0.25811094"
+        },
+        {
+            "img_index": "4755",
+            "distance": "0.2549006"
+        },
+        {
+            "img_index": "4262",
+            "distance": "0.23897073"
         }
     ],
     "9719": [
         {
-            "img_index": "4437",
-            "distance": "0.28177246"
+            "img_index": "7537",
+            "distance": "0.26601252"
         },
         {
             "img_index": "9719",
-            "distance": "0.2794989"
+            "distance": "0.26067525"
         },
         {
-            "img_index": "11761",
-            "distance": "0.27867028"
+            "img_index": "5312",
+            "distance": "0.24151966"
         }
     ],
     "7000": [
         {
-            "img_index": "3661",
-            "distance": "0.2946412"
-        },
-        {
             "img_index": "2750",
-            "distance": "0.28953627"
+            "distance": "0.291573"
         },
         {
-            "img_index": "8776",
-            "distance": "0.28863257"
+            "img_index": "7000",
+            "distance": "0.2793886"
+        },
+        {
+            "img_index": "1153",
+            "distance": "0.26958215"
         }
     ],
     "7312": [
         {
-            "img_index": "10725",
-            "distance": "0.26415166"
+            "img_index": "7834",
+            "distance": "0.25810957"
         },
         {
-            "img_index": "2316",
-            "distance": "0.26383135"
+            "img_index": "12382",
+            "distance": "0.2573206"
         },
         {
-            "img_index": "1648",
-            "distance": "0.25960177"
+            "img_index": "2758",
+            "distance": "0.2547351"
         }
     ],
     "4809": [
         {
-            "img_index": "11030",
-            "distance": "0.2919435"
+            "img_index": "4809",
+            "distance": "0.27702764"
         },
         {
-            "img_index": "5091",
-            "distance": "0.29167628"
+            "img_index": "8489",
+            "distance": "0.26039562"
         },
         {
-            "img_index": "81",
-            "distance": "0.2844559"
+            "img_index": "10107",
+            "distance": "0.25310022"
         }
     ],
     "12187": [
         {
+            "img_index": "12999",
+            "distance": "0.25773072"
+        },
+        {
             "img_index": "7701",
-            "distance": "0.2926129"
+            "distance": "0.25556433"
         },
         {
-            "img_index": "12713",
-            "distance": "0.27963564"
-        },
-        {
-            "img_index": "5747",
-            "distance": "0.27933818"
+            "img_index": "624",
+            "distance": "0.24582496"
         }
     ],
     "7808": [
         {
-            "img_index": "10387",
-            "distance": "0.31011456"
-        },
-        {
-            "img_index": "3504",
-            "distance": "0.3055247"
-        },
-        {
             "img_index": "13259",
-            "distance": "0.30470687"
+            "distance": "0.3035311"
+        },
+        {
+            "img_index": "6211",
+            "distance": "0.27569664"
+        },
+        {
+            "img_index": "7808",
+            "distance": "0.2742786"
         }
     ],
     "7537": [
         {
-            "img_index": "11761",
-            "distance": "0.28703377"
-        },
-        {
             "img_index": "7537",
-            "distance": "0.28412768"
+            "distance": "0.2813787"
         },
         {
-            "img_index": "4437",
-            "distance": "0.28329545"
-        }
-    ],
-    "8591": [
-        {
-            "img_index": "4924",
-            "distance": "0.2893183"
+            "img_index": "9719",
+            "distance": "0.27202508"
         },
         {
-            "img_index": "8974",
-            "distance": "0.28752217"
-        },
-        {
-            "img_index": "4666",
-            "distance": "0.28398037"
+            "img_index": "5312",
+            "distance": "0.2574756"
         }
     ],
     "13082": [
         {
             "img_index": "13082",
-            "distance": "0.2781285"
+            "distance": "0.28775594"
         },
         {
-            "img_index": "8530",
-            "distance": "0.2766009"
+            "img_index": "4764",
+            "distance": "0.25826955"
         },
         {
-            "img_index": "11009",
-            "distance": "0.26235214"
+            "img_index": "3198",
+            "distance": "0.24140514"
+        }
+    ],
+    "8029": [
+        {
+            "img_index": "3927",
+            "distance": "0.25204647"
+        },
+        {
+            "img_index": "10107",
+            "distance": "0.25105914"
+        },
+        {
+            "img_index": "8029",
+            "distance": "0.24309254"
         }
     ],
     "11805": [
         {
-            "img_index": "10347",
-            "distance": "0.30989853"
+            "img_index": "11805",
+            "distance": "0.2636798"
         },
         {
-            "img_index": "10294",
-            "distance": "0.2918233"
+            "img_index": "8489",
+            "distance": "0.24773405"
         },
         {
-            "img_index": "5285",
-            "distance": "0.2771274"
+            "img_index": "11167",
+            "distance": "0.24189794"
         }
     ],
     "7950": [
         {
-            "img_index": "10631",
-            "distance": "0.29185343"
-        },
-        {
             "img_index": "7950",
-            "distance": "0.2914312"
+            "distance": "0.2542084"
         },
         {
-            "img_index": "5808",
-            "distance": "0.28838775"
+            "img_index": "624",
+            "distance": "0.25305578"
+        },
+        {
+            "img_index": "6341",
+            "distance": "0.24022363"
         }
     ],
     "12999": [
         {
-            "img_index": "2294",
-            "distance": "0.26857737"
-        },
-        {
-            "img_index": "1969",
-            "distance": "0.26594263"
-        },
-        {
             "img_index": "624",
-            "distance": "0.25647277"
+            "distance": "0.26163715"
+        },
+        {
+            "img_index": "12999",
+            "distance": "0.25130227"
+        },
+        {
+            "img_index": "6932",
+            "distance": "0.22945127"
         }
     ],
-    "8221": [
+    "9989": [
         {
-            "img_index": "7943",
-            "distance": "0.2860779"
+            "img_index": "9683",
+            "distance": "0.25932342"
         },
         {
-            "img_index": "13048",
-            "distance": "0.28344974"
+            "img_index": "5936",
+            "distance": "0.25764605"
         },
         {
-            "img_index": "105",
-            "distance": "0.27707186"
+            "img_index": "3598",
+            "distance": "0.25051928"
         }
     ],
     "6091": [
         {
-            "img_index": "5333",
-            "distance": "0.27966592"
+            "img_index": "1153",
+            "distance": "0.25277364"
         },
         {
-            "img_index": "7242",
-            "distance": "0.27615985"
+            "img_index": "2750",
+            "distance": "0.23496951"
         },
         {
-            "img_index": "3748",
-            "distance": "0.27444303"
+            "img_index": "6091",
+            "distance": "0.2329193"
         }
     ],
     "6836": [
         {
-            "img_index": "2930",
-            "distance": "0.26422533"
+            "img_index": "3927",
+            "distance": "0.26649284"
         },
         {
-            "img_index": "4843",
-            "distance": "0.26422533"
+            "img_index": "416",
+            "distance": "0.25489384"
         },
         {
-            "img_index": "4467",
-            "distance": "0.26422533"
+            "img_index": "441",
+            "distance": "0.2494451"
         }
     ],
     "6805": [
         {
-            "img_index": "11690",
-            "distance": "0.28278092"
-        },
-        {
-            "img_index": "12961",
-            "distance": "0.27621317"
-        },
-        {
             "img_index": "6805",
-            "distance": "0.2759465"
+            "distance": "0.25152332"
+        },
+        {
+            "img_index": "12999",
+            "distance": "0.21616742"
+        },
+        {
+            "img_index": "3927",
+            "distance": "0.21353532"
         }
     ],
     "10054": [
         {
             "img_index": "10054",
-            "distance": "0.30884677"
-        },
-        {
-            "img_index": "9297",
-            "distance": "0.29670593"
+            "distance": "0.2942683"
         },
         {
             "img_index": "2013",
-            "distance": "0.2683058"
+            "distance": "0.26263374"
+        },
+        {
+            "img_index": "3927",
+            "distance": "0.2368354"
         }
     ],
     "7186": [
         {
             "img_index": "3927",
-            "distance": "0.32178885"
+            "distance": "0.32407254"
         },
         {
-            "img_index": "8435",
-            "distance": "0.3191484"
+            "img_index": "6639",
+            "distance": "0.27246958"
         },
         {
-            "img_index": "13337",
-            "distance": "0.30017322"
+            "img_index": "10872",
+            "distance": "0.2618928"
         }
     ],
     "10633": [
         {
-            "img_index": "4237",
-            "distance": "0.2478514"
-        },
-        {
             "img_index": "12999",
-            "distance": "0.24611285"
+            "distance": "0.2551399"
         },
         {
             "img_index": "10633",
-            "distance": "0.24499378"
+            "distance": "0.24805647"
+        },
+        {
+            "img_index": "624",
+            "distance": "0.24445474"
         }
     ],
     "10978": [
         {
+            "img_index": "6341",
+            "distance": "0.24301721"
+        },
+        {
             "img_index": "10978",
-            "distance": "0.2672302"
+            "distance": "0.23687461"
         },
         {
-            "img_index": "10805",
-            "distance": "0.26570082"
-        },
-        {
-            "img_index": "9601",
-            "distance": "0.26547047"
+            "img_index": "9081",
+            "distance": "0.23438092"
         }
     ]
 }

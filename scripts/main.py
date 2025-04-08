@@ -20,7 +20,7 @@ from retrieval import TextToImageRetriever
 from experiment import execute_experiment
 from load_data import save_embeddings
 from evaluation.reformatting import alt_to_og
-from metadata import preprocess_metadata
+# from metadata import preprocess_metadata
 
 # from final_query_selection_and_plot_generation import altered_to_og
 
@@ -50,14 +50,24 @@ def main():
     metadata = load_metadata(METADATA_PATH)
     # Save metadata to new file (including index serving as id) and load it again
     #metadata = preprocess_metadata(metadata)
-    save_metadata(metadata, PROCESSED_METADATA_PATH)
-    metadata = load_metadata(PROCESSED_METADATA_PATH)
+    # save_metadata(metadata, PROCESSED_METADATA_PATH)
+    # metadata = load_metadata(PROCESSED_METADATA_PATH)
+    metadata = pd.read_csv(METADATA_W_OG_PATH)
 
     # Generating and saving queries
     # query_df, image_list = load_queries_and_image_indices(QUERY_PATH, metadata)
     # columns=[id,keywords,query,num_altered,altered_ids]
     query_df = pd.read_csv(QUERY_PATH)
+    query_df['altered_indices'] = query_df['altered_indices'].apply(
+        lambda x : list(map(int, x.replace("'", "").replace("[", "").replace("]", "").split(", "))))
     image_list = query_df['index'].tolist()
+    [image_list.extend(l) for l in query_df['altered_indices'].tolist()]
+
+    mask = (metadata['index'].isin(image_list)) | (metadata['og_image'].isin(image_list))
+
+    metadata = metadata[mask]
+    # print(metadata)
+    # raise Exception("Debugging")
     image_id_list = [str(metadata[metadata['index'] == index]['image_id'].iloc[0]) for index in image_list]
     image_ids_to_real_indices = {}
     for i in range(len(image_id_list)):
@@ -100,7 +110,7 @@ def main():
         # Setting up retrieval pipeline
         retriever = TextToImageRetriever(model, device, embeddings)
         # Executing experiment for each K value, saves to json file for each K.
-        for k in K_VALUES:
+        for k in [len(embeddings)]:  # K_VALUES:
             execute_experiment(retriever, query_df, k, RETRIEVAL_RESULTS_PATH)
 
     embeddings = None  # clear memory because RIP my RAM

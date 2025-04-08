@@ -22,14 +22,14 @@ def compute_relative_distances_per_bin(bins: list[str], retrieval_results: dict[
             ind = int(row['img_index'])
             # raise Exception("Debugging")
             og_index = metadata.loc[metadata['index'] == ind, 'og_image']
-            if len(og_index) == 0:
+            if len(og_index) == np.nan:
                 print(f'No original image found for this image: {ind}')
                 continue
-            og_index = int(og_index.values[0])  # get the original image path
+            og_index = og_index.values[0]  # get the original image path
             # print('og_index: ', og_index)
             # raise Exception("Debugging")
 
-            if og_index == '':
+            if og_index == np.nan:
                 print(f'Image should be original: {ind}')
                 continue  # if the image is not altered, skip it as dist = 0 always
             rank = row['rank']
