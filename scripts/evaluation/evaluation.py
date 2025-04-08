@@ -1,9 +1,10 @@
+import os.path
+
 import pandas as pd
 from pprint import pprint
 import json
 
 from evaluation.evaluation_metrics import evaluate_all_queries
-from evaluation.ground_truth import gen_ground_truth
 from evaluation.distance_exploration import compute_relative_distances_per_bin, plot_relative_distances
 from evaluation.reformatting import reformat_retrieval_results
 
@@ -32,15 +33,20 @@ def evaluate(k_values: list[int], retrieval_results_path: str, metadata: pd.Data
     # print('Structure of path:\n <image_path>: { query: str, ranked_list: pd.DataFrame[image_path, relevance_score] }')
 
     retrieval_results = json.load(open(retrieval_results_path, 'r'))
-    retrieval_results = reformat_retrieval_results(retrieval_results)
+    retrieval_results = {k: reformat_retrieval_results(pd.DataFrame(v)) for k, v in retrieval_results.items()}
+    metadata['ratio_category'].fillna('real', inplace=True)  # TODO: will not work for pandas 3.0
+    # metadata.fillna({'og_image': ''}, inplace=True)  # TODO: check if this is the right way to do it
+    # 'df.method({col: value}, inplace=True)'
 
-    evaluation_results = evaluate_all_queries(queries['id'].tolist(), ground_truth, retrieval_results, k_values,
-                                              metadata=metadata, save_folder=save_folder)
-    print(f'Saved generated ground truth to {save_folder} as a JSON file.')
-    print('Structure of path:\n { <k>: { ndcg_[all|c1|c2|c3|og]: float, relD_[og|c1|c2|c3]_[c1|c2|c3]: float } }')
-    pprint(evaluation_results)
+    if not os.path.exists(os.path.join(save_folder, "evaluation_results.json")):
+        evaluation_results = evaluate_all_queries(queries['id'].tolist(), ground_truth, retrieval_results, k_values,
+                                                  metadata=metadata, save_folder=save_folder)
+        print(f'Saved generated ground truth to {save_folder} as a JSON file.')
+        print('Structure of path:\n { <k>: { ndcg_[all|c1|...|og]: float, relD_[og|c1|...]_[c1|...]: float } }')
+        pprint(evaluation_results)
 
-    relative_distances = compute_relative_distances_per_bin(['c1', 'c2', 'c3'], retrieval_results, metadata)
+    relative_distances = compute_relative_distances_per_bin(['bin1', 'bin2', 'bin3', 'bin4', 'bin5'], retrieval_results,
+                                                            metadata)
     print('Relative distances per bin:')
     pprint(relative_distances)
 

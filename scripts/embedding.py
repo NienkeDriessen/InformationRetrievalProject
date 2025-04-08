@@ -55,6 +55,14 @@ def generate_image_embeddings(imgs_path: str, metadata: pd.DataFrame, query_imag
         fake_images.append(alter1)
         altered_img_paths.append(alter1path)
 
+    image_paths[:] = [x for x in image_paths if x]
+
+    linked_images = [{'Real_image': x, 'Altered_Image': y} for x, y in zip(real_images, fake_images)]
+    linked_image_paths = [{'Real_image_path': x, 'Altered_Image_path': y} for x, y in
+                          zip(og_img_paths, altered_img_paths)]
+
+
+
     # Generate embeddings for all images
     output_embeddings = []
     for i in range(len(image_paths)):

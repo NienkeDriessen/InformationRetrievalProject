@@ -72,7 +72,7 @@ def load_embeddings(embeddings_path: str) -> dict:
     return embedding_dict
 
 
-def load_queries_and_image_ids(query_path: str):
+def load_queries_and_image_ids(query_path: str) -> (pd.DataFrame, list):
     """
     Load query file from string path, as well as a list of all images that are in the query file.
 
@@ -81,7 +81,7 @@ def load_queries_and_image_ids(query_path: str):
     :return: image_list containing all original image ids as well as their altered image ids.
     """
     # Load CSV into DataFrame
-    query_df = pd.read_csv(query_path)
+    query_df = pd.read_csv(query_path, sep=';')
 
     # Ensure required columns exist
     # id,keywords,query,num_altered,altered_ids
