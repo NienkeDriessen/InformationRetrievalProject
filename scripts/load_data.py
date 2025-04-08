@@ -32,7 +32,12 @@ def find_index_from_image_id(image_id: str, metadata: pd.DataFrame) -> str:
     :param column_name: Name of column containing image ids.
     :return: Index of image.
     """
-    return metadata[metadata['image_id'] == image_id]['index'].iloc[0]
+    indices = metadata[metadata['image_id'] == image_id]['index']
+    if len(indices) > 1:
+        raise ValueError(f"'{image_id}' is not a unique image id")
+    if len(indices) == 0:
+        raise ValueError(f"No image with id '{image_id}' found")
+    return indices.iloc[0]
 
 
 def load_metadata(metadata_path: str) -> pd.DataFrame:

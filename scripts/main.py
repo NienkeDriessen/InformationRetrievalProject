@@ -20,6 +20,7 @@ from retrieval import TextToImageRetriever
 from experiment import execute_experiment
 from load_data import save_embeddings
 from evaluation.reformatting import alt_to_og
+from metadata import preprocess_metadata
 
 # from final_query_selection_and_plot_generation import altered_to_og
 
@@ -48,6 +49,7 @@ def main():
     # Loading original images and metadata
     metadata = load_metadata(METADATA_PATH)
     # Save metadata to new file (including index serving as id) and load it again
+    metadata = preprocess_metadata(metadata)
     save_metadata(metadata, PROCESSED_METADATA_PATH)
     metadata = load_metadata(PROCESSED_METADATA_PATH)
 
