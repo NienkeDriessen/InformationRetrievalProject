@@ -77,8 +77,10 @@ def load_embeddings(embeddings_path: str) -> dict:
     """
     embedding_dict = {}
     with h5py.File(embeddings_path, 'r') as f:
-        img_indices = f['img_index'][:].astype(str)
+        img_indices = f['img_index'][:].astype(int)
         embeddings = f['embeddings'][:]
+
+        print(len(embeddings), len(img_indices))
 
         for i in range(len(img_indices)):
             embedding_dict[img_indices[i]] = embeddings[i]
@@ -86,7 +88,7 @@ def load_embeddings(embeddings_path: str) -> dict:
     return embedding_dict
 
 
-def load_queries_and_image_ids(query_path: str, img_metadata: pd.DataFrame) -> (List[str], List[str]):
+def load_queries_and_image_indices(query_path: str, img_metadata: pd.DataFrame) -> (List[str], List[str]):
     """
     Load query file from string path, as well as a list of all images that are in the query file.
 

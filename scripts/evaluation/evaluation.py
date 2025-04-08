@@ -33,6 +33,10 @@ def evaluate(k_values: list[int], retrieval_results_path: str, metadata: pd.Data
     # print('Structure of path:\n <image_path>: { query: str, ranked_list: pd.DataFrame[image_path, relevance_score] }')
 
     retrieval_results = json.load(open(retrieval_results_path, 'r'))
+    # for k,v in retrieval_results.items():
+    #     print(v)
+    #     break
+    # raise Exception("Debugging")
     retrieval_results = {k: reformat_retrieval_results(pd.DataFrame(v)) for k, v in retrieval_results.items()}
     metadata['ratio_category'].fillna('real', inplace=True)  # TODO: will not work for pandas 3.0
     # metadata.fillna({'og_image': ''}, inplace=True)  # TODO: check if this is the right way to do it

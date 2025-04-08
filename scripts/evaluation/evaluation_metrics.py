@@ -64,14 +64,14 @@ def filter_relevance_labels(corpus: str, ground_truth: pd.DataFrame, retrieved_l
     """
     retrieved_list_local = retrieved_list.copy().reset_index(drop=False)
     if corpus == 'og':
-        return retrieved_list_local[['image_path']].merge(ground_truth, on='image_path', how='left',
+        return retrieved_list_local[['index']].merge(ground_truth, on='index', how='left',
                                                           suffixes=('', '_target')).fillna(0)
     else:
-        prediction = retrieved_list_local[['image_path']]
-        prediction = prediction.merge(metadata[['image_path', 'ratio_category', 'og_image']], on='image_path',
+        prediction = retrieved_list_local[['index']]
+        prediction = prediction.merge(metadata[['index', 'image_path', 'ratio_category', 'og_image']], on='index',
                                       how='left')
-        prediction.loc[prediction['ratio_category'] == 'real', 'og_image'] = prediction['image_path']
-        prediction = prediction.merge(ground_truth, left_on='og_image', right_on='image_path', how='left',
+        prediction.loc[prediction['ratio_category'] == 'real', 'og_image'] = prediction['index']
+        prediction = prediction.merge(ground_truth, left_on='og_image', right_on='index', how='left',
                                       suffixes=('', '_target'))
         prediction = prediction.rename(columns={'relevance_score_target': 'relevance_score'})
         if corpus == 'all':
@@ -79,7 +79,7 @@ def filter_relevance_labels(corpus: str, ground_truth: pd.DataFrame, retrieved_l
         else:
             # replace relevance score with 0 where category != corpus
             prediction.loc[prediction['ratio_category'] != corpus, 'relevance_score'] = 0
-            prediction = prediction[['image_path', 'relevance_score']]
+            prediction = prediction[['index', 'image_path', 'relevance_score']]
             return prediction
 
 

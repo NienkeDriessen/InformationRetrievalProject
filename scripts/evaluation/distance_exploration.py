@@ -19,27 +19,30 @@ def compute_relative_distances_per_bin(bins: list[str], retrieval_results: dict[
         df = results.copy()
         df['rank'] = np.arange(len(df))
         for index, row in df.iloc[:20].iterrows():  # take first 20 ranking results?
-            id_to_search_for = os.path.splitext(os.path.split(row.name)[1])[0]  # get the id of the image
-            metadata_rows = metadata.loc[metadata['image_id'] == id_to_search_for]
-            og_image = metadata_rows['og_image']  # is id
-            og_path = metadata_rows['image_path']  # is path
-
-            if len(og_image) == 0:
-                print(f'No original image found for this image: {row.name}')
+            ind = int(row['img_index'])
+            # raise Exception("Debugging")
+            og_index = metadata.loc[metadata['index'] == ind, 'og_image']
+            if len(og_index) == 0:
+                print(f'No original image found for this image: {ind}')
                 continue
-            og_image = og_image.values[0]  # get the original image path
-            if og_image == '':
-                print(f'Image should be original: {row.name}')
+            og_index = int(og_index.values[0])  # get the original image path
+            # print('og_index: ', og_index)
+            # raise Exception("Debugging")
+
+            if og_index == '':
+                print(f'Image should be original: {ind}')
                 continue  # if the image is not altered, skip it as dist = 0 always
             rank = row['rank']
-
             # get the bin for the image
-            bin = metadata.loc[metadata['image_id'] == id_to_search_for, 'ratio_category'].values[0]
-            og_rank = df.loc[[df['img_id'] == og_image], 'rank']
+            bin = metadata.loc[metadata['index'] == ind, 'ratio_category'].values[0]
+            og_rank = df.loc[df['img_index'] == str(og_index), 'rank']
+            print(type(df['img_index'][0]))
+            print(og_rank)
+            raise Exception("Debugging")
 
             # if the og image is not in the ranked list, skip this image
             if og_rank == 0:  # TODO: OG not in ranking
-                print(f'Original image not in ranking: {og_image}')
+                print(f'Original image not in ranking: {og_index}')
                 continue
 
             # compute the relative distance

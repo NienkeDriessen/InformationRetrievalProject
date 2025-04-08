@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Define file paths
-metadata_path = "../metadata/metadata_OpenImages.csv"
+metadata_path = "../metadata/processed_metadata_OpenImages.csv"
 plots_folder = "../data_plots/"
 
 if not os.path.exists(plots_folder):
@@ -17,6 +17,11 @@ def isOriginal(image_id):
 
 # Load the CSV file
 df = pd.read_csv(metadata_path)
+mask = ((df['label'] == 'real') & df['entities'].notna()) | (df['label'] == 'fake')
+df = df[mask]
+
+print(df.columns)
+print(len(df))
 
 # Dictionary to store original images and their altered versions
 original_to_altered = {}
@@ -34,38 +39,49 @@ for _, row in df.iterrows():
     image_id = row['image_id']
     dreamsim = row['dreamsim']  # DreamSim value
     ratio = row['ratio_category']
+    index = row['index']
+    # print(row)
 
     # Extract original ID (before any underscores if applicable)
     original_id = image_id.split("_")[0]
+    original_index = df.loc[df['image_id'] == original_id, 'index'].values[0] if not df[df['image_id'] == original_id].empty else None
+    if original_index is None:
+        print(f"Original ID not found for {image_id}")
+        continue
+        # raise Exception(f"Original ID not found for {image_id}")
 
-    is_original = isOriginal(image_id) # Check if the image is original
+    is_original = isOriginal(image_id)  # Check if the image is original
     # Check if it's an original image
     # if is_original:
-    if original_id not in original_to_altered:
-        original_to_altered[original_id] = []  # Initialize list
+    if original_index not in original_to_altered:
+        original_to_altered[original_index] = []  # Initialize list
         # First filter: Only add altered images with DreamSim ≥ 0.13
     if (not is_original) and dreamsim >= 0.13 and type(ratio) is str:
         print("not none", ratio)
         altered_data = {
-            "altered_id": image_id,
+            "altered_id": index,
             "dreamsim": dreamsim,
             "mse_rgb": row["mse_rgb"],
             "mse_gray": row["mse_gray"],
             "ssim_rgb": row["ssim_rgb"],
             "ssim_gray": row["ssim_gray"],
         }
-        original_to_altered[original_id].append(altered_data)
+        original_to_altered[original_index].append(altered_data)
 
         # Track values for distribution analysis
         for metric in tracked_metrics:
             metric_values[metric].append(row[metric])
 
+
 # Second filter: Only keep original images that have at least 3 altered versions
 filtered_originals = {k: v for k, v in original_to_altered.items() if len(v) >= 3}
 
+# print(filtered_originals)
+# raise Exception("stop here")
+
 # Retrieve entity keywords for the final selection
 for orig_id, altered_list in filtered_originals.items():
-    entities = df[df["image_id"] == orig_id]["entities"].dropna().values
+    entities = df[df["index"] == orig_id]["entities"].dropna().values
 
     # Convert to a sorted tuple to ensure uniqueness
     entity_tuple = tuple(sorted(entities))
@@ -74,7 +90,7 @@ for orig_id, altered_list in filtered_originals.items():
     if entity_tuple and entity_tuple not in unique_entity_sets:
         unique_entity_sets.add(entity_tuple)
         selected_originals.append({
-            "id": orig_id,
+            "index": orig_id,
             "keywords": entities.tolist(),
             "num_altered": len(altered_list),
             "altered_ids": [alt["altered_id"] for alt in altered_list]  # List of altered image IDs
@@ -89,9 +105,9 @@ for entry in selected_originals:
 altered_to_og = {}
 for row in selected_originals:
     for i in row["altered_ids"]:
-        altered_to_og[i] = row["id"]
+        altered_to_og[i] = row["index"]
 df = pd.DataFrame.from_dict(altered_to_og, orient='index', columns=['og_image'])
-df.to_csv(plots_folder + "altered_to_og.csv", index=True)
+df.to_csv(plots_folder + "altered_to_og2.csv", index=True)
 
 # Convert to DataFrame and save to CSV
 df_selected = pd.DataFrame(selected_originals)

@@ -1,18 +1,19 @@
 import pandas as pd
+import numpy as np
 
 
 def alt_to_og(query_df: pd.DataFrame) -> pd.DataFrame:
     """
-    Get the mapping of alternate image id to original id.
+    Get the mapping of alternate image index to original index.
     :param query_df: query dataframe
     """
     image_id = []
     og_image = []
     for index, row in query_df.iterrows():
-        for i in row['place']:
-            image_id.append(row.image_id)
-            og_image.append(i)
-    return pd.DataFrame({'image_id': image_id, 'og_image': og_image})
+        for i in row['altered_indices']:
+            image_id.append(np.float64(row['index']))
+            og_image.append(np.float64(i))
+    return pd.DataFrame({'index': image_id, 'og_image': og_image})
 
 
 def reformat_retrieval_results(retrieval: pd.DataFrame) -> pd.DataFrame:
@@ -21,16 +22,13 @@ def reformat_retrieval_results(retrieval: pd.DataFrame) -> pd.DataFrame:
     :param retrieval:
     :return:
     """
-    p_img_path = 'img_path'
-    p_relevance_score = 'distance'
-    return retrieval[[p_img_path, p_relevance_score]].rename(columns={
-        p_img_path: 'image_path',
-        p_relevance_score: 'relevance_score'
-    }).set_index('image_path')
+    return retrieval.rename(columns={
+        'image_index': 'index',
+        'distance': 'relevance_score'
+    })
 
 
-def reformat_metadata(metadata: pd.DataFrame, image_list: list[str],
-                      alternate_to_original: pd.DataFrame) -> pd.DataFrame:
+def reformat_metadata(metadata: pd.DataFrame, image_list: list[str]) -> pd.DataFrame:
     """
     Reformats OpenImage's metadata to the following:
     - removes unnecessary columns for ground truth and evaluation
@@ -43,11 +41,18 @@ def reformat_metadata(metadata: pd.DataFrame, image_list: list[str],
     :param alternate_to_original: dataframe with the mapping of alternate image id to original id
     :return: new metadata dataframe with the following columns: ['image_id', 'image_path', 'ratio_category', 'label', 'entities']
     """
-    mdata = metadata[['image_id', 'image_path', 'ratio_category', 'label', 'entities']].copy()
-    mdata = mdata.merge(alternate_to_original, left_on='image_id', right_on='image_id', how='left')
-    mdata = mdata.loc[mdata['image_id' in image_list]]
+    mdata = metadata[['index', 'image_id', 'image_path', 'ratio_category', 'label', 'entities', 'og_image']].copy()
+
     mask = ((mdata['label'] == 'real') | (mdata['og_image'].notna()))
     mdata = mdata[mask]
+    print(len(mdata))
+
     mask = ((mdata['entities'].notna()) & (mdata['label'] == 'real')) | (mdata['label'] == 'fake')
     mdata = mdata[mask]
+    print(len(mdata))
+
+    mask = (mdata['image_id'].isin(image_list) | mdata['og_image'].isin(image_list))
+    mdata = mdata.loc[mask]  # ids baaaaad >:(
+
+    mdata.to_csv('metadata_reformatted_HELP.csv', index=False)
     return mdata
