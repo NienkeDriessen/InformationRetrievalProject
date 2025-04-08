@@ -17,6 +17,7 @@ import os
 
 from retrieval import TextToImageRetriever
 from experiment import execute_experiment
+from metadata import preprocess_metadata
 
 # Defining constants
 METADATA_PATH = '../metadata/metadata_OpenImages.csv'
@@ -40,6 +41,7 @@ def main():
     # Loading original images and metadata
     metadata = load_metadata(METADATA_PATH)
     # Save metadata to new file (including index serving as id) and load it again
+    metadata = preprocess_metadata(metadata)
     save_metadata(metadata, PROCESSED_METADATA_PATH)
     metadata = load_metadata(PROCESSED_METADATA_PATH)
 
