@@ -11,7 +11,7 @@ class RetrievalResult:
   """
   Class representing result item from text-image retrieval.
   """
-  img_path: str
+  img_index: str
   distance: float
 
   def __str__(self) -> str:
@@ -20,7 +20,7 @@ class RetrievalResult:
 
     :return: String representation of object
     """
-    return f"Result:\n  img_path: {self.img_path},\n  distance: {self.distance}\n"
+    return f"Result:\n  img_path: {self.img_index},\n  distance: {self.distance}\n"
 
   def to_dict(self) -> dict:
     """
@@ -29,7 +29,7 @@ class RetrievalResult:
     :return: Dictionary of object fields (all values as strings).
     """
     return {
-      "img_path": self.img_path,
+      "img_index": self.img_index,
       "distance": str(self.distance),
     }
 
@@ -40,7 +40,7 @@ class TextToImageRetriever:
   def __init__(self, embedding_model, device, embeddings):
     self.embedding_model = embedding_model
     self.device = device
-    self.img_paths = np.array(list(embeddings.keys()))
+    self.img_indices = np.array(list(embeddings.keys()))
 
     self.embeddings = embeddings  # image paths mapped to embedding tensors
 
@@ -73,13 +73,13 @@ class TextToImageRetriever:
     distances, indices = self.index.search(text_features.cpu().detach().numpy(), k=n)
     indices = indices[0]
     distances = distances[0]
-    img_paths = self.img_paths[indices]
+    img_indices = self.img_indices[indices]
     results = []
 
     # Construct results based on metadata
-    for i in range(len(img_paths)):
+    for i in range(len(img_indices)):
       distance = distances[i]
-      img_path = img_paths[i]
-      results.append(RetrievalResult(img_path, distance))
+      img_index = img_indices[i]
+      results.append(RetrievalResult(img_index, distance))
 
     return results

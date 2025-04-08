@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import torch
 
-from load_data import find
+from load_data import find, find_index_from_image_id
 import PIL.Image as Image
 
 
@@ -37,7 +37,7 @@ def generate_image_embeddings(imgs_path: str, metadata: pd.DataFrame, query_imag
         # Only use images for which we have queries
         meta = meta[meta["image_id"].isin(query_image_ids)]
 
-        real_index = meta[meta['image_id'] == real_images[i]]['index'].iloc[0]
+        real_index = find_index_from_image_id(real_images[i], meta)
         image_indices.append(real_index)
 
         real_images[i] = real_images[i] + '.jpg'
@@ -47,7 +47,7 @@ def generate_image_embeddings(imgs_path: str, metadata: pd.DataFrame, query_imag
         alter1path = []
         metal = meta[meta['label'] == 'fake']
         for altered_id in metal['image_id']:
-            altered_index = metal[metal['image_id'] == altered_id]['index'].iloc[0]
+            altered_index = find_index_from_image_id(altered_id, metal)
             image_indices.append(altered_index)
             alter1.append(altered_id + '.png')
             alter1path.append(find(altered_id + '.png', imgs_path))
