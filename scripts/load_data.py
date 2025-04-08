@@ -31,16 +31,26 @@ def load_metadata(metadata_path: str) -> pd.DataFrame:
     return pd.read_csv(metadata_path)
 
 
-def save_embeddings(embeddings_path: str, embeddings: [torch.tensor], image_paths: [str]) -> None:
+def save_metadata(metadata: pd.DataFrame, metadata_path: str) -> None:
+    """
+    Save metadata to CSV file with index.
+
+    :param metadata: Metadata to save
+    :param metadata_path: Path to CSV file.
+    """
+    metadata.to_csv(metadata_path, index=True, index_label='index')
+
+
+def save_embeddings(embeddings_path: str, embeddings: [torch.tensor], image_indices: [str]) -> None:
     """
     Save embeddings to a h5 file along with corresponding image paths.
 
     :param embeddings_path: Path to embeddings file.
     :param embeddings: List of embeddings as tensors.
-    :param image_paths: List of image paths (corresponding to embeddings in same order).
+    :param image_indices: List of image indices (corresponding to embeddings in same order).
     """
     with h5py.File(embeddings_path, 'w') as f:
-        f.create_dataset('img_path', data=image_paths)  # String paths
+        f.create_dataset('img_index', data=image_indices)  # String paths
         f.create_dataset('embeddings', data=embeddings)
 
 
@@ -49,15 +59,15 @@ def load_embeddings(embeddings_path: str) -> dict:
     Load embeddings from h5 file.
 
     :param embeddings_path: Path to h5 file.
-    :return: Dictionary with image paths mapped to embeddings.
+    :return: Dictionary with image indices mapped to embeddings.
     """
     embedding_dict = {}
     with h5py.File(embeddings_path, 'r') as f:
-        img_paths = f['img_path'][:].astype(str)
+        img_indices = f['img_index'][:].astype(str)
         embeddings = f['embeddings'][:]
 
-        for i in range(len(img_paths)):
-            embedding_dict[img_paths[i]] = embeddings[i]
+        for i in range(len(img_indices)):
+            embedding_dict[img_indices[i]] = embeddings[i]
 
     return embedding_dict
 

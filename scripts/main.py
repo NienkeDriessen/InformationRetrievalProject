@@ -8,7 +8,7 @@ from clip import clip
 import json
 import pandas as pd
 
-from load_data import load_metadata, load_queries_and_image_ids, load_embeddings
+from load_data import load_metadata, load_queries_and_image_ids, load_embeddings, save_embeddings, save_metadata
 from embedding import generate_image_embeddings
 from evaluation.ground_truth import gen_ground_truth
 from evaluation.evaluation import evaluate
@@ -17,10 +17,10 @@ import os
 
 from retrieval import TextToImageRetriever
 from experiment import execute_experiment
-from load_data import save_embeddings
 
 # Defining constants
 METADATA_PATH = '../metadata/metadata_OpenImages.csv'
+PROCESSED_METADATA_PATH = '../metadata/processed_metadata_OpenImages.csv'
 EMBEDDING_FOLDER_PATH = '../data/embeddings'
 EMBEDDING_NAME = 'img_embeddings.h5'
 EMBEDDING_PATH = os.path.join(EMBEDDING_FOLDER_PATH, EMBEDDING_NAME)
@@ -36,8 +36,11 @@ def main():
     """
     Main method entrypoint of the application.
     """
-    # Loading images and metadata
+    # Loading original images and metadata
     metadata = load_metadata(METADATA_PATH)
+    # Save metadata to new file (including index serving as id) and load it again
+    save_metadata(metadata, PROCESSED_METADATA_PATH)
+    metadata = load_metadata(PROCESSED_METADATA_PATH)
 
     # Generating and saving queries
     query_df, image_list = load_queries_and_image_ids(QUERY_PATH)  # columns=[id,keywords,query,num_altered,altered_ids]
@@ -51,12 +54,12 @@ def main():
     if not os.path.exists(EMBEDDING_FOLDER_PATH) or REGENERATE_EMBEDDINGS:
         if not os.path.exists(EMBEDDING_FOLDER_PATH):
             os.makedirs(EMBEDDING_FOLDER_PATH)
-        embeddings, image_paths, mdata = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
-        save_embeddings(EMBEDDING_PATH, embeddings, image_paths)
-        mdata.to_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'), index=True)
+        embeddings, image_indices = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
+        save_embeddings(EMBEDDING_PATH, embeddings, image_indices)
+        #mdata.to_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'), index=True)
 
     embeddings = load_embeddings(EMBEDDING_PATH)
-    metadata = pd.read_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'))
+    #metadata = pd.read_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'))
 
     if not os.path.exists(RETRIEVAL_RESULTS_PATH):
         os.makedirs(RETRIEVAL_RESULTS_PATH)
