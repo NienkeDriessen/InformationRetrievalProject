@@ -1,4 +1,4 @@
-﻿id;keywords;Query;num_altered;altered_ids
+﻿id;keywords;query;num_altered;altered_ids
 3fdfe506da22acaa;"[""['fish']""]";A fish;3;['3fdfe506da22acaa_m0ch_cf_00434cf6_OpenImages_StableDiffusion_XL', '3fdfe506da22acaa_m0ch_cf_f626de23_OpenImages_StableDiffusion_v5', '3fdfe506da22acaa_m0ch_cf_484255f6_OpenImages_StableDiffusion_XL']
 f509159922bd5baa;"[""['bottle']""]";A bottle;3;['f509159922bd5baa_m04dr76w_c5a9a2d9_OpenImages_OpenJourney', 'f509159922bd5baa_m04dr76w_c5a9a2d9_OpenImages_Kandinsky_2_2', 'f509159922bd5baa_m04dr76w_5f100e1e_OpenImages_Kandinsky_2_2']
 86401ad43b4f7652;"[""['horse', 'bull']""]";A horse;4;['86401ad43b4f7652_m0cnyhnx_ca4b7e93_OpenImages_OpenJourney', '86401ad43b4f7652_m0cnyhnx_ca4b7e93_OpenImages_Kandinsky_2_2', '86401ad43b4f7652_m0cnyhnx_ca4b7e93_OpenImages_StableDiffusion_v4', '86401ad43b4f7652_m03k3r_03b30a42_OpenImages_StableDiffusion_v5']
