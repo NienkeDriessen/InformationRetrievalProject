@@ -59,9 +59,9 @@ def main():
     query_df = pd.read_csv(QUERY_PATH)
     image_list = query_df['index'].tolist()
     image_id_list = [str(metadata[metadata['index'] == index]['image_id'].iloc[0]) for index in image_list]
-    image_ids_to_indices = {}
+    image_ids_to_real_indices = {}
     for i in range(len(image_id_list)):
-        image_ids_to_indices[image_id_list[i]] = image_list[i]
+        image_ids_to_real_indices[image_id_list[i]] = image_list[i]
 
     # Define embedding model
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -81,7 +81,7 @@ def main():
         print(f'Generating embeddings for {len(image_list)} images...')
         if not os.path.exists(EMBEDDING_FOLDER_PATH):
             os.makedirs(EMBEDDING_FOLDER_PATH)
-        embeddings, image_indices = generate_image_embeddings(IMG_PATH, metadata, image_ids_to_indices, model, preprocess, device)
+        embeddings, image_indices = generate_image_embeddings(IMG_PATH, metadata, image_ids_to_real_indices, model, preprocess, device)
         save_embeddings(EMBEDDING_PATH, embeddings, image_indices)
         #mdata.to_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'), index=True)
 
