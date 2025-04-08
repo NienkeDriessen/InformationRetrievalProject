@@ -38,8 +38,8 @@ METADATA_W_OG_PATH = '../data/metadata_w_og_images.csv'
 RETRIEVAL_RESULTS_PATH = '../data/retrieval_results'
 RESULT_PATH = '../results/'  # path to folder to save metric results and graphs to
 K_VALUES = [1, 3, 5, 10]  # values for k used in the metrics in evaluation (EG, nDCG@k)
-REGENERATE_EMBEDDINGS = False
-REGENERATE_RESULTS = False
+REGENERATE_EMBEDDINGS = True
+REGENERATE_RESULTS = True
 
 
 def main():
@@ -49,7 +49,7 @@ def main():
     # Loading original images and metadata
     metadata = load_metadata(METADATA_PATH)
     # Save metadata to new file (including index serving as id) and load it again
-    metadata = preprocess_metadata(metadata)
+    #metadata = preprocess_metadata(metadata)
     save_metadata(metadata, PROCESSED_METADATA_PATH)
     metadata = load_metadata(PROCESSED_METADATA_PATH)
 
@@ -58,6 +58,10 @@ def main():
     # columns=[id,keywords,query,num_altered,altered_ids]
     query_df = pd.read_csv(QUERY_PATH)
     image_list = query_df['index'].tolist()
+    image_id_list = [str(metadata[metadata['index'] == index]['image_id'].iloc[0]) for index in image_list]
+    image_ids_to_indices = {}
+    for i in range(len(image_id_list)):
+        image_ids_to_indices[image_id_list[i]] = image_list[i]
 
     # Define embedding model
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -74,14 +78,19 @@ def main():
     # print(mdata[:10])
 
     if not os.path.exists(EMBEDDING_PATH) or REGENERATE_EMBEDDINGS:
+        print(f'Generating embeddings for {len(image_list)} images...')
         if not os.path.exists(EMBEDDING_FOLDER_PATH):
             os.makedirs(EMBEDDING_FOLDER_PATH)
-        embeddings, image_indices = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
+        embeddings, image_indices = generate_image_embeddings(IMG_PATH, metadata, image_ids_to_indices, model, preprocess, device)
         save_embeddings(EMBEDDING_PATH, embeddings, image_indices)
         #mdata.to_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'), index=True)
 
     # metadata = pd.read_csv(os.path.join(RESULT_PATH, 'tempie6_may_be_good.csv'))
     embeddings = load_embeddings(EMBEDDING_PATH)
+    print("embeddings: ", embeddings)
+    key = [key for key in embeddings.keys()][0]
+    print("first key: ", str(key))
+    print("first embedding: ", embeddings[key])
     metadata = pd.read_csv(os.path.join(RESULT_PATH, 'processed_metadata_OpenImages.csv'))
     # TODO: smth with query_generation methods
 

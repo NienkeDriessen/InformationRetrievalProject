@@ -11,7 +11,7 @@ class RetrievalResult:
   """
   Class representing result item from text-image retrieval.
   """
-  img_index: str
+  img_index: int
   distance: float
 
   def __str__(self) -> str:
@@ -29,7 +29,7 @@ class RetrievalResult:
     :return: Dictionary of object fields (all values as strings).
     """
     return {
-      "img_index": self.img_index,
+      "img_index": str(self.img_index),
       "distance": str(self.distance),
     }
 
