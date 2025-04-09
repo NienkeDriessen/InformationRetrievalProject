@@ -10,6 +10,8 @@ from load_data import save_embeddings
 import torch.nn.functional as F
 from tqdm import tqdm
 
+# from scripts.query_creation.queries_based_on_random_words import subset
+
 
 def gen_entity_embeddings(mdata: pd.DataFrame, save_path: str, clip_model, clip_preprocess) -> {}:
     """
@@ -45,10 +47,13 @@ def gen_entity_embeddings(mdata: pd.DataFrame, save_path: str, clip_model, clip_
 def gen_ground_truth(mdata: pd.DataFrame, queries: pd.DataFrame, embeddings, model, preprocess, save_path: str,
                      ps_rel: int = 10) -> dict:
     query_dict = {}
-    real_mdata = mdata.loc[mdata['label'] == 'real'].copy()  # only keep real images for ground truth
+    real_mdata = mdata.loc[mdata['label'] == 'real'].dropna(subset=['entities']).copy()  # only keep real images for ground truth
+    real_mdata = real_mdata.loc[real_mdata['index'].isin(queries['index'].tolist())]  # only keep images that have embeddings
     with torch.no_grad():
         # stack embeddings for efficiency
         device = "cuda" if torch.cuda.is_available() else "cpu"
+        # filter embeddings to only include real images
+        embeddings = {key: embeddings[key] for key in embeddings.keys() if key in real_mdata['index'].tolist()}
         tensor_list = [torch.tensor(embeddings[key][:]) for key in embeddings.keys()]
         s_embeddings = torch.stack(tensor_list)
         for index, row in tqdm(queries.iterrows()):

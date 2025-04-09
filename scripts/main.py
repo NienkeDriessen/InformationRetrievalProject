@@ -37,9 +37,9 @@ QUERY_EMBEDDINGS = '../data/query_embeddings.h5'
 METADATA_W_OG_PATH = '../data/metadata_w_og_images.csv'
 RETRIEVAL_RESULTS_PATH = '../data/retrieval_results'
 RESULT_PATH = '../results/'  # path to folder to save metric results and graphs to
-K_VALUES = [1, 3, 5, 10]  # values for k used in the metrics in evaluation (EG, nDCG@k)
-REGENERATE_EMBEDDINGS = True
-REGENERATE_RESULTS = True
+K_VALUES = [10, 30, 50, 80]  # values for k used in the metrics in evaluation (EG, nDCG@k)
+REGENERATE_EMBEDDINGS = False
+REGENERATE_RESULTS = False
 
 
 def main():
@@ -97,12 +97,11 @@ def main():
 
     # metadata = pd.read_csv(os.path.join(RESULT_PATH, 'tempie6_may_be_good.csv'))
     embeddings = load_embeddings(EMBEDDING_PATH)
-    print("embeddings: ", embeddings)
+    # print("embeddings: ", embeddings)
     key = [key for key in embeddings.keys()][0]
     print("first key: ", str(key))
-    print("first embedding: ", embeddings[key])
+    # print("first embedding: ", embeddings[key])
     metadata = pd.read_csv(os.path.join(RESULT_PATH, 'processed_metadata_OpenImages.csv'))
-    # TODO: smth with query_generation methods
 
     if not os.path.exists(RETRIEVAL_RESULTS_PATH):
         os.makedirs(RETRIEVAL_RESULTS_PATH)
@@ -138,7 +137,7 @@ def main():
 
     # Evaluation script - individual functions detail expected input structure
     for f in os.listdir(RETRIEVAL_RESULTS_PATH):
-        if f.endswith('.json'):
+        if f.endswith('850.json'):
             retrieval_results_path = os.path.join(RETRIEVAL_RESULTS_PATH, f)
             # Evaluate the retrieval results
             evaluate(K_VALUES, retrieval_results_path, mdata, queries, ground_truth, RESULT_PATH)
