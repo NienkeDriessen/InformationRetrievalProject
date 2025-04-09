@@ -151,7 +151,8 @@ def evaluate_all_queries(queries: [str], ground_truth: dict, retrieved_list: dic
     :return: dictionary for nDCG and relative delta scores for each corpus
     """
     # get all scores
-    all_scores = [evaluate_query(ground_truth[q], retrieved_list[q], ks, metadata)
+    print(ground_truth.keys())
+    all_scores = [evaluate_query(ground_truth[str(q)], retrieved_list[str(q)], ks, metadata)
                   for q in queries]
     # get average scores
     avg_scores = {}

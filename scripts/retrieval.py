@@ -4,6 +4,7 @@ from typing import List
 import clip
 import faiss
 import numpy as np
+import torch
 
 
 @dataclass
@@ -11,7 +12,7 @@ class RetrievalResult:
   """
   Class representing result item from text-image retrieval.
   """
-  img_index: str
+  img_index: int
   distance: float
 
   def __str__(self) -> str:
@@ -29,7 +30,7 @@ class RetrievalResult:
     :return: Dictionary of object fields (all values as strings).
     """
     return {
-      "img_index": self.img_index,
+      "img_index": str(self.img_index),
       "distance": str(self.distance),
     }
 
@@ -55,7 +56,7 @@ class TextToImageRetriever:
     self.index = faiss.IndexFlatIP(d)
     self.index.add(img_features)
 
-  def retrieve(self, query, n) -> List[RetrievalResult]:
+  def retrieve(self, query: str, n) -> List[RetrievalResult]:
     """
     Retrieve top N elements closest to query.
 
@@ -63,12 +64,21 @@ class TextToImageRetriever:
     :param n: Number of elements to retrieve
     :return: List of retrieval results.
     """
-    # Get embedding of query
-    tokenized_text = clip.tokenize([query]).to(self.device)
-    text_features = self.embedding_model.encode_text(tokenized_text)
+    ent = query.replace("'", "").replace("[", "").replace("]", "").split(", ")
+    with torch.no_grad():
+        embs = []
+        for e in ent:
+            # Get embedding of query
+            tokenized_text = clip.tokenize(e).to(self.device)
+            embeddings = self.embedding_model.encode_text(tokenized_text)
+            embeddings /= embeddings.norm(dim=-1, keepdim=True)  # normalise
+            embs.append(embeddings)
+        text_features = torch.stack(embs).mean(dim=0)  # average
 
     # Normalize embedding
     text_features /= text_features.norm(dim=-1, keepdim=True)
+
+    # print('\n\n', text_features.shape)
 
     distances, indices = self.index.search(text_features.cpu().detach().numpy(), k=n)
     indices = indices[0]

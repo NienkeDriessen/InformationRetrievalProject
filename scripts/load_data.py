@@ -57,10 +57,10 @@ def save_metadata(metadata: pd.DataFrame, metadata_path: str) -> None:
     :param metadata: Metadata to save
     :param metadata_path: Path to CSV file.
     """
-    metadata.to_csv(metadata_path, index=True, index_label='index')
+    metadata.to_csv(metadata_path, index=False)
 
 
-def save_embeddings(embeddings_path: str, embeddings: [torch.tensor], image_indices: [str]) -> None:
+def save_embeddings(embeddings_path: str, embeddings: [torch.tensor], image_indices: [int]) -> None:
     """
     Save embeddings to a h5 file along with corresponding image paths.
 

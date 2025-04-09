@@ -25,7 +25,7 @@ def execute_experiment(retriever: TextToImageRetriever, query_df: pd.DataFrame, 
     res = {}
     for _, row in query_df.iterrows():
         img_index = row['index']
-        query = row['query']
+        query = row['entities']
         results = [retrieval_result.to_dict() for retrieval_result in retriever.retrieve(query, n)]
         res[img_index] = results
 

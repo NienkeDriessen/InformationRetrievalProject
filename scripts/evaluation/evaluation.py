@@ -43,7 +43,7 @@ def evaluate(k_values: list[int], retrieval_results_path: str, metadata: pd.Data
     # 'df.method({col: value}, inplace=True)'
 
     if not os.path.exists(os.path.join(save_folder, "evaluation_results.json")):
-        evaluation_results = evaluate_all_queries(queries['id'].tolist(), ground_truth, retrieval_results, k_values,
+        evaluation_results = evaluate_all_queries(queries['index'].tolist(), ground_truth, retrieval_results, k_values,
                                                   metadata=metadata, save_folder=save_folder)
         print(f'Saved generated ground truth to {save_folder} as a JSON file.')
         print('Structure of path:\n { <k>: { ndcg_[all|c1|...|og]: float, relD_[og|c1|...]_[c1|...]: float } }')
