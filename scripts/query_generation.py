@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 from load_data import save_embeddings
 
-metadata_path = "../metadata/processed_metadata_OpenImages.csv"
+metadata_path = "ellende69.csv"
 
 
 def extract_data_from_metadata(metadata: pd.DataFrame, save_path: str = '') -> (dict, list[str], list[float]):

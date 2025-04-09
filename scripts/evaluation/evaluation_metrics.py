@@ -1,3 +1,5 @@
+import math
+
 import pandas as pd
 import numpy as np
 import json
@@ -39,6 +41,13 @@ def ndcg_score(ground_truth: pd.DataFrame, retrieved_list: pd.DataFrame, k: int)
     log = np.log2(np.arange(2, k + 2))
     idcg = (np.array(ground_truth[:k]['relevance_score']) / log).sum()  # TODO: check slice is correct
     dcg = (np.array(retrieved_list[:k]['relevance_score']) / log).sum()  # TODO: check slice is correct + change to use right relevance scores
+
+    gt_indices = set(ground_truth['index'].tolist())
+    retrieved_indices = set(retrieved_list['index'].tolist())
+    intersect = retrieved_indices.intersection(gt_indices)
+    if len(intersect) > 0:
+        print('yay found intersection, altered has corresponding ground truth')
+
     return dcg / idcg if idcg > 0 else 0
 
 
@@ -70,10 +79,13 @@ def filter_relevance_labels(corpus: str, ground_truth: pd.DataFrame, retrieved_l
         prediction = retrieved_list_local[['index']]
         prediction = prediction.merge(metadata[['index', 'image_path', 'ratio_category', 'og_image']], on='index',
                                       how='left')
-        prediction.loc[prediction['ratio_category'] == 'real', 'og_image'] = prediction['index']
+        prediction.loc[prediction['ratio_category'] == 'real', 'og_image'] = prediction['index']  # tODO: che
+        mask = (prediction['ratio_category'] != 'real') & (prediction['og_image'].isna())
+        print('trying to find fake w/out og', prediction[mask])
         prediction = prediction.merge(ground_truth, left_on='og_image', right_on='index', how='left',
                                       suffixes=('', '_target'))
-        prediction = prediction.rename(columns={'relevance_score_target': 'relevance_score'})
+        print(prediction.columns)
+        # prediction = prediction.rename(columns={'relevance_score_target': 'relevance_score'})
         if corpus == 'all':
             return prediction
         else:
@@ -182,5 +194,5 @@ def evaluate_all_queries(queries: [str], ground_truth: dict, retrieved_list: dic
             'relD_c4_c5': np.mean([s[str(k)]['relD_c4_c5'] for s in all_scores]),
         }
     with open(os.path.join(save_folder, "evaluation_results.json"), "w") as outfile:
-        json.dump(avg_scores, outfile, default=lambda df: json.loads(df.to_json()))
+        json.dump(avg_scores, outfile, indent=4, default=lambda df: json.loads(df.to_json()))
     return avg_scores

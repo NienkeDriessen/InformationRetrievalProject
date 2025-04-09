@@ -25,7 +25,7 @@ from evaluation.reformatting import alt_to_og
 # from final_query_selection_and_plot_generation import altered_to_og
 
 # Defining constants
-METADATA_PATH = '../metadata/metadata_OpenImages.csv'
+METADATA_PATH = '../ellende69.csv'
 PROCESSED_METADATA_PATH = '../metadata/processed_metadata_OpenImages.csv'
 EMBEDDING_FOLDER_PATH = '../data/embeddings'
 EMBEDDING_NAME = 'img_embeddings.h5'
@@ -36,10 +36,10 @@ QUERY_PATH = '../data/query_information.csv'
 QUERY_EMBEDDINGS = '../data/query_embeddings.h5'
 METADATA_W_OG_PATH = '../data/metadata_w_og_images.csv'
 RETRIEVAL_RESULTS_PATH = '../data/retrieval_results'
-RESULT_PATH = '../results/'  # path to folder to save metric results and graphs to
+RESULT_PATH = '../results2/'  # path to folder to save metric results and graphs to
 K_VALUES = [10, 30, 50, 80]  # values for k used in the metrics in evaluation (EG, nDCG@k)
-REGENERATE_EMBEDDINGS = False
-REGENERATE_RESULTS = False
+REGENERATE_EMBEDDINGS = True
+REGENERATE_RESULTS = True
 
 
 def main():
@@ -47,7 +47,7 @@ def main():
     Main method entrypoint of the application.
     """
     # Loading original images and metadata
-    metadata = load_metadata(METADATA_PATH)
+    # metadata = load_metadata(METADATA_PATH)
     # Save metadata to new file (including index serving as id) and load it again
     #metadata = preprocess_metadata(metadata)
     # save_metadata(metadata, PROCESSED_METADATA_PATH)
@@ -62,10 +62,13 @@ def main():
         lambda x : list(map(int, x.replace("'", "").replace("[", "").replace("]", "").split(", "))))
     image_list = query_df['index'].tolist()
     [image_list.extend(l) for l in query_df['altered_indices'].tolist()]
+    print(image_list)
 
-    mask = (metadata['index'].isin(image_list)) | (metadata['og_image'].isin(image_list))
-
+    # filters metadata to only contain images related to a query
+    mask = (metadata['index'].isin(image_list))  # (metadata['index'].isin(image_list)) | (metadata['og_image'].isin(image_list))
     metadata = metadata[mask]
+
+
     # print(metadata)
     # raise Exception("Debugging")
     image_id_list = [str(metadata[metadata['index'] == index]['image_id'].iloc[0]) for index in image_list]
@@ -91,7 +94,7 @@ def main():
         print(f'Generating embeddings for {len(image_list)} images...')
         if not os.path.exists(EMBEDDING_FOLDER_PATH):
             os.makedirs(EMBEDDING_FOLDER_PATH)
-        embeddings, image_indices = generate_image_embeddings(IMG_PATH, metadata, image_ids_to_real_indices, model, preprocess, device)
+        embeddings, image_indices = generate_image_embeddings(IMG_PATH, metadata, image_list, model, preprocess, device)
         save_embeddings(EMBEDDING_PATH, embeddings, image_indices)
         #mdata.to_csv(os.path.join(RESULT_PATH, 'temp_metadata.csv'), index=True)
 
@@ -101,7 +104,7 @@ def main():
     key = [key for key in embeddings.keys()][0]
     print("first key: ", str(key))
     # print("first embedding: ", embeddings[key])
-    metadata = pd.read_csv(os.path.join(RESULT_PATH, 'processed_metadata_OpenImages.csv'))
+    # metadata = pd.read_csv(os.path.join(RESULT_PATH, 'processed_metadata_OpenImages.csv'))
 
     if not os.path.exists(RETRIEVAL_RESULTS_PATH):
         os.makedirs(RETRIEVAL_RESULTS_PATH)
@@ -122,6 +125,8 @@ def main():
 
     # Generate ground truth
     queries = query_df
+    if not os.path.exists(RESULT_PATH):
+        os.makedirs(RESULT_PATH)
     if not os.path.exists(os.path.join(RESULT_PATH, 'queries_w_ground_truth.json')):
         if not os.path.exists(QUERY_EMBEDDINGS):
             entity_embeddings = gen_entity_embeddings(mdata, EMBEDDING_FOLDER_PATH, model, preprocess)
